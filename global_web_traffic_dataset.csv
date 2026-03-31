@@ -1,0 +1,2001 @@
+visit_id,date,country,traffic_source,device_type,browser,page,session_duration_sec,pages_viewed,bounce,conversion
+1,2025-04-13,Turkey,Referral,Desktop,Chrome,/about,49,7,0,0
+2,2025-12-15,Turkey,Social Media,Mobile,Chrome,/blog,785,3,0,0
+3,2025-09-28,India,Direct,Desktop,Safari,/blog,1734,13,0,0
+4,2025-04-17,Italy,Organic Search,Mobile,Opera,/blog,529,5,0,0
+5,2025-03-13,Mexico,Email,Mobile,Opera,/contact,1649,10,1,0
+6,2025-07-08,South Africa,Organic Search,Mobile,Edge,/about,1770,6,0,0
+7,2025-01-21,Netherlands,Referral,Desktop,Chrome,/login,555,6,0,0
+8,2025-04-13,UK,Organic Search,Mobile,Edge,/login,245,14,0,0
+9,2025-05-02,Japan,Direct,Mobile,Chrome,/about,472,4,0,0
+10,2025-08-03,France,Email,Mobile,Safari,/login,1261,6,0,0
+11,2025-11-27,Mexico,Referral,Mobile,Opera,/home,1733,3,1,0
+12,2025-03-29,USA,Email,Desktop,Opera,/contact,492,7,0,0
+13,2025-04-10,Canada,Social Media,Desktop,Safari,/,439,7,0,0
+14,2025-12-26,India,Organic Search,Mobile,Edge,/,1055,4,0,0
+15,2025-06-01,France,Email,Desktop,Edge,/,352,2,0,0
+16,2025-05-11,France,Paid Ads,Mobile,Firefox,/,1073,11,0,0
+17,2025-05-30,USA,Organic Search,Mobile,Chrome,/,1206,7,0,0
+18,2025-11-05,Saudi Arabia,Social Media,Mobile,Edge,/login,1472,3,0,1
+19,2025-09-15,Indonesia,Email,Tablet,Safari,/pricing,1212,1,0,0
+20,2025-12-10,Netherlands,Referral,Mobile,Edge,/blog,1631,2,0,0
+21,2025-10-21,Italy,Social Media,Desktop,Opera,/contact,142,10,0,0
+22,2025-07-11,Brazil,Paid Ads,Desktop,Chrome,/pricing,360,9,0,0
+23,2025-10-04,Mexico,Email,Mobile,Firefox,/contact,1558,12,0,0
+24,2025-06-10,South Africa,Direct,Desktop,Chrome,/home,1573,8,0,0
+25,2025-11-10,Australia,Organic Search,Desktop,Opera,/about,515,14,1,0
+26,2025-01-22,UK,Referral,Mobile,Opera,/products,93,6,0,0
+27,2025-09-10,South Africa,Direct,Mobile,Opera,/blog,1002,14,0,0
+28,2025-08-24,Pakistan,Email,Tablet,Opera,/home,1497,6,0,0
+29,2025-12-11,Turkey,Email,Desktop,Safari,/pricing,839,14,1,0
+30,2025-02-18,Australia,Social Media,Desktop,Firefox,/products,870,1,1,1
+31,2025-02-28,South Africa,Email,Desktop,Opera,/about,352,2,0,0
+32,2025-06-19,Italy,Referral,Tablet,Opera,/home,1313,4,0,0
+33,2025-07-07,India,Direct,Mobile,Edge,/about,875,3,1,0
+34,2025-09-28,Mexico,Referral,Mobile,Firefox,/about,1296,14,0,0
+35,2025-07-09,Spain,Paid Ads,Tablet,Chrome,/login,1199,1,0,0
+36,2025-06-24,Mexico,Paid Ads,Mobile,Firefox,/contact,302,8,1,1
+37,2025-02-20,UAE,Organic Search,Mobile,Firefox,/products,1542,7,0,0
+38,2025-12-30,South Africa,Organic Search,Desktop,Firefox,/contact,1613,4,0,0
+39,2025-02-24,Brazil,Paid Ads,Mobile,Opera,/about,1259,12,1,0
+40,2025-09-01,China,Email,Mobile,Opera,/login,1203,12,0,0
+41,2025-11-16,South Africa,Referral,Mobile,Safari,/home,607,9,0,0
+42,2025-05-11,USA,Paid Ads,Tablet,Chrome,/about,654,11,0,0
+43,2025-11-03,China,Organic Search,Tablet,Edge,/pricing,457,14,0,0
+44,2025-05-15,India,Paid Ads,Mobile,Firefox,/about,699,4,0,0
+45,2025-01-21,France,Email,Mobile,Chrome,/contact,1011,1,0,0
+46,2025-11-25,Turkey,Paid Ads,Mobile,Chrome,/products,864,10,0,0
+47,2025-06-16,Turkey,Referral,Desktop,Safari,/home,511,1,1,1
+48,2025-10-01,UK,Direct,Desktop,Edge,/contact,773,1,0,0
+49,2025-03-30,USA,Email,Mobile,Firefox,/about,1560,1,1,0
+50,2025-11-12,Australia,Organic Search,Mobile,Edge,/pricing,744,4,1,1
+51,2025-01-14,Brazil,Referral,Desktop,Safari,/blog,1412,1,0,0
+52,2025-08-30,South Africa,Paid Ads,Tablet,Opera,/login,1234,2,0,0
+53,2025-09-22,South Africa,Paid Ads,Desktop,Chrome,/pricing,1652,4,1,0
+54,2025-12-12,Saudi Arabia,Direct,Desktop,Firefox,/about,259,7,0,1
+55,2025-02-22,China,Organic Search,Mobile,Opera,/pricing,1442,2,0,0
+56,2025-12-06,Turkey,Organic Search,Desktop,Safari,/login,610,8,0,0
+57,2025-04-02,China,Social Media,Desktop,Edge,/blog,134,13,1,1
+58,2025-09-21,Saudi Arabia,Organic Search,Desktop,Chrome,/pricing,122,7,0,0
+59,2025-02-04,Italy,Direct,Mobile,Firefox,/blog,990,9,0,0
+60,2025-07-25,China,Social Media,Mobile,Opera,/about,1170,14,0,0
+61,2025-03-22,Netherlands,Social Media,Mobile,Opera,/blog,1792,6,1,0
+62,2025-02-19,Germany,Paid Ads,Mobile,Chrome,/contact,1529,4,0,0
+63,2025-12-26,USA,Paid Ads,Desktop,Edge,/contact,1711,6,0,0
+64,2025-01-02,USA,Organic Search,Tablet,Safari,/blog,159,4,0,0
+65,2025-02-23,Indonesia,Social Media,Desktop,Edge,/home,884,7,0,0
+66,2025-04-16,UAE,Paid Ads,Tablet,Edge,/products,352,9,0,0
+67,2025-09-17,Netherlands,Direct,Mobile,Edge,/home,589,3,0,0
+68,2025-11-06,UAE,Paid Ads,Tablet,Chrome,/blog,1766,3,0,0
+69,2025-07-10,France,Email,Desktop,Chrome,/products,792,2,1,1
+70,2025-08-06,Japan,Email,Mobile,Safari,/contact,330,1,0,0
+71,2025-02-13,UK,Paid Ads,Desktop,Edge,/products,831,14,0,0
+72,2025-06-11,South Africa,Social Media,Desktop,Chrome,/blog,541,1,1,0
+73,2025-07-21,India,Social Media,Mobile,Safari,/contact,1322,13,0,0
+74,2025-09-27,Japan,Referral,Desktop,Safari,/products,1522,3,0,1
+75,2025-12-17,USA,Email,Mobile,Edge,/products,501,14,1,0
+76,2025-10-31,Japan,Direct,Desktop,Firefox,/home,621,7,0,0
+77,2025-09-28,UAE,Social Media,Desktop,Edge,/products,261,11,0,0
+78,2025-08-03,Spain,Organic Search,Mobile,Firefox,/about,1110,9,0,0
+79,2025-09-09,Japan,Email,Mobile,Safari,/blog,1680,14,0,0
+80,2025-07-09,Spain,Direct,Mobile,Chrome,/,1425,2,0,0
+81,2025-10-23,Japan,Direct,Mobile,Opera,/,1445,7,1,0
+82,2025-08-01,Australia,Social Media,Mobile,Safari,/,182,1,0,0
+83,2025-07-27,Germany,Direct,Desktop,Chrome,/blog,884,2,0,0
+84,2025-08-25,UK,Social Media,Mobile,Safari,/,210,6,0,0
+85,2025-12-04,India,Paid Ads,Tablet,Edge,/home,226,11,1,0
+86,2025-02-22,Netherlands,Email,Mobile,Firefox,/blog,385,5,1,0
+87,2025-10-07,Germany,Referral,Mobile,Safari,/about,1753,8,0,0
+88,2025-08-05,India,Paid Ads,Mobile,Chrome,/contact,1619,12,1,0
+89,2025-09-09,Indonesia,Email,Mobile,Edge,/about,20,11,1,0
+90,2025-07-07,India,Social Media,Mobile,Opera,/blog,1045,2,0,0
+91,2025-02-10,UK,Email,Desktop,Edge,/blog,901,1,0,0
+92,2025-06-06,South Africa,Social Media,Desktop,Firefox,/products,1623,7,0,0
+93,2025-01-15,Spain,Paid Ads,Mobile,Edge,/products,444,6,1,0
+94,2025-10-28,Japan,Organic Search,Desktop,Opera,/products,1717,8,1,0
+95,2025-03-06,Indonesia,Organic Search,Mobile,Chrome,/login,1641,11,0,0
+96,2025-12-11,Spain,Email,Mobile,Safari,/login,827,13,0,0
+97,2025-11-23,Australia,Organic Search,Mobile,Firefox,/pricing,1406,14,0,0
+98,2025-01-09,USA,Social Media,Desktop,Opera,/login,1306,8,1,0
+99,2025-12-10,Pakistan,Direct,Desktop,Firefox,/home,940,2,1,0
+100,2025-05-09,Turkey,Social Media,Tablet,Edge,/blog,700,14,0,0
+101,2025-05-16,USA,Direct,Mobile,Firefox,/about,1609,8,0,1
+102,2025-03-04,Italy,Paid Ads,Mobile,Opera,/blog,1542,6,0,0
+103,2025-05-19,Pakistan,Referral,Mobile,Safari,/products,1165,9,1,0
+104,2025-03-22,Turkey,Direct,Mobile,Safari,/blog,864,12,0,0
+105,2025-06-12,Indonesia,Organic Search,Mobile,Firefox,/contact,793,7,0,0
+106,2025-10-16,USA,Social Media,Mobile,Chrome,/login,328,2,1,0
+107,2025-09-18,Saudi Arabia,Paid Ads,Desktop,Firefox,/blog,853,8,0,0
+108,2025-08-19,Saudi Arabia,Organic Search,Mobile,Edge,/about,630,9,1,0
+109,2025-02-10,Canada,Paid Ads,Mobile,Safari,/,794,7,0,0
+110,2025-01-28,Italy,Referral,Tablet,Safari,/contact,1201,4,0,0
+111,2025-05-15,India,Social Media,Desktop,Safari,/contact,406,9,1,0
+112,2025-07-20,Australia,Email,Mobile,Chrome,/blog,1213,4,0,0
+113,2025-11-24,Canada,Social Media,Mobile,Chrome,/pricing,1091,12,0,0
+114,2025-09-25,China,Referral,Mobile,Opera,/products,1513,4,0,1
+115,2025-02-02,Netherlands,Social Media,Desktop,Firefox,/home,1624,9,0,0
+116,2025-02-17,Netherlands,Email,Mobile,Firefox,/home,469,14,0,1
+117,2025-03-03,Brazil,Direct,Mobile,Edge,/,70,8,1,0
+118,2025-08-04,UK,Paid Ads,Desktop,Safari,/home,378,4,1,0
+119,2025-10-20,Netherlands,Email,Mobile,Chrome,/home,1154,14,1,0
+120,2025-04-09,Japan,Organic Search,Mobile,Edge,/products,728,8,0,0
+121,2025-06-21,Canada,Referral,Mobile,Edge,/login,555,8,1,0
+122,2025-12-26,China,Direct,Tablet,Chrome,/products,1615,7,1,1
+123,2025-08-02,UAE,Organic Search,Desktop,Firefox,/pricing,1050,10,0,0
+124,2025-02-04,UK,Organic Search,Desktop,Safari,/about,505,13,0,0
+125,2025-08-15,India,Referral,Mobile,Firefox,/,506,6,0,0
+126,2025-04-11,Italy,Direct,Desktop,Edge,/home,514,8,1,0
+127,2025-05-11,France,Organic Search,Desktop,Safari,/pricing,1565,7,0,0
+128,2025-09-14,UK,Organic Search,Desktop,Opera,/,978,5,1,0
+129,2025-01-05,UAE,Direct,Desktop,Edge,/contact,1348,12,0,0
+130,2025-08-06,France,Social Media,Mobile,Firefox,/home,1102,13,1,1
+131,2025-09-12,Turkey,Organic Search,Desktop,Firefox,/home,1760,13,0,0
+132,2025-12-25,Italy,Paid Ads,Mobile,Firefox,/products,170,4,0,0
+133,2025-10-10,Germany,Direct,Desktop,Chrome,/blog,1647,14,0,0
+134,2025-07-26,Turkey,Organic Search,Mobile,Edge,/,727,12,0,0
+135,2025-01-15,Australia,Referral,Desktop,Safari,/home,1178,2,1,0
+136,2025-12-12,UAE,Email,Mobile,Firefox,/login,1602,11,1,0
+137,2025-02-11,India,Paid Ads,Mobile,Firefox,/,1628,8,0,0
+138,2025-06-28,Netherlands,Email,Desktop,Chrome,/about,1002,9,0,0
+139,2025-03-04,South Africa,Email,Mobile,Safari,/login,1418,4,0,0
+140,2025-12-18,Italy,Organic Search,Desktop,Edge,/pricing,278,4,0,0
+141,2025-08-19,Australia,Paid Ads,Mobile,Opera,/login,1487,5,0,0
+142,2025-08-29,Spain,Paid Ads,Desktop,Chrome,/pricing,708,2,1,0
+143,2025-02-21,Australia,Social Media,Tablet,Edge,/blog,1551,7,1,0
+144,2025-04-06,UAE,Email,Desktop,Opera,/home,874,5,0,0
+145,2025-08-10,Turkey,Paid Ads,Mobile,Firefox,/login,359,6,0,0
+146,2025-08-19,Turkey,Social Media,Desktop,Firefox,/about,119,4,0,0
+147,2025-08-25,Germany,Direct,Desktop,Safari,/products,1516,8,0,0
+148,2025-05-23,Australia,Social Media,Mobile,Opera,/home,416,8,0,0
+149,2025-06-20,Indonesia,Referral,Tablet,Firefox,/,659,12,0,0
+150,2025-01-29,Turkey,Organic Search,Desktop,Firefox,/contact,60,5,0,0
+151,2025-02-05,Germany,Direct,Desktop,Safari,/pricing,1436,12,0,0
+152,2025-01-13,Spain,Direct,Desktop,Edge,/,1596,6,0,0
+153,2025-06-09,Indonesia,Referral,Desktop,Firefox,/blog,1509,3,0,0
+154,2025-11-23,UK,Social Media,Desktop,Chrome,/pricing,1120,1,0,0
+155,2025-07-06,Netherlands,Organic Search,Mobile,Chrome,/products,1101,9,1,0
+156,2025-08-31,Germany,Social Media,Desktop,Edge,/pricing,605,9,1,0
+157,2025-03-27,UAE,Paid Ads,Desktop,Opera,/contact,988,3,1,1
+158,2025-10-11,Mexico,Social Media,Mobile,Safari,/login,1075,4,0,0
+159,2025-03-07,Netherlands,Direct,Mobile,Chrome,/about,740,13,0,0
+160,2025-06-19,Turkey,Organic Search,Desktop,Chrome,/login,66,7,0,0
+161,2025-02-14,Canada,Social Media,Desktop,Edge,/home,747,2,0,0
+162,2025-03-03,China,Organic Search,Mobile,Opera,/contact,205,12,1,0
+163,2025-05-14,UAE,Organic Search,Desktop,Opera,/about,1793,3,0,0
+164,2025-10-11,Brazil,Paid Ads,Mobile,Edge,/contact,1711,6,0,0
+165,2025-01-28,Germany,Paid Ads,Desktop,Chrome,/home,1095,11,0,0
+166,2025-04-18,South Africa,Direct,Mobile,Safari,/pricing,1296,8,0,0
+167,2025-02-13,UK,Referral,Desktop,Chrome,/blog,121,1,1,0
+168,2025-12-06,Saudi Arabia,Organic Search,Mobile,Opera,/home,774,4,0,0
+169,2025-10-13,Spain,Referral,Mobile,Chrome,/home,720,1,0,0
+170,2025-11-27,Germany,Direct,Mobile,Safari,/about,1211,2,0,0
+171,2025-05-08,Australia,Organic Search,Desktop,Firefox,/products,957,8,1,0
+172,2025-12-14,Pakistan,Organic Search,Desktop,Chrome,/login,35,6,0,1
+173,2025-08-19,Italy,Email,Desktop,Edge,/pricing,419,9,0,0
+174,2025-07-09,Brazil,Referral,Desktop,Firefox,/home,767,2,0,0
+175,2025-08-13,Pakistan,Social Media,Desktop,Edge,/blog,540,3,1,0
+176,2025-10-10,Spain,Paid Ads,Mobile,Edge,/,1350,9,0,0
+177,2025-05-01,Pakistan,Social Media,Mobile,Edge,/pricing,1565,9,0,0
+178,2025-04-26,Saudi Arabia,Referral,Mobile,Chrome,/products,1139,13,1,0
+179,2025-08-21,Brazil,Paid Ads,Mobile,Opera,/contact,758,6,1,0
+180,2025-09-16,Brazil,Social Media,Mobile,Firefox,/home,1497,14,0,0
+181,2025-12-25,Germany,Email,Desktop,Safari,/blog,255,3,1,0
+182,2025-07-17,Mexico,Paid Ads,Mobile,Opera,/pricing,1114,5,0,0
+183,2025-05-17,Germany,Organic Search,Desktop,Chrome,/blog,671,2,1,0
+184,2025-11-14,Pakistan,Social Media,Mobile,Edge,/blog,918,7,0,0
+185,2025-06-14,USA,Paid Ads,Mobile,Safari,/login,405,10,0,0
+186,2025-08-13,Italy,Email,Mobile,Firefox,/about,531,11,1,0
+187,2025-11-03,Spain,Paid Ads,Mobile,Opera,/contact,1769,8,1,0
+188,2025-08-22,Brazil,Paid Ads,Desktop,Opera,/products,935,6,0,1
+189,2025-06-21,Turkey,Email,Mobile,Safari,/login,273,8,1,0
+190,2025-06-01,Spain,Social Media,Mobile,Chrome,/pricing,1694,2,0,0
+191,2025-11-11,Japan,Direct,Mobile,Firefox,/home,799,3,1,0
+192,2025-06-09,Japan,Social Media,Mobile,Safari,/products,1307,7,0,0
+193,2025-04-06,Turkey,Referral,Desktop,Edge,/home,1739,10,0,0
+194,2025-08-21,Brazil,Email,Desktop,Firefox,/,181,12,0,0
+195,2025-06-29,Brazil,Social Media,Desktop,Opera,/blog,274,1,0,0
+196,2025-04-23,China,Paid Ads,Desktop,Safari,/,1059,7,0,0
+197,2025-11-14,UAE,Email,Mobile,Opera,/about,1502,6,0,0
+198,2025-02-21,Saudi Arabia,Organic Search,Mobile,Opera,/blog,485,8,0,0
+199,2025-09-25,France,Social Media,Mobile,Opera,/contact,365,7,1,0
+200,2025-10-22,Germany,Email,Mobile,Chrome,/products,1059,4,0,0
+201,2025-04-23,South Africa,Social Media,Mobile,Opera,/home,43,3,0,0
+202,2025-04-11,Indonesia,Email,Mobile,Edge,/login,273,3,0,0
+203,2025-04-23,Germany,Paid Ads,Desktop,Edge,/about,1171,4,0,0
+204,2025-03-22,Pakistan,Organic Search,Mobile,Firefox,/contact,825,9,0,0
+205,2025-07-06,Brazil,Organic Search,Desktop,Opera,/home,1728,9,0,0
+206,2025-04-23,South Africa,Referral,Desktop,Opera,/products,884,13,0,0
+207,2025-01-02,Indonesia,Email,Mobile,Safari,/pricing,763,2,0,0
+208,2025-05-10,Germany,Social Media,Desktop,Chrome,/about,575,5,0,0
+209,2025-08-08,Brazil,Organic Search,Desktop,Firefox,/,471,1,0,0
+210,2025-02-23,USA,Organic Search,Desktop,Opera,/,1201,4,1,1
+211,2025-12-09,South Africa,Direct,Desktop,Safari,/login,1664,2,0,0
+212,2025-08-12,France,Direct,Tablet,Chrome,/home,664,8,1,0
+213,2025-08-13,Turkey,Organic Search,Desktop,Firefox,/home,90,4,0,0
+214,2025-05-06,Saudi Arabia,Email,Desktop,Firefox,/home,766,5,1,0
+215,2025-05-10,Canada,Referral,Mobile,Opera,/about,879,11,0,0
+216,2025-02-22,Italy,Organic Search,Mobile,Firefox,/products,1440,4,0,0
+217,2025-06-21,UK,Paid Ads,Tablet,Safari,/pricing,1607,5,1,0
+218,2025-08-06,USA,Social Media,Desktop,Firefox,/,1079,5,0,0
+219,2025-06-09,Saudi Arabia,Referral,Mobile,Edge,/contact,608,5,0,0
+220,2025-07-17,UAE,Paid Ads,Mobile,Safari,/blog,1644,11,0,0
+221,2025-09-04,France,Referral,Tablet,Chrome,/about,816,3,1,0
+222,2025-11-20,Turkey,Paid Ads,Mobile,Chrome,/about,1086,7,0,0
+223,2025-07-22,Canada,Social Media,Mobile,Opera,/products,993,3,0,0
+224,2025-07-03,Pakistan,Social Media,Desktop,Opera,/,713,2,1,0
+225,2025-05-03,Australia,Direct,Mobile,Edge,/login,485,3,0,0
+226,2025-09-12,Brazil,Email,Mobile,Chrome,/pricing,601,11,1,0
+227,2025-10-21,Japan,Paid Ads,Mobile,Chrome,/products,25,3,0,0
+228,2025-10-07,Netherlands,Direct,Desktop,Chrome,/contact,1393,8,1,0
+229,2025-11-21,Spain,Paid Ads,Desktop,Chrome,/,496,4,0,0
+230,2025-04-08,UK,Direct,Desktop,Firefox,/products,715,3,0,0
+231,2025-07-17,Canada,Social Media,Desktop,Safari,/,1535,10,0,0
+232,2025-08-28,Pakistan,Referral,Desktop,Safari,/,1174,5,0,0
+233,2025-05-24,South Africa,Direct,Tablet,Edge,/login,629,4,0,0
+234,2025-04-07,Canada,Paid Ads,Mobile,Firefox,/about,1028,9,0,0
+235,2025-07-20,Brazil,Paid Ads,Mobile,Chrome,/pricing,786,8,0,0
+236,2025-05-04,Pakistan,Email,Mobile,Chrome,/about,456,11,0,0
+237,2025-07-06,Japan,Social Media,Mobile,Opera,/blog,299,7,0,0
+238,2025-11-22,Saudi Arabia,Paid Ads,Desktop,Opera,/pricing,218,8,0,0
+239,2025-12-15,Australia,Organic Search,Desktop,Edge,/,1508,13,0,0
+240,2025-09-16,Pakistan,Referral,Desktop,Chrome,/products,422,5,0,0
+241,2025-05-28,Netherlands,Direct,Mobile,Edge,/contact,686,4,0,0
+242,2025-09-09,Indonesia,Email,Mobile,Firefox,/login,1460,7,0,0
+243,2025-12-12,Germany,Referral,Desktop,Safari,/pricing,1404,1,1,0
+244,2025-05-27,India,Social Media,Mobile,Chrome,/blog,673,6,0,0
+245,2025-05-28,Brazil,Email,Tablet,Firefox,/,299,8,0,0
+246,2025-12-18,Pakistan,Direct,Mobile,Chrome,/contact,1465,7,0,0
+247,2025-07-18,Spain,Direct,Mobile,Opera,/pricing,1301,2,1,0
+248,2025-11-04,Netherlands,Organic Search,Mobile,Edge,/about,160,14,0,0
+249,2025-05-08,Germany,Social Media,Desktop,Opera,/about,1752,13,1,0
+250,2025-02-08,China,Email,Mobile,Safari,/pricing,1288,14,0,1
+251,2025-12-04,France,Email,Desktop,Opera,/pricing,1386,7,1,0
+252,2025-12-26,USA,Paid Ads,Mobile,Chrome,/pricing,1410,13,0,0
+253,2025-05-09,Germany,Organic Search,Mobile,Opera,/contact,1686,6,0,0
+254,2025-09-24,Canada,Organic Search,Desktop,Chrome,/about,864,13,0,0
+255,2025-05-31,Japan,Email,Mobile,Safari,/products,1391,5,1,0
+256,2025-10-25,China,Email,Tablet,Opera,/blog,617,4,1,0
+257,2025-04-09,USA,Referral,Desktop,Edge,/blog,379,1,0,0
+258,2025-09-20,India,Referral,Mobile,Edge,/login,1260,13,0,0
+259,2025-09-09,Japan,Referral,Desktop,Edge,/,714,2,0,0
+260,2025-05-24,Pakistan,Organic Search,Mobile,Opera,/home,1336,7,0,1
+261,2025-12-12,Germany,Paid Ads,Mobile,Opera,/products,835,10,0,0
+262,2025-04-22,Spain,Direct,Mobile,Opera,/about,1014,3,0,0
+263,2025-03-01,Saudi Arabia,Referral,Tablet,Chrome,/,1422,5,1,0
+264,2025-01-02,UK,Paid Ads,Mobile,Safari,/login,386,8,0,0
+265,2025-10-31,France,Social Media,Mobile,Edge,/,982,13,0,0
+266,2025-09-11,Italy,Referral,Desktop,Chrome,/pricing,127,13,0,0
+267,2025-05-20,China,Direct,Tablet,Edge,/home,1038,8,1,0
+268,2025-02-06,India,Social Media,Desktop,Chrome,/about,453,6,1,1
+269,2025-06-09,China,Social Media,Mobile,Opera,/home,1385,5,0,0
+270,2025-01-09,South Africa,Direct,Desktop,Edge,/products,764,13,1,0
+271,2025-08-21,Canada,Referral,Desktop,Opera,/home,1566,2,1,0
+272,2025-04-09,Italy,Organic Search,Mobile,Edge,/,1697,9,0,0
+273,2025-05-27,Canada,Direct,Desktop,Firefox,/home,649,1,0,0
+274,2025-10-31,India,Direct,Desktop,Chrome,/home,133,11,1,0
+275,2025-07-27,UK,Direct,Desktop,Firefox,/blog,667,2,0,0
+276,2025-05-11,Italy,Social Media,Desktop,Chrome,/about,1310,13,0,0
+277,2025-06-01,UK,Paid Ads,Desktop,Safari,/about,831,1,0,1
+278,2025-02-23,India,Organic Search,Desktop,Edge,/,1427,12,0,0
+279,2025-04-30,Saudi Arabia,Referral,Mobile,Safari,/contact,673,4,1,0
+280,2025-06-10,Canada,Referral,Desktop,Safari,/home,369,4,0,0
+281,2025-04-26,UK,Paid Ads,Mobile,Chrome,/home,632,5,0,0
+282,2025-03-16,Mexico,Direct,Desktop,Firefox,/pricing,1502,5,1,0
+283,2025-04-23,China,Organic Search,Tablet,Opera,/about,1661,8,0,0
+284,2025-04-14,Italy,Referral,Mobile,Chrome,/home,1733,11,0,0
+285,2025-12-06,Germany,Email,Desktop,Opera,/about,1090,11,1,1
+286,2025-09-11,France,Referral,Mobile,Safari,/home,1284,3,0,0
+287,2025-08-15,Spain,Direct,Mobile,Opera,/blog,928,6,0,0
+288,2025-04-22,Turkey,Email,Tablet,Firefox,/,1183,12,0,0
+289,2025-04-09,UAE,Paid Ads,Mobile,Chrome,/about,461,13,0,0
+290,2025-06-02,Brazil,Organic Search,Desktop,Firefox,/products,1195,12,1,0
+291,2025-12-15,UAE,Paid Ads,Mobile,Firefox,/,129,3,0,0
+292,2025-12-04,Italy,Paid Ads,Mobile,Chrome,/pricing,591,13,0,0
+293,2025-07-13,Saudi Arabia,Organic Search,Mobile,Firefox,/,1384,2,0,0
+294,2025-11-06,UAE,Organic Search,Desktop,Edge,/home,108,8,0,0
+295,2025-06-12,Italy,Referral,Mobile,Edge,/pricing,1200,1,1,1
+296,2025-07-27,China,Referral,Tablet,Edge,/,1696,9,1,1
+297,2025-06-18,Mexico,Organic Search,Desktop,Opera,/login,523,11,1,1
+298,2025-06-10,Canada,Email,Desktop,Firefox,/pricing,673,7,0,0
+299,2025-03-09,UAE,Social Media,Desktop,Chrome,/login,410,12,1,1
+300,2025-10-16,Spain,Referral,Mobile,Chrome,/products,374,10,0,1
+301,2025-10-04,Indonesia,Social Media,Mobile,Opera,/,1610,13,1,1
+302,2025-10-31,China,Email,Mobile,Chrome,/about,1359,12,1,0
+303,2025-05-15,France,Organic Search,Mobile,Edge,/about,590,11,0,0
+304,2025-07-14,Mexico,Email,Mobile,Firefox,/contact,1666,4,0,0
+305,2025-05-08,China,Referral,Desktop,Chrome,/home,630,3,0,0
+306,2025-02-02,Italy,Paid Ads,Mobile,Chrome,/login,837,6,0,0
+307,2025-06-25,USA,Organic Search,Mobile,Safari,/pricing,256,9,1,0
+308,2025-01-22,Mexico,Direct,Tablet,Safari,/contact,443,9,0,1
+309,2025-08-26,India,Social Media,Tablet,Safari,/contact,1126,4,0,0
+310,2025-06-07,South Africa,Email,Tablet,Firefox,/blog,1301,10,0,0
+311,2025-02-07,China,Organic Search,Mobile,Edge,/login,624,5,1,1
+312,2025-08-18,Pakistan,Email,Mobile,Edge,/pricing,952,11,0,1
+313,2025-12-31,USA,Organic Search,Mobile,Edge,/contact,972,13,0,0
+314,2025-02-20,UAE,Referral,Tablet,Firefox,/blog,633,9,0,0
+315,2025-09-21,Italy,Referral,Desktop,Firefox,/contact,330,2,0,0
+316,2025-10-10,India,Referral,Desktop,Safari,/home,865,2,0,0
+317,2025-01-27,Mexico,Email,Desktop,Chrome,/products,71,5,1,0
+318,2025-08-14,UK,Direct,Mobile,Opera,/login,309,1,0,0
+319,2025-10-04,Netherlands,Referral,Desktop,Opera,/blog,412,8,0,0
+320,2025-10-13,Germany,Organic Search,Desktop,Chrome,/products,964,5,0,0
+321,2025-04-07,USA,Referral,Desktop,Safari,/pricing,1681,12,0,1
+322,2025-10-11,South Africa,Paid Ads,Desktop,Chrome,/home,1600,10,0,0
+323,2025-11-13,Spain,Referral,Mobile,Chrome,/blog,1653,2,0,0
+324,2025-10-31,UK,Email,Desktop,Opera,/pricing,1336,12,0,0
+325,2025-05-27,Japan,Direct,Mobile,Safari,/contact,262,9,0,0
+326,2025-01-04,UK,Paid Ads,Mobile,Firefox,/about,1767,2,0,1
+327,2025-02-04,Japan,Email,Mobile,Opera,/,487,7,1,0
+328,2025-07-11,USA,Email,Desktop,Firefox,/pricing,1402,8,0,0
+329,2025-02-18,Australia,Email,Tablet,Safari,/products,1712,14,1,0
+330,2025-01-17,Canada,Organic Search,Mobile,Chrome,/home,169,6,1,0
+331,2025-06-21,Mexico,Email,Tablet,Edge,/home,970,14,0,0
+332,2025-08-08,Germany,Organic Search,Tablet,Edge,/pricing,1199,11,1,0
+333,2025-06-07,South Africa,Email,Desktop,Safari,/contact,214,7,0,0
+334,2025-02-15,India,Social Media,Desktop,Edge,/,1300,11,0,0
+335,2025-01-06,Canada,Paid Ads,Desktop,Firefox,/login,1171,1,0,0
+336,2025-04-09,Australia,Social Media,Mobile,Edge,/products,1401,4,0,0
+337,2025-08-21,Turkey,Email,Desktop,Safari,/pricing,1476,13,0,0
+338,2025-02-06,France,Paid Ads,Desktop,Safari,/pricing,867,7,0,0
+339,2025-10-07,Mexico,Paid Ads,Mobile,Firefox,/about,769,1,0,0
+340,2025-12-15,Brazil,Direct,Desktop,Edge,/home,1600,13,0,0
+341,2025-10-29,Italy,Social Media,Desktop,Edge,/products,730,1,0,0
+342,2025-06-30,Turkey,Direct,Mobile,Chrome,/,1050,11,0,0
+343,2025-04-05,Saudi Arabia,Paid Ads,Desktop,Opera,/home,77,6,0,0
+344,2025-04-09,Brazil,Organic Search,Mobile,Safari,/pricing,142,4,0,1
+345,2025-07-07,India,Paid Ads,Mobile,Chrome,/home,1733,3,0,0
+346,2025-04-26,South Africa,Direct,Mobile,Safari,/home,928,12,0,0
+347,2025-07-10,Spain,Social Media,Mobile,Chrome,/blog,439,5,1,1
+348,2025-09-10,Canada,Email,Mobile,Opera,/home,317,9,1,0
+349,2025-06-10,Brazil,Email,Mobile,Chrome,/contact,659,10,0,0
+350,2025-09-13,Netherlands,Social Media,Mobile,Safari,/home,1207,10,1,0
+351,2025-11-19,India,Email,Mobile,Edge,/login,421,12,0,0
+352,2025-05-08,Canada,Email,Mobile,Safari,/contact,106,14,0,0
+353,2025-01-18,UAE,Direct,Mobile,Firefox,/products,1716,14,1,0
+354,2025-10-08,Pakistan,Social Media,Mobile,Firefox,/home,1187,12,0,0
+355,2025-08-11,Mexico,Referral,Desktop,Firefox,/,1728,11,1,0
+356,2025-02-23,Netherlands,Organic Search,Desktop,Firefox,/contact,1275,10,0,1
+357,2025-02-27,Japan,Organic Search,Desktop,Opera,/contact,1337,3,0,0
+358,2025-11-19,Turkey,Email,Tablet,Edge,/pricing,1318,5,0,0
+359,2025-12-26,Canada,Organic Search,Mobile,Edge,/products,1060,10,0,0
+360,2025-06-23,UK,Social Media,Mobile,Safari,/home,1435,5,0,0
+361,2025-10-07,UK,Social Media,Desktop,Chrome,/about,1393,9,0,0
+362,2025-04-24,Canada,Paid Ads,Mobile,Safari,/,1093,11,1,1
+363,2025-10-15,South Africa,Paid Ads,Desktop,Safari,/pricing,211,12,0,0
+364,2025-12-08,Netherlands,Organic Search,Desktop,Safari,/products,771,10,0,0
+365,2025-05-31,Mexico,Referral,Mobile,Safari,/login,883,11,0,1
+366,2025-05-07,South Africa,Paid Ads,Mobile,Edge,/contact,590,4,1,0
+367,2025-06-04,Brazil,Paid Ads,Mobile,Chrome,/,379,1,0,0
+368,2025-09-30,UK,Social Media,Mobile,Safari,/login,542,10,0,1
+369,2025-04-14,USA,Referral,Desktop,Edge,/home,1185,5,1,0
+370,2025-10-26,Germany,Email,Mobile,Safari,/about,1135,1,0,1
+371,2025-09-03,Netherlands,Organic Search,Mobile,Firefox,/blog,908,6,0,0
+372,2025-06-25,USA,Paid Ads,Desktop,Safari,/blog,616,12,1,0
+373,2025-02-08,Netherlands,Referral,Mobile,Safari,/products,1479,10,1,0
+374,2025-06-19,UAE,Referral,Mobile,Opera,/about,882,10,0,0
+375,2025-09-04,Netherlands,Organic Search,Mobile,Firefox,/,1262,7,0,0
+376,2025-01-26,Mexico,Referral,Mobile,Chrome,/pricing,1158,1,1,0
+377,2025-12-21,Canada,Referral,Mobile,Safari,/,779,10,0,0
+378,2025-11-02,Canada,Referral,Desktop,Chrome,/about,843,4,1,0
+379,2025-01-13,Japan,Paid Ads,Mobile,Firefox,/login,1008,9,0,0
+380,2025-11-12,India,Organic Search,Desktop,Safari,/contact,947,13,0,0
+381,2025-11-09,Spain,Referral,Desktop,Opera,/blog,245,1,0,1
+382,2025-02-05,UK,Referral,Desktop,Edge,/products,171,9,1,0
+383,2025-06-22,China,Paid Ads,Mobile,Opera,/home,563,8,1,0
+384,2025-01-20,UK,Organic Search,Mobile,Opera,/,797,5,0,0
+385,2025-11-17,Germany,Social Media,Desktop,Edge,/blog,1386,6,1,0
+386,2025-09-21,Turkey,Paid Ads,Mobile,Edge,/pricing,1101,7,0,0
+387,2025-05-22,Germany,Organic Search,Tablet,Edge,/products,1206,4,0,0
+388,2025-05-23,Spain,Referral,Desktop,Safari,/home,1670,14,1,0
+389,2025-04-02,Italy,Organic Search,Desktop,Chrome,/,1715,14,1,0
+390,2025-12-20,Spain,Organic Search,Mobile,Chrome,/pricing,568,6,1,0
+391,2025-11-18,Netherlands,Email,Desktop,Edge,/home,270,7,1,1
+392,2025-10-15,Mexico,Organic Search,Mobile,Opera,/contact,226,11,0,1
+393,2025-08-03,South Africa,Social Media,Desktop,Firefox,/blog,1157,6,0,0
+394,2025-12-08,India,Organic Search,Mobile,Edge,/contact,814,11,1,0
+395,2025-02-20,Australia,Social Media,Mobile,Opera,/blog,1195,13,0,1
+396,2025-06-02,UK,Referral,Mobile,Opera,/pricing,210,12,0,0
+397,2025-07-05,Indonesia,Social Media,Mobile,Safari,/login,1487,6,0,0
+398,2025-03-04,Indonesia,Referral,Mobile,Safari,/contact,411,2,0,0
+399,2025-07-09,France,Referral,Mobile,Chrome,/blog,1495,5,1,0
+400,2025-05-05,Indonesia,Social Media,Mobile,Chrome,/products,284,3,0,0
+401,2025-05-30,UK,Paid Ads,Desktop,Firefox,/pricing,215,7,1,0
+402,2025-11-10,Brazil,Direct,Mobile,Firefox,/blog,1073,4,0,0
+403,2025-02-27,UK,Organic Search,Desktop,Firefox,/,1306,1,0,0
+404,2025-12-08,Australia,Email,Mobile,Firefox,/blog,1733,12,0,0
+405,2025-11-01,South Africa,Direct,Desktop,Opera,/contact,876,12,0,0
+406,2025-06-29,Turkey,Organic Search,Mobile,Opera,/products,102,6,0,0
+407,2025-06-19,Japan,Organic Search,Desktop,Chrome,/home,1075,6,0,0
+408,2025-11-22,Indonesia,Referral,Mobile,Safari,/login,1498,7,0,0
+409,2025-09-28,Japan,Organic Search,Mobile,Safari,/home,388,11,0,0
+410,2025-02-23,Canada,Email,Mobile,Edge,/blog,1140,8,0,0
+411,2025-04-11,Japan,Organic Search,Mobile,Opera,/home,1361,3,0,1
+412,2025-09-21,Netherlands,Social Media,Desktop,Firefox,/blog,74,14,0,1
+413,2025-02-22,Indonesia,Direct,Mobile,Firefox,/products,374,6,0,0
+414,2025-03-01,Pakistan,Social Media,Mobile,Edge,/home,830,10,1,0
+415,2025-04-18,UAE,Email,Desktop,Safari,/contact,1517,2,0,0
+416,2025-01-05,UAE,Organic Search,Tablet,Firefox,/contact,1680,13,1,0
+417,2025-04-13,USA,Email,Desktop,Safari,/,1057,14,1,0
+418,2025-07-15,Germany,Referral,Desktop,Edge,/blog,549,9,0,0
+419,2025-09-19,Germany,Social Media,Tablet,Safari,/home,1095,2,1,0
+420,2025-12-31,Pakistan,Social Media,Desktop,Safari,/contact,500,3,0,0
+421,2025-12-16,China,Paid Ads,Tablet,Safari,/about,1306,12,1,0
+422,2025-02-16,Saudi Arabia,Organic Search,Tablet,Firefox,/products,238,13,1,0
+423,2025-12-21,France,Referral,Desktop,Chrome,/login,1053,10,0,0
+424,2025-11-07,Pakistan,Social Media,Mobile,Opera,/products,12,12,0,0
+425,2025-11-04,Mexico,Social Media,Desktop,Safari,/about,1454,12,0,0
+426,2025-05-24,Mexico,Referral,Mobile,Safari,/about,1763,2,0,0
+427,2025-09-26,Germany,Email,Desktop,Safari,/,920,9,0,0
+428,2025-05-04,India,Email,Desktop,Chrome,/products,316,1,0,1
+429,2025-04-16,Pakistan,Organic Search,Mobile,Edge,/products,441,5,0,0
+430,2025-06-07,South Africa,Paid Ads,Mobile,Firefox,/home,145,1,0,0
+431,2025-05-27,France,Social Media,Tablet,Chrome,/blog,524,5,1,0
+432,2025-05-25,Mexico,Paid Ads,Mobile,Safari,/pricing,202,8,1,0
+433,2025-04-30,Canada,Email,Mobile,Chrome,/login,1618,8,0,0
+434,2025-11-15,Pakistan,Email,Mobile,Chrome,/products,1448,11,0,0
+435,2025-10-02,Netherlands,Direct,Mobile,Chrome,/login,882,8,0,0
+436,2025-04-02,Pakistan,Organic Search,Desktop,Edge,/login,1151,2,0,0
+437,2025-02-27,France,Direct,Mobile,Opera,/login,675,8,1,0
+438,2025-12-12,France,Direct,Tablet,Firefox,/products,218,12,0,0
+439,2025-08-17,UK,Direct,Desktop,Edge,/pricing,961,5,0,0
+440,2025-04-27,India,Organic Search,Mobile,Edge,/products,1067,1,1,0
+441,2025-11-14,Turkey,Organic Search,Mobile,Opera,/home,658,7,1,0
+442,2025-10-06,Brazil,Referral,Tablet,Edge,/home,1351,13,0,0
+443,2025-05-07,Pakistan,Paid Ads,Mobile,Chrome,/pricing,129,6,0,0
+444,2025-05-09,France,Paid Ads,Desktop,Chrome,/contact,636,5,0,0
+445,2025-02-27,USA,Referral,Desktop,Safari,/products,534,1,0,0
+446,2025-05-02,Spain,Referral,Desktop,Edge,/contact,1614,14,1,0
+447,2025-01-01,South Africa,Email,Mobile,Safari,/login,778,14,0,0
+448,2025-08-27,Spain,Direct,Desktop,Firefox,/products,1122,1,0,0
+449,2025-10-17,South Africa,Referral,Mobile,Chrome,/blog,521,6,1,1
+450,2025-04-06,France,Social Media,Desktop,Firefox,/products,56,10,1,1
+451,2025-05-06,Spain,Paid Ads,Desktop,Opera,/home,781,12,1,1
+452,2025-04-28,Germany,Referral,Mobile,Chrome,/,749,7,0,0
+453,2025-02-17,Saudi Arabia,Social Media,Mobile,Firefox,/about,1725,10,0,0
+454,2025-03-30,Canada,Social Media,Desktop,Opera,/,531,10,0,0
+455,2025-08-25,Saudi Arabia,Social Media,Mobile,Firefox,/,1317,1,0,0
+456,2025-09-29,Australia,Email,Mobile,Opera,/,1410,9,0,0
+457,2025-07-08,Mexico,Email,Desktop,Opera,/about,1671,4,0,0
+458,2025-07-11,Germany,Social Media,Desktop,Chrome,/contact,143,5,0,0
+459,2025-03-10,UK,Email,Mobile,Safari,/about,1700,2,1,0
+460,2025-10-05,Mexico,Direct,Mobile,Opera,/contact,257,14,0,0
+461,2025-12-15,UAE,Social Media,Desktop,Opera,/about,1685,12,1,0
+462,2025-09-04,South Africa,Direct,Mobile,Chrome,/about,1351,10,0,0
+463,2025-03-17,China,Direct,Tablet,Safari,/products,445,13,1,0
+464,2025-06-03,Canada,Social Media,Mobile,Edge,/contact,1209,8,0,0
+465,2025-05-24,Japan,Paid Ads,Mobile,Edge,/products,695,14,1,0
+466,2025-03-27,Mexico,Social Media,Mobile,Safari,/blog,595,2,0,0
+467,2025-07-04,India,Social Media,Tablet,Firefox,/products,360,3,0,0
+468,2025-10-12,Brazil,Email,Mobile,Chrome,/,152,12,1,0
+469,2025-08-08,Brazil,Social Media,Mobile,Safari,/pricing,976,9,0,0
+470,2025-03-10,Spain,Paid Ads,Mobile,Edge,/pricing,813,2,0,0
+471,2025-02-16,Saudi Arabia,Email,Mobile,Opera,/home,1431,14,1,1
+472,2025-04-04,Japan,Organic Search,Desktop,Edge,/home,1657,6,1,0
+473,2025-08-26,Saudi Arabia,Organic Search,Mobile,Opera,/login,727,12,0,0
+474,2025-07-23,Japan,Direct,Mobile,Chrome,/products,652,4,0,0
+475,2025-08-06,Japan,Direct,Mobile,Opera,/about,1402,7,0,0
+476,2025-12-07,USA,Paid Ads,Mobile,Safari,/about,510,14,0,0
+477,2025-02-08,UK,Referral,Mobile,Opera,/pricing,1655,14,1,0
+478,2025-04-10,UAE,Organic Search,Desktop,Firefox,/,379,6,0,0
+479,2025-10-16,USA,Direct,Mobile,Safari,/contact,1612,10,0,0
+480,2025-09-11,Brazil,Organic Search,Mobile,Chrome,/,1415,14,1,0
+481,2025-08-10,South Africa,Paid Ads,Desktop,Safari,/login,1119,9,0,0
+482,2025-12-23,China,Paid Ads,Desktop,Firefox,/,796,14,0,0
+483,2025-01-23,Australia,Referral,Tablet,Chrome,/products,748,9,0,0
+484,2025-09-07,UK,Referral,Desktop,Edge,/products,1493,10,0,0
+485,2025-01-10,China,Email,Desktop,Firefox,/blog,959,4,0,0
+486,2025-09-03,China,Paid Ads,Tablet,Chrome,/login,1358,1,0,1
+487,2025-11-21,Saudi Arabia,Direct,Mobile,Opera,/,531,2,0,0
+488,2025-04-10,Turkey,Organic Search,Mobile,Safari,/about,498,8,0,1
+489,2025-10-17,Saudi Arabia,Social Media,Mobile,Chrome,/about,406,14,0,0
+490,2025-06-29,Spain,Referral,Desktop,Safari,/login,905,10,0,0
+491,2025-08-11,Indonesia,Social Media,Mobile,Opera,/,364,8,0,0
+492,2025-09-07,France,Direct,Mobile,Chrome,/products,956,14,0,0
+493,2025-05-27,Italy,Referral,Mobile,Edge,/products,297,2,0,0
+494,2025-04-06,USA,Social Media,Mobile,Firefox,/blog,1492,4,0,0
+495,2025-09-14,France,Direct,Mobile,Chrome,/blog,1657,1,0,0
+496,2025-11-21,China,Organic Search,Mobile,Opera,/home,1007,7,0,1
+497,2025-01-04,Spain,Direct,Mobile,Chrome,/login,545,4,1,0
+498,2025-01-16,China,Email,Mobile,Safari,/pricing,1324,11,0,0
+499,2025-10-07,Australia,Referral,Mobile,Chrome,/,860,14,1,0
+500,2025-12-02,USA,Paid Ads,Mobile,Edge,/login,847,8,1,0
+501,2025-09-04,Spain,Organic Search,Mobile,Chrome,/about,177,9,0,0
+502,2025-09-15,Indonesia,Social Media,Mobile,Firefox,/,959,12,0,0
+503,2025-06-09,Canada,Referral,Mobile,Chrome,/blog,630,9,1,0
+504,2025-12-06,Saudi Arabia,Paid Ads,Mobile,Safari,/blog,437,3,0,0
+505,2025-06-01,France,Direct,Mobile,Chrome,/home,1735,5,1,0
+506,2025-06-27,Mexico,Paid Ads,Tablet,Edge,/pricing,499,6,0,0
+507,2025-06-12,China,Referral,Mobile,Opera,/home,364,6,0,0
+508,2025-02-02,Netherlands,Referral,Mobile,Chrome,/about,205,10,0,0
+509,2025-06-28,Germany,Email,Mobile,Chrome,/pricing,554,8,0,1
+510,2025-04-11,Australia,Email,Tablet,Firefox,/contact,726,6,0,0
+511,2025-09-25,Mexico,Paid Ads,Mobile,Edge,/,833,6,0,0
+512,2025-11-19,Turkey,Direct,Mobile,Opera,/home,941,4,1,0
+513,2025-03-06,Indonesia,Paid Ads,Mobile,Safari,/blog,1727,7,1,0
+514,2025-06-17,Pakistan,Referral,Mobile,Chrome,/home,1012,14,0,0
+515,2025-11-26,Indonesia,Referral,Desktop,Opera,/contact,668,14,1,0
+516,2025-02-12,Indonesia,Social Media,Mobile,Safari,/home,948,8,1,0
+517,2025-02-13,Australia,Email,Tablet,Edge,/,789,3,1,0
+518,2025-10-12,France,Social Media,Mobile,Edge,/contact,20,7,0,0
+519,2025-01-12,France,Organic Search,Mobile,Opera,/login,1615,3,1,0
+520,2025-04-05,China,Referral,Tablet,Safari,/login,1289,8,0,0
+521,2025-10-29,Brazil,Social Media,Mobile,Edge,/login,405,1,0,0
+522,2025-09-10,India,Paid Ads,Mobile,Opera,/blog,740,1,1,1
+523,2025-08-30,Turkey,Email,Mobile,Edge,/blog,418,14,0,0
+524,2025-02-04,UAE,Email,Mobile,Edge,/login,371,6,0,0
+525,2025-08-03,Saudi Arabia,Direct,Desktop,Edge,/login,1292,10,1,0
+526,2025-12-03,China,Paid Ads,Mobile,Firefox,/login,1036,9,0,0
+527,2025-03-31,China,Direct,Mobile,Safari,/products,93,12,1,0
+528,2025-09-21,Japan,Social Media,Mobile,Opera,/login,165,14,1,0
+529,2025-04-03,UK,Organic Search,Mobile,Opera,/contact,1696,4,0,0
+530,2025-03-31,Turkey,Paid Ads,Mobile,Safari,/products,1209,6,0,0
+531,2025-04-25,South Africa,Paid Ads,Desktop,Safari,/products,716,12,1,0
+532,2025-04-15,Canada,Paid Ads,Mobile,Safari,/,481,5,0,0
+533,2025-07-15,Saudi Arabia,Direct,Desktop,Safari,/home,628,12,1,0
+534,2025-11-10,Germany,Social Media,Mobile,Chrome,/blog,1457,1,1,1
+535,2025-04-24,Germany,Paid Ads,Mobile,Opera,/blog,143,6,0,0
+536,2025-03-16,Netherlands,Paid Ads,Mobile,Chrome,/home,797,9,0,0
+537,2025-08-05,Japan,Email,Mobile,Edge,/blog,916,12,1,0
+538,2025-10-04,Japan,Organic Search,Desktop,Edge,/home,873,3,0,0
+539,2025-09-06,South Africa,Email,Desktop,Opera,/contact,1413,11,0,0
+540,2025-06-13,Brazil,Email,Mobile,Edge,/,676,3,1,1
+541,2025-12-23,Germany,Organic Search,Desktop,Safari,/login,286,14,1,0
+542,2025-07-11,Italy,Social Media,Mobile,Chrome,/,1269,2,0,0
+543,2025-08-15,China,Email,Desktop,Safari,/about,1785,13,0,0
+544,2025-06-26,UK,Social Media,Mobile,Edge,/,891,4,0,0
+545,2025-04-09,Spain,Email,Mobile,Chrome,/home,22,10,1,0
+546,2025-02-05,UAE,Referral,Desktop,Safari,/about,351,3,1,0
+547,2025-04-06,UK,Organic Search,Mobile,Opera,/home,44,12,1,0
+548,2025-06-01,Australia,Email,Desktop,Safari,/login,568,2,0,0
+549,2025-05-31,Brazil,Referral,Desktop,Edge,/pricing,1247,1,1,0
+550,2025-07-09,Turkey,Direct,Mobile,Chrome,/about,1445,3,1,0
+551,2025-08-12,Saudi Arabia,Referral,Mobile,Opera,/login,414,10,0,0
+552,2025-02-06,China,Paid Ads,Mobile,Chrome,/login,1527,6,0,0
+553,2025-09-25,South Africa,Email,Desktop,Opera,/blog,667,9,1,0
+554,2025-07-02,Japan,Referral,Mobile,Chrome,/blog,168,11,0,0
+555,2025-01-13,China,Social Media,Desktop,Edge,/pricing,965,5,0,0
+556,2025-10-06,Netherlands,Direct,Desktop,Opera,/pricing,1670,3,0,0
+557,2025-08-05,South Africa,Email,Mobile,Firefox,/,1143,14,0,0
+558,2025-12-21,Mexico,Paid Ads,Mobile,Chrome,/login,558,5,0,1
+559,2025-12-27,Mexico,Referral,Desktop,Chrome,/pricing,1559,5,0,0
+560,2025-10-13,Italy,Direct,Mobile,Safari,/home,994,5,1,0
+561,2025-09-30,Indonesia,Email,Desktop,Opera,/login,1380,12,1,0
+562,2025-03-03,Netherlands,Direct,Mobile,Firefox,/products,1777,12,1,0
+563,2025-03-25,Saudi Arabia,Paid Ads,Desktop,Edge,/home,1669,7,0,0
+564,2025-08-05,Canada,Referral,Desktop,Safari,/about,288,5,1,0
+565,2025-12-08,Pakistan,Direct,Mobile,Firefox,/pricing,488,7,1,0
+566,2025-07-06,Saudi Arabia,Direct,Mobile,Opera,/blog,120,9,0,1
+567,2025-01-19,Italy,Organic Search,Mobile,Firefox,/home,1669,5,0,0
+568,2025-06-26,Japan,Direct,Desktop,Chrome,/blog,440,2,0,0
+569,2025-04-10,Turkey,Organic Search,Desktop,Chrome,/home,551,5,1,0
+570,2025-08-21,South Africa,Referral,Mobile,Safari,/blog,1148,8,0,1
+571,2025-03-17,Spain,Email,Desktop,Opera,/contact,1123,12,1,1
+572,2025-09-22,China,Email,Mobile,Opera,/home,1245,4,0,0
+573,2025-10-11,Netherlands,Referral,Desktop,Firefox,/about,1583,2,0,0
+574,2025-07-25,China,Referral,Mobile,Safari,/blog,1628,10,1,0
+575,2025-08-11,Netherlands,Social Media,Mobile,Opera,/products,1572,3,0,0
+576,2025-02-21,Pakistan,Referral,Desktop,Chrome,/about,1762,9,0,0
+577,2025-12-05,Italy,Direct,Mobile,Firefox,/,369,9,1,1
+578,2025-05-24,Australia,Email,Mobile,Edge,/home,1519,8,1,0
+579,2025-03-10,Australia,Paid Ads,Desktop,Chrome,/products,381,8,0,0
+580,2025-04-09,Spain,Email,Tablet,Safari,/,1248,8,0,0
+581,2025-01-25,South Africa,Organic Search,Mobile,Opera,/home,1766,8,0,0
+582,2025-02-22,UK,Email,Desktop,Chrome,/products,1048,8,1,0
+583,2025-05-31,Turkey,Social Media,Mobile,Edge,/products,964,1,0,0
+584,2025-05-24,Mexico,Referral,Desktop,Edge,/about,268,6,0,0
+585,2025-02-26,South Africa,Referral,Mobile,Safari,/contact,787,12,0,0
+586,2025-02-08,Turkey,Email,Mobile,Chrome,/products,1496,9,1,0
+587,2025-04-19,Indonesia,Paid Ads,Mobile,Firefox,/contact,129,8,1,0
+588,2025-06-30,Italy,Paid Ads,Tablet,Chrome,/pricing,985,3,1,0
+589,2025-02-11,Spain,Social Media,Mobile,Edge,/about,922,11,0,1
+590,2025-07-05,Australia,Organic Search,Mobile,Safari,/login,1161,1,1,0
+591,2025-08-11,France,Email,Desktop,Safari,/blog,732,2,0,0
+592,2025-05-02,USA,Referral,Mobile,Firefox,/about,532,11,0,0
+593,2025-05-13,Canada,Email,Desktop,Safari,/,1721,2,1,0
+594,2025-06-12,Indonesia,Social Media,Mobile,Safari,/blog,1678,7,0,0
+595,2025-08-03,Pakistan,Direct,Mobile,Safari,/blog,334,12,0,0
+596,2025-08-09,Italy,Direct,Desktop,Safari,/login,1353,6,1,0
+597,2025-08-23,Turkey,Social Media,Desktop,Safari,/contact,1539,11,0,1
+598,2025-11-27,France,Referral,Mobile,Edge,/login,1559,2,0,0
+599,2025-05-26,Turkey,Social Media,Mobile,Chrome,/login,1083,8,0,0
+600,2025-08-27,China,Referral,Mobile,Opera,/blog,1617,9,0,0
+601,2025-03-17,Brazil,Paid Ads,Mobile,Safari,/products,78,7,1,1
+602,2025-01-09,UAE,Social Media,Mobile,Opera,/contact,400,4,0,0
+603,2025-03-15,China,Referral,Mobile,Opera,/blog,392,13,1,0
+604,2025-09-10,USA,Social Media,Desktop,Edge,/contact,25,13,0,0
+605,2025-08-18,Italy,Social Media,Desktop,Safari,/pricing,1472,1,0,0
+606,2025-01-07,France,Referral,Mobile,Opera,/contact,855,4,0,0
+607,2025-06-23,Canada,Referral,Mobile,Safari,/home,878,4,1,0
+608,2025-05-21,USA,Organic Search,Desktop,Firefox,/products,577,8,0,0
+609,2025-06-17,Germany,Social Media,Mobile,Firefox,/,1650,4,1,0
+610,2025-06-19,China,Direct,Desktop,Firefox,/home,141,4,0,0
+611,2025-10-10,Canada,Social Media,Mobile,Opera,/home,1593,13,1,0
+612,2025-05-02,Brazil,Social Media,Mobile,Firefox,/login,1281,2,1,0
+613,2025-07-13,UK,Referral,Mobile,Edge,/login,282,12,1,0
+614,2025-01-05,Australia,Social Media,Mobile,Edge,/home,1656,10,1,0
+615,2025-01-29,Brazil,Email,Desktop,Opera,/blog,1382,7,0,0
+616,2025-06-14,Netherlands,Social Media,Tablet,Safari,/contact,493,4,1,0
+617,2025-12-05,Pakistan,Email,Mobile,Chrome,/contact,559,11,0,0
+618,2025-05-16,UK,Direct,Mobile,Safari,/about,366,6,0,0
+619,2025-12-31,Japan,Referral,Mobile,Safari,/blog,1785,3,0,1
+620,2025-11-17,UAE,Social Media,Mobile,Safari,/products,1351,7,0,1
+621,2025-12-08,Spain,Email,Mobile,Safari,/blog,1666,6,0,0
+622,2025-05-25,Japan,Email,Mobile,Chrome,/blog,1081,3,0,0
+623,2025-11-23,Mexico,Email,Desktop,Firefox,/blog,1043,4,0,0
+624,2025-08-05,Germany,Paid Ads,Desktop,Safari,/products,242,10,0,0
+625,2025-10-28,Brazil,Organic Search,Mobile,Edge,/about,45,14,0,0
+626,2025-05-12,Italy,Direct,Desktop,Opera,/products,422,5,1,0
+627,2025-10-19,Saudi Arabia,Social Media,Mobile,Opera,/pricing,1495,9,1,0
+628,2025-03-11,Netherlands,Paid Ads,Desktop,Edge,/about,1037,14,1,1
+629,2025-09-09,Netherlands,Social Media,Mobile,Safari,/pricing,53,6,0,0
+630,2025-10-02,UK,Social Media,Mobile,Chrome,/pricing,577,13,0,0
+631,2025-12-30,Mexico,Referral,Tablet,Firefox,/pricing,1587,4,1,0
+632,2025-07-01,Australia,Referral,Mobile,Opera,/contact,1288,11,1,0
+633,2025-06-16,UAE,Referral,Mobile,Firefox,/home,749,11,1,0
+634,2025-04-01,Indonesia,Paid Ads,Mobile,Chrome,/home,123,7,0,0
+635,2025-07-21,India,Social Media,Mobile,Opera,/pricing,1782,2,0,0
+636,2025-12-12,Indonesia,Organic Search,Desktop,Firefox,/pricing,406,4,1,0
+637,2025-01-19,France,Direct,Tablet,Chrome,/,1207,5,0,0
+638,2025-02-08,Germany,Referral,Mobile,Firefox,/login,1288,4,0,0
+639,2025-05-06,Turkey,Referral,Mobile,Safari,/home,475,4,1,0
+640,2025-06-22,Germany,Social Media,Desktop,Chrome,/login,1310,11,1,1
+641,2025-05-21,Mexico,Social Media,Desktop,Firefox,/login,1497,13,0,0
+642,2025-08-30,Brazil,Paid Ads,Mobile,Safari,/,856,9,0,0
+643,2025-08-08,Canada,Paid Ads,Mobile,Safari,/login,511,14,1,0
+644,2025-05-06,France,Referral,Desktop,Chrome,/about,450,11,0,0
+645,2025-02-27,India,Social Media,Desktop,Edge,/,78,13,1,0
+646,2025-05-28,China,Organic Search,Mobile,Opera,/login,1542,2,1,1
+647,2025-11-13,Pakistan,Direct,Mobile,Chrome,/login,335,6,1,0
+648,2025-12-27,Brazil,Social Media,Desktop,Safari,/blog,1775,14,1,0
+649,2025-01-01,India,Social Media,Mobile,Safari,/login,76,8,0,0
+650,2025-12-14,Netherlands,Email,Desktop,Chrome,/contact,313,8,0,0
+651,2025-07-09,Germany,Paid Ads,Mobile,Edge,/about,981,11,0,0
+652,2025-07-10,Spain,Direct,Mobile,Opera,/products,493,7,0,0
+653,2025-11-08,Mexico,Referral,Desktop,Firefox,/home,938,10,0,0
+654,2025-04-27,Saudi Arabia,Social Media,Mobile,Chrome,/pricing,1581,11,0,0
+655,2025-05-14,Pakistan,Referral,Mobile,Opera,/login,1450,4,1,1
+656,2025-02-27,Germany,Social Media,Mobile,Opera,/about,1192,7,0,0
+657,2025-02-13,Netherlands,Referral,Desktop,Safari,/pricing,158,13,0,0
+658,2025-06-22,Canada,Direct,Desktop,Firefox,/products,1060,10,0,0
+659,2025-06-09,France,Paid Ads,Desktop,Chrome,/about,996,6,0,0
+660,2025-06-22,UAE,Direct,Mobile,Safari,/home,593,11,0,0
+661,2025-11-13,Mexico,Email,Mobile,Safari,/about,257,6,0,0
+662,2025-10-30,Germany,Organic Search,Mobile,Edge,/pricing,1134,2,0,0
+663,2025-05-29,UK,Paid Ads,Mobile,Opera,/pricing,711,8,1,0
+664,2025-03-21,South Africa,Direct,Tablet,Chrome,/blog,105,8,1,0
+665,2025-08-01,Indonesia,Email,Mobile,Chrome,/login,1417,14,1,0
+666,2025-07-22,Indonesia,Organic Search,Desktop,Chrome,/,291,11,0,0
+667,2025-09-09,Saudi Arabia,Email,Desktop,Safari,/about,331,7,0,0
+668,2025-08-17,Netherlands,Social Media,Mobile,Edge,/pricing,1429,11,0,0
+669,2025-06-13,Indonesia,Social Media,Desktop,Firefox,/contact,1311,9,0,0
+670,2025-08-15,Spain,Referral,Desktop,Safari,/home,538,8,0,0
+671,2025-05-27,Italy,Paid Ads,Mobile,Firefox,/contact,272,14,0,0
+672,2025-01-20,India,Social Media,Mobile,Edge,/products,1652,9,1,0
+673,2025-02-16,Germany,Email,Desktop,Opera,/about,589,9,0,0
+674,2025-08-21,Indonesia,Paid Ads,Mobile,Chrome,/blog,1673,6,0,0
+675,2025-11-01,UAE,Social Media,Mobile,Firefox,/home,1326,2,0,0
+676,2025-01-14,Spain,Referral,Mobile,Safari,/blog,303,12,0,0
+677,2025-05-23,Germany,Direct,Desktop,Firefox,/,1641,7,1,0
+678,2025-01-01,Saudi Arabia,Referral,Desktop,Opera,/pricing,404,3,0,0
+679,2025-02-23,USA,Organic Search,Mobile,Chrome,/login,522,13,0,0
+680,2025-09-16,South Africa,Social Media,Mobile,Firefox,/home,930,7,0,0
+681,2025-05-24,Mexico,Organic Search,Mobile,Opera,/products,819,9,0,0
+682,2025-01-12,Saudi Arabia,Organic Search,Mobile,Safari,/login,1213,10,0,0
+683,2025-11-26,Turkey,Email,Desktop,Edge,/about,929,14,1,0
+684,2025-08-12,Australia,Paid Ads,Desktop,Safari,/,702,10,1,0
+685,2025-09-29,Spain,Email,Mobile,Chrome,/,244,2,1,0
+686,2025-12-24,USA,Social Media,Desktop,Safari,/blog,961,14,0,0
+687,2025-06-05,Saudi Arabia,Organic Search,Desktop,Safari,/,1370,13,0,0
+688,2025-01-08,India,Direct,Mobile,Safari,/home,1041,6,0,0
+689,2025-05-02,Germany,Organic Search,Desktop,Safari,/blog,1476,13,1,0
+690,2025-12-14,Mexico,Direct,Desktop,Chrome,/login,548,6,1,0
+691,2025-06-13,UAE,Email,Mobile,Opera,/,829,9,1,0
+692,2025-03-31,Turkey,Email,Desktop,Firefox,/about,1691,13,0,0
+693,2025-05-16,Turkey,Paid Ads,Desktop,Edge,/login,1124,9,0,0
+694,2025-07-05,India,Organic Search,Mobile,Firefox,/products,281,13,0,0
+695,2025-11-12,Turkey,Referral,Mobile,Firefox,/about,1038,5,0,0
+696,2025-06-27,Netherlands,Email,Desktop,Edge,/contact,1627,14,0,0
+697,2025-01-28,Australia,Email,Mobile,Chrome,/home,1252,5,0,1
+698,2025-08-08,Pakistan,Paid Ads,Mobile,Edge,/products,1151,9,1,0
+699,2025-12-23,Japan,Direct,Mobile,Chrome,/products,602,8,0,0
+700,2025-02-10,UAE,Paid Ads,Mobile,Firefox,/blog,985,7,0,0
+701,2025-08-16,France,Organic Search,Mobile,Chrome,/pricing,1615,8,0,0
+702,2025-07-11,Mexico,Social Media,Mobile,Opera,/blog,124,6,0,0
+703,2025-05-25,Brazil,Social Media,Desktop,Edge,/home,272,3,1,0
+704,2025-07-20,South Africa,Direct,Desktop,Opera,/home,1339,7,0,1
+705,2025-07-31,Canada,Email,Mobile,Firefox,/blog,1687,8,0,0
+706,2025-08-08,Spain,Direct,Mobile,Edge,/pricing,1455,8,1,0
+707,2025-08-28,Australia,Email,Desktop,Firefox,/about,216,1,0,0
+708,2025-02-15,Saudi Arabia,Email,Mobile,Opera,/blog,1656,7,0,0
+709,2025-02-04,Spain,Social Media,Mobile,Firefox,/home,312,3,1,0
+710,2025-09-10,India,Direct,Mobile,Edge,/pricing,121,2,1,0
+711,2025-03-23,Saudi Arabia,Paid Ads,Desktop,Edge,/home,1450,14,0,0
+712,2025-09-13,Spain,Email,Mobile,Firefox,/pricing,1588,2,0,0
+713,2025-07-16,Indonesia,Referral,Desktop,Edge,/pricing,1318,14,0,0
+714,2025-10-30,Indonesia,Referral,Desktop,Edge,/login,1673,14,1,0
+715,2025-01-10,Brazil,Paid Ads,Mobile,Firefox,/blog,194,8,0,0
+716,2025-11-08,Canada,Referral,Desktop,Opera,/blog,1774,9,1,0
+717,2025-10-13,Netherlands,Organic Search,Desktop,Edge,/blog,910,3,1,1
+718,2025-08-30,Indonesia,Email,Mobile,Edge,/pricing,230,14,1,0
+719,2025-09-08,France,Paid Ads,Desktop,Edge,/pricing,1477,3,0,0
+720,2025-12-31,France,Direct,Desktop,Edge,/home,1150,6,0,1
+721,2025-01-05,Mexico,Email,Desktop,Firefox,/products,1103,11,0,0
+722,2025-04-29,Saudi Arabia,Paid Ads,Mobile,Opera,/blog,907,10,1,0
+723,2025-10-16,Brazil,Social Media,Mobile,Opera,/login,1103,1,0,0
+724,2025-03-06,France,Direct,Mobile,Chrome,/contact,631,6,0,0
+725,2025-05-26,Germany,Social Media,Mobile,Edge,/home,436,12,0,1
+726,2025-08-12,India,Email,Mobile,Edge,/home,653,3,0,0
+727,2025-08-27,Germany,Direct,Mobile,Chrome,/,577,11,0,0
+728,2025-06-26,Pakistan,Referral,Desktop,Opera,/blog,452,4,0,0
+729,2025-09-24,Pakistan,Paid Ads,Desktop,Safari,/about,610,9,0,0
+730,2025-12-07,South Africa,Email,Mobile,Safari,/home,1170,3,0,0
+731,2025-10-09,Canada,Organic Search,Mobile,Opera,/,513,1,0,0
+732,2025-03-04,USA,Direct,Tablet,Edge,/contact,140,3,1,0
+733,2025-08-05,Germany,Direct,Mobile,Safari,/login,227,7,1,0
+734,2025-12-08,India,Email,Mobile,Firefox,/contact,697,13,0,1
+735,2025-11-11,Japan,Email,Mobile,Firefox,/about,180,7,0,0
+736,2025-10-10,Netherlands,Social Media,Mobile,Chrome,/blog,1508,11,1,0
+737,2025-06-26,Italy,Referral,Mobile,Opera,/pricing,621,5,0,0
+738,2025-04-08,Mexico,Social Media,Mobile,Opera,/,1001,14,0,0
+739,2025-04-15,Germany,Social Media,Mobile,Safari,/pricing,1162,1,0,0
+740,2025-04-09,Italy,Referral,Tablet,Edge,/contact,66,11,0,0
+741,2025-11-07,Brazil,Organic Search,Desktop,Opera,/contact,1214,8,0,1
+742,2025-01-06,Pakistan,Social Media,Desktop,Safari,/products,255,10,1,0
+743,2025-07-16,Canada,Social Media,Mobile,Safari,/products,153,8,1,0
+744,2025-12-17,Netherlands,Direct,Mobile,Opera,/login,1084,10,0,0
+745,2025-05-13,Brazil,Referral,Mobile,Safari,/about,377,12,0,0
+746,2025-12-24,UAE,Paid Ads,Desktop,Chrome,/products,1492,10,0,0
+747,2025-09-16,UAE,Organic Search,Mobile,Chrome,/products,227,13,0,0
+748,2025-01-23,Brazil,Organic Search,Mobile,Opera,/about,625,10,0,0
+749,2025-02-22,Spain,Referral,Mobile,Edge,/home,1600,2,0,0
+750,2025-06-14,India,Email,Mobile,Chrome,/products,1290,10,1,0
+751,2025-07-21,Italy,Email,Desktop,Chrome,/home,1189,3,0,0
+752,2025-03-24,Japan,Direct,Mobile,Opera,/home,1598,4,1,0
+753,2025-05-25,Spain,Direct,Tablet,Firefox,/blog,451,1,0,0
+754,2025-03-26,Germany,Referral,Mobile,Safari,/home,850,4,0,0
+755,2025-03-19,Australia,Direct,Mobile,Chrome,/home,965,5,0,0
+756,2025-01-01,Mexico,Organic Search,Mobile,Firefox,/products,708,3,0,0
+757,2025-02-20,South Africa,Organic Search,Desktop,Edge,/home,885,14,1,0
+758,2025-06-22,Australia,Paid Ads,Mobile,Firefox,/pricing,1695,11,0,0
+759,2025-07-24,Germany,Email,Mobile,Opera,/about,785,10,0,0
+760,2025-09-17,South Africa,Referral,Mobile,Edge,/products,771,2,0,0
+761,2025-10-15,USA,Social Media,Desktop,Edge,/about,954,13,0,0
+762,2025-02-03,Pakistan,Email,Desktop,Firefox,/,932,6,0,0
+763,2025-12-14,India,Social Media,Desktop,Opera,/products,944,8,0,0
+764,2025-04-05,Turkey,Paid Ads,Desktop,Chrome,/home,1756,7,1,0
+765,2025-03-13,South Africa,Paid Ads,Desktop,Firefox,/pricing,34,11,1,0
+766,2025-02-08,Australia,Direct,Mobile,Chrome,/about,815,14,0,0
+767,2025-06-03,Mexico,Paid Ads,Desktop,Firefox,/products,1697,1,0,0
+768,2025-09-07,Turkey,Paid Ads,Desktop,Chrome,/pricing,1569,4,0,0
+769,2025-06-11,UAE,Social Media,Mobile,Firefox,/about,773,3,0,0
+770,2025-04-28,Pakistan,Direct,Desktop,Edge,/,1093,6,1,0
+771,2025-09-16,Brazil,Paid Ads,Desktop,Safari,/contact,1500,9,1,0
+772,2025-11-02,Italy,Email,Desktop,Edge,/login,443,9,0,0
+773,2025-09-25,Netherlands,Paid Ads,Desktop,Chrome,/login,888,7,0,0
+774,2025-02-23,France,Direct,Mobile,Opera,/,1099,12,1,0
+775,2025-08-24,South Africa,Referral,Desktop,Edge,/contact,919,9,1,0
+776,2025-08-10,France,Direct,Mobile,Safari,/blog,574,8,0,0
+777,2025-09-08,Canada,Social Media,Tablet,Chrome,/contact,115,5,0,0
+778,2025-11-09,France,Referral,Mobile,Edge,/blog,105,9,0,1
+779,2025-04-22,Saudi Arabia,Email,Mobile,Firefox,/products,1721,14,1,0
+780,2025-09-12,Indonesia,Organic Search,Mobile,Opera,/blog,1584,7,0,0
+781,2025-10-30,Indonesia,Direct,Mobile,Chrome,/login,177,5,1,0
+782,2025-07-26,Italy,Social Media,Desktop,Edge,/login,51,8,0,0
+783,2025-08-17,Japan,Email,Mobile,Chrome,/pricing,113,7,0,0
+784,2025-12-07,USA,Referral,Mobile,Firefox,/blog,1237,9,0,0
+785,2025-03-07,South Africa,Email,Desktop,Safari,/pricing,529,10,1,1
+786,2025-03-16,Germany,Direct,Desktop,Edge,/login,291,1,0,0
+787,2025-04-13,Brazil,Paid Ads,Mobile,Chrome,/about,1076,13,1,0
+788,2025-07-11,Pakistan,Direct,Mobile,Chrome,/about,956,9,0,1
+789,2025-09-09,USA,Organic Search,Desktop,Chrome,/contact,1143,7,1,1
+790,2025-08-14,Saudi Arabia,Direct,Mobile,Safari,/contact,1243,1,1,0
+791,2025-10-21,UK,Referral,Desktop,Chrome,/contact,758,1,0,0
+792,2025-11-02,Australia,Referral,Mobile,Opera,/blog,840,5,1,0
+793,2025-04-08,Japan,Direct,Desktop,Opera,/contact,58,8,0,0
+794,2025-12-04,Pakistan,Referral,Desktop,Chrome,/blog,124,9,0,0
+795,2025-10-13,Saudi Arabia,Paid Ads,Mobile,Opera,/blog,1188,12,0,0
+796,2025-12-01,Saudi Arabia,Email,Mobile,Edge,/home,1682,6,1,1
+797,2025-12-13,UK,Direct,Mobile,Opera,/home,512,12,1,0
+798,2025-11-04,India,Paid Ads,Mobile,Chrome,/blog,1712,13,0,0
+799,2025-09-06,Netherlands,Email,Desktop,Firefox,/about,1744,10,1,0
+800,2025-06-15,India,Email,Mobile,Edge,/pricing,995,12,0,0
+801,2025-12-01,UK,Paid Ads,Desktop,Safari,/login,80,8,1,0
+802,2025-01-30,USA,Social Media,Mobile,Chrome,/login,1021,6,0,0
+803,2025-09-04,Brazil,Direct,Desktop,Safari,/products,1552,11,0,0
+804,2025-04-16,France,Email,Mobile,Firefox,/,1745,6,0,0
+805,2025-02-20,UK,Email,Tablet,Safari,/home,1369,4,0,0
+806,2025-03-22,UAE,Referral,Tablet,Chrome,/blog,76,11,0,0
+807,2025-05-13,UK,Email,Mobile,Chrome,/,1526,5,0,0
+808,2025-10-12,Brazil,Paid Ads,Desktop,Firefox,/home,1683,14,0,0
+809,2025-05-18,UK,Email,Mobile,Chrome,/products,1787,2,1,0
+810,2025-07-03,UAE,Social Media,Mobile,Firefox,/login,976,3,0,0
+811,2025-11-26,UAE,Direct,Desktop,Firefox,/pricing,1246,3,1,0
+812,2025-09-30,Indonesia,Direct,Tablet,Chrome,/blog,190,14,0,0
+813,2025-12-06,Pakistan,Email,Desktop,Opera,/products,1799,12,0,0
+814,2025-03-10,Italy,Organic Search,Tablet,Firefox,/login,622,11,0,0
+815,2025-02-03,Turkey,Organic Search,Mobile,Chrome,/about,1632,5,1,0
+816,2025-09-19,China,Paid Ads,Mobile,Opera,/home,706,14,1,0
+817,2025-02-22,India,Organic Search,Desktop,Firefox,/blog,612,5,0,0
+818,2025-07-24,Brazil,Paid Ads,Desktop,Opera,/,257,6,0,0
+819,2025-05-06,Canada,Referral,Mobile,Edge,/about,1247,5,0,0
+820,2025-08-23,Indonesia,Paid Ads,Desktop,Edge,/login,368,12,0,0
+821,2025-02-12,Saudi Arabia,Organic Search,Desktop,Opera,/about,258,6,1,0
+822,2025-08-28,Pakistan,Email,Mobile,Firefox,/contact,647,8,0,0
+823,2025-04-21,Mexico,Referral,Mobile,Chrome,/pricing,959,2,0,0
+824,2025-09-06,Germany,Organic Search,Mobile,Safari,/login,1549,4,1,1
+825,2025-05-31,Netherlands,Paid Ads,Mobile,Chrome,/about,1121,13,1,0
+826,2025-07-02,Mexico,Social Media,Desktop,Safari,/home,672,6,0,0
+827,2025-12-02,Turkey,Direct,Tablet,Safari,/pricing,185,12,0,0
+828,2025-04-05,China,Organic Search,Desktop,Firefox,/blog,732,5,0,0
+829,2025-01-08,Turkey,Paid Ads,Mobile,Opera,/contact,435,1,0,0
+830,2025-12-26,Mexico,Referral,Mobile,Chrome,/login,1636,9,0,0
+831,2025-07-03,Netherlands,Organic Search,Mobile,Opera,/products,780,3,1,0
+832,2025-10-08,Japan,Organic Search,Desktop,Edge,/pricing,712,2,1,0
+833,2025-07-14,China,Direct,Mobile,Firefox,/,90,9,0,0
+834,2025-12-18,Saudi Arabia,Paid Ads,Mobile,Firefox,/home,936,7,0,0
+835,2025-07-14,UK,Social Media,Desktop,Edge,/login,147,5,0,0
+836,2025-06-04,Canada,Referral,Mobile,Chrome,/,1466,12,0,0
+837,2025-04-03,China,Paid Ads,Tablet,Edge,/pricing,479,6,0,0
+838,2025-06-09,Italy,Referral,Tablet,Chrome,/login,359,12,0,0
+839,2025-03-02,USA,Organic Search,Desktop,Safari,/contact,1159,11,0,0
+840,2025-05-02,Brazil,Direct,Desktop,Firefox,/products,1342,4,0,0
+841,2025-02-20,Mexico,Direct,Desktop,Chrome,/products,1263,1,0,0
+842,2025-10-04,Canada,Email,Mobile,Opera,/,1493,4,0,0
+843,2025-01-05,India,Social Media,Desktop,Opera,/blog,1378,9,0,0
+844,2025-04-02,Pakistan,Direct,Desktop,Firefox,/blog,319,1,0,0
+845,2025-06-19,Mexico,Organic Search,Tablet,Edge,/contact,1053,10,0,0
+846,2025-11-13,South Africa,Social Media,Tablet,Edge,/products,1594,3,0,0
+847,2025-01-22,Australia,Paid Ads,Desktop,Chrome,/,1011,5,0,0
+848,2025-11-22,Indonesia,Direct,Desktop,Edge,/,1680,7,1,0
+849,2025-01-01,France,Social Media,Mobile,Firefox,/login,1574,9,0,0
+850,2025-05-13,Indonesia,Organic Search,Desktop,Chrome,/login,1593,6,0,0
+851,2025-08-21,Australia,Email,Mobile,Safari,/,1510,3,0,0
+852,2025-01-12,Italy,Referral,Mobile,Edge,/login,278,13,0,0
+853,2025-12-12,Brazil,Referral,Mobile,Edge,/pricing,1036,7,1,0
+854,2025-02-15,China,Organic Search,Mobile,Chrome,/login,779,14,1,0
+855,2025-02-03,Japan,Organic Search,Mobile,Opera,/contact,25,4,0,0
+856,2025-03-19,Germany,Referral,Mobile,Edge,/blog,615,3,0,0
+857,2025-08-06,France,Email,Desktop,Firefox,/blog,1391,14,0,0
+858,2025-10-28,China,Social Media,Mobile,Edge,/pricing,1679,7,0,0
+859,2025-03-14,Japan,Referral,Mobile,Safari,/home,822,11,0,0
+860,2025-10-09,Turkey,Organic Search,Desktop,Edge,/pricing,1166,11,0,0
+861,2025-09-06,Turkey,Direct,Desktop,Opera,/contact,1345,7,0,1
+862,2025-02-16,UAE,Paid Ads,Desktop,Edge,/,491,4,0,0
+863,2025-05-01,Netherlands,Email,Tablet,Chrome,/pricing,904,12,1,0
+864,2025-08-02,China,Email,Desktop,Edge,/,1577,7,0,0
+865,2025-08-27,South Africa,Direct,Desktop,Opera,/contact,1338,11,0,0
+866,2025-02-25,Brazil,Direct,Mobile,Chrome,/about,278,14,0,0
+867,2025-12-16,Mexico,Organic Search,Mobile,Firefox,/contact,423,2,0,0
+868,2025-04-17,India,Referral,Desktop,Chrome,/products,34,1,1,0
+869,2025-11-15,Italy,Social Media,Tablet,Safari,/,325,12,0,0
+870,2025-02-17,UK,Email,Mobile,Chrome,/blog,580,2,1,0
+871,2025-03-02,Pakistan,Email,Mobile,Firefox,/pricing,734,4,0,0
+872,2025-12-03,UAE,Direct,Mobile,Edge,/about,1701,8,1,0
+873,2025-01-26,Canada,Referral,Desktop,Chrome,/contact,1017,3,1,0
+874,2025-10-19,Spain,Email,Desktop,Chrome,/,1309,10,0,0
+875,2025-09-14,Canada,Social Media,Mobile,Chrome,/about,398,6,0,0
+876,2025-01-08,South Africa,Direct,Desktop,Chrome,/home,731,6,1,1
+877,2025-04-23,Australia,Social Media,Desktop,Firefox,/products,453,13,0,0
+878,2025-12-21,China,Referral,Mobile,Opera,/home,1008,9,0,0
+879,2025-09-10,India,Email,Desktop,Opera,/contact,1460,9,0,0
+880,2025-06-29,USA,Paid Ads,Tablet,Chrome,/home,1090,4,0,0
+881,2025-07-26,USA,Email,Desktop,Firefox,/home,706,9,0,0
+882,2025-10-30,China,Referral,Mobile,Firefox,/products,980,13,0,0
+883,2025-05-07,France,Email,Mobile,Chrome,/products,1599,6,0,0
+884,2025-02-25,UAE,Email,Mobile,Safari,/login,730,2,0,0
+885,2025-08-02,Australia,Organic Search,Desktop,Chrome,/products,377,10,1,0
+886,2025-01-14,France,Email,Mobile,Safari,/about,351,14,0,0
+887,2025-01-28,Germany,Email,Mobile,Chrome,/login,313,11,1,0
+888,2025-03-19,India,Social Media,Mobile,Safari,/products,773,6,1,0
+889,2025-08-04,Netherlands,Paid Ads,Mobile,Safari,/home,1407,2,1,0
+890,2025-12-31,Indonesia,Social Media,Mobile,Chrome,/blog,825,8,1,0
+891,2025-06-03,Japan,Social Media,Mobile,Safari,/blog,121,4,1,0
+892,2025-01-14,Italy,Direct,Mobile,Edge,/login,887,5,1,1
+893,2025-07-06,Australia,Organic Search,Tablet,Opera,/products,1039,8,0,0
+894,2025-11-08,Netherlands,Social Media,Desktop,Firefox,/about,939,14,0,0
+895,2025-01-07,UAE,Referral,Mobile,Safari,/pricing,712,11,1,0
+896,2025-01-03,USA,Referral,Mobile,Safari,/,855,8,0,0
+897,2025-04-21,Spain,Email,Mobile,Firefox,/contact,953,12,1,0
+898,2025-08-26,Spain,Direct,Mobile,Safari,/about,288,14,1,0
+899,2025-12-29,UK,Organic Search,Tablet,Firefox,/pricing,391,12,0,0
+900,2025-08-27,Germany,Organic Search,Mobile,Chrome,/contact,22,6,1,0
+901,2025-10-01,India,Email,Desktop,Edge,/pricing,312,4,0,0
+902,2025-10-21,France,Referral,Desktop,Edge,/pricing,1589,1,0,0
+903,2025-08-15,Canada,Paid Ads,Mobile,Opera,/login,1650,12,0,1
+904,2025-01-15,USA,Direct,Mobile,Safari,/blog,169,7,0,0
+905,2025-07-11,Germany,Email,Desktop,Opera,/,163,8,0,0
+906,2025-04-29,Mexico,Direct,Desktop,Chrome,/pricing,763,9,0,0
+907,2025-01-28,UK,Referral,Desktop,Edge,/products,190,2,0,0
+908,2025-07-21,France,Referral,Mobile,Chrome,/contact,1559,1,1,0
+909,2025-02-08,Canada,Paid Ads,Desktop,Chrome,/about,1213,4,0,0
+910,2025-09-30,Japan,Paid Ads,Mobile,Safari,/blog,386,13,0,0
+911,2025-08-19,Mexico,Organic Search,Mobile,Chrome,/contact,785,5,0,0
+912,2025-03-27,India,Direct,Mobile,Edge,/login,1201,10,1,0
+913,2025-05-06,South Africa,Direct,Mobile,Opera,/products,1247,12,1,0
+914,2025-10-27,India,Referral,Mobile,Edge,/products,1183,1,0,0
+915,2025-01-25,Indonesia,Organic Search,Desktop,Safari,/pricing,25,5,0,0
+916,2025-05-25,Italy,Email,Mobile,Edge,/products,1124,6,1,0
+917,2025-01-13,Australia,Direct,Mobile,Firefox,/,1153,3,0,0
+918,2025-07-31,UK,Organic Search,Tablet,Opera,/login,262,12,0,0
+919,2025-01-25,Turkey,Organic Search,Desktop,Firefox,/products,1093,7,0,0
+920,2025-03-09,Italy,Referral,Desktop,Firefox,/pricing,1299,14,0,0
+921,2025-03-08,Italy,Organic Search,Desktop,Safari,/contact,1442,6,1,0
+922,2025-08-21,Japan,Paid Ads,Mobile,Chrome,/login,40,4,0,0
+923,2025-04-19,UK,Paid Ads,Mobile,Firefox,/products,1054,3,0,0
+924,2025-05-26,Canada,Social Media,Desktop,Edge,/blog,740,5,0,0
+925,2025-04-21,Italy,Referral,Mobile,Chrome,/login,1626,3,1,0
+926,2025-08-16,UAE,Email,Desktop,Edge,/login,298,10,1,1
+927,2025-04-21,USA,Social Media,Desktop,Edge,/about,1576,9,1,0
+928,2025-02-03,Canada,Paid Ads,Mobile,Chrome,/blog,507,9,0,1
+929,2025-04-21,Mexico,Social Media,Desktop,Chrome,/blog,1779,6,0,0
+930,2025-09-21,UK,Referral,Mobile,Edge,/contact,1507,13,1,0
+931,2025-08-24,Japan,Referral,Mobile,Safari,/home,1438,11,0,0
+932,2025-03-24,Indonesia,Organic Search,Mobile,Opera,/about,557,6,1,0
+933,2025-02-11,Turkey,Direct,Desktop,Opera,/blog,970,12,0,0
+934,2025-04-11,South Africa,Organic Search,Tablet,Safari,/blog,141,14,0,0
+935,2025-01-06,Australia,Referral,Mobile,Chrome,/home,1357,4,0,0
+936,2025-06-29,UAE,Paid Ads,Mobile,Edge,/contact,867,4,1,0
+937,2025-10-09,Saudi Arabia,Email,Desktop,Opera,/about,1165,2,1,0
+938,2025-11-16,France,Paid Ads,Desktop,Edge,/blog,530,10,0,0
+939,2025-08-14,Italy,Organic Search,Desktop,Safari,/pricing,39,4,0,0
+940,2025-11-11,Australia,Email,Desktop,Edge,/contact,636,8,1,0
+941,2025-12-31,Turkey,Referral,Mobile,Safari,/about,1334,13,0,0
+942,2025-08-17,Canada,Paid Ads,Tablet,Chrome,/blog,13,10,1,0
+943,2025-10-16,USA,Referral,Mobile,Safari,/blog,1358,2,0,0
+944,2025-05-30,Mexico,Email,Desktop,Safari,/home,518,9,0,1
+945,2025-10-04,UAE,Email,Mobile,Opera,/about,1270,14,0,0
+946,2025-07-17,UK,Paid Ads,Desktop,Edge,/pricing,1568,1,0,0
+947,2025-03-11,UK,Referral,Mobile,Opera,/contact,25,13,0,0
+948,2025-04-22,Canada,Social Media,Mobile,Firefox,/products,1567,2,0,0
+949,2025-01-04,China,Referral,Mobile,Safari,/,1006,2,0,0
+950,2025-12-16,Turkey,Email,Tablet,Firefox,/pricing,1617,11,0,1
+951,2025-11-27,Pakistan,Referral,Desktop,Opera,/products,1479,13,0,0
+952,2025-11-14,India,Organic Search,Mobile,Edge,/pricing,1536,14,1,1
+953,2025-12-16,Japan,Social Media,Tablet,Opera,/about,965,6,0,0
+954,2025-04-05,Mexico,Direct,Mobile,Edge,/products,1263,14,0,0
+955,2025-06-01,USA,Organic Search,Mobile,Edge,/about,1140,7,0,0
+956,2025-11-07,China,Direct,Tablet,Chrome,/products,1753,13,0,0
+957,2025-05-17,Canada,Paid Ads,Desktop,Safari,/pricing,1422,3,1,0
+958,2025-09-04,Germany,Direct,Tablet,Opera,/home,1753,11,0,1
+959,2025-08-31,Turkey,Referral,Desktop,Edge,/pricing,272,9,1,0
+960,2025-01-31,India,Direct,Mobile,Opera,/about,1596,5,0,1
+961,2025-02-09,Turkey,Email,Mobile,Opera,/pricing,1098,5,0,0
+962,2025-08-17,Canada,Organic Search,Desktop,Edge,/login,274,11,0,0
+963,2025-02-05,Netherlands,Organic Search,Mobile,Firefox,/login,1371,12,1,0
+964,2025-08-11,Mexico,Direct,Desktop,Safari,/products,1334,4,1,0
+965,2025-01-06,Netherlands,Organic Search,Tablet,Safari,/login,387,9,0,0
+966,2025-11-18,Germany,Email,Mobile,Chrome,/,1208,8,1,1
+967,2025-08-08,Italy,Organic Search,Mobile,Chrome,/products,972,12,0,0
+968,2025-03-16,Saudi Arabia,Direct,Mobile,Chrome,/login,1185,4,1,0
+969,2025-01-04,Pakistan,Social Media,Mobile,Safari,/blog,485,4,0,0
+970,2025-12-01,Japan,Social Media,Mobile,Firefox,/pricing,1299,2,0,0
+971,2025-05-14,Canada,Paid Ads,Mobile,Safari,/contact,338,9,0,0
+972,2025-04-28,Spain,Organic Search,Mobile,Safari,/pricing,1196,3,1,0
+973,2025-04-04,Turkey,Direct,Mobile,Safari,/login,447,4,1,0
+974,2025-03-03,South Africa,Organic Search,Desktop,Safari,/home,1376,14,1,0
+975,2025-07-13,Indonesia,Referral,Desktop,Firefox,/about,1400,7,1,0
+976,2025-12-01,USA,Email,Desktop,Chrome,/contact,1498,10,0,0
+977,2025-07-22,India,Organic Search,Mobile,Opera,/products,1783,8,1,0
+978,2025-01-26,UK,Organic Search,Mobile,Chrome,/home,1232,8,1,0
+979,2025-06-22,Netherlands,Social Media,Mobile,Chrome,/pricing,1533,4,0,0
+980,2025-10-27,India,Email,Mobile,Opera,/login,25,7,0,0
+981,2025-05-13,Netherlands,Direct,Desktop,Safari,/products,1329,10,0,1
+982,2025-11-22,Germany,Organic Search,Desktop,Firefox,/products,877,1,1,0
+983,2025-04-28,China,Social Media,Mobile,Firefox,/blog,520,6,1,0
+984,2025-11-20,Canada,Paid Ads,Mobile,Chrome,/blog,993,6,1,0
+985,2025-10-02,Indonesia,Email,Tablet,Opera,/login,1272,6,1,0
+986,2025-07-31,Netherlands,Social Media,Mobile,Edge,/login,590,12,1,0
+987,2025-08-13,Mexico,Social Media,Mobile,Safari,/,1334,2,1,0
+988,2025-01-20,Saudi Arabia,Social Media,Mobile,Chrome,/blog,15,8,1,0
+989,2025-04-23,China,Organic Search,Tablet,Firefox,/about,1253,14,0,1
+990,2025-05-20,Netherlands,Organic Search,Mobile,Opera,/contact,1028,5,0,0
+991,2025-02-16,India,Paid Ads,Desktop,Opera,/products,1799,5,0,0
+992,2025-01-01,UAE,Referral,Mobile,Chrome,/blog,1486,2,1,0
+993,2025-03-31,Indonesia,Referral,Mobile,Edge,/login,1466,4,0,0
+994,2025-05-22,Netherlands,Referral,Mobile,Firefox,/,816,12,0,0
+995,2025-11-16,Indonesia,Email,Desktop,Chrome,/login,1419,9,0,0
+996,2025-02-07,Canada,Email,Mobile,Edge,/login,628,9,0,0
+997,2025-10-20,Brazil,Paid Ads,Tablet,Opera,/login,1328,6,0,0
+998,2025-05-19,Indonesia,Email,Desktop,Safari,/pricing,1151,11,0,0
+999,2025-12-22,Japan,Referral,Mobile,Firefox,/contact,414,9,0,0
+1000,2025-11-29,Mexico,Referral,Desktop,Firefox,/blog,1713,4,0,0
+1001,2025-09-16,Spain,Social Media,Desktop,Edge,/products,1006,11,0,1
+1002,2025-06-10,Pakistan,Email,Desktop,Chrome,/pricing,1796,1,0,0
+1003,2025-06-27,Netherlands,Organic Search,Desktop,Opera,/login,603,2,0,0
+1004,2025-01-10,Japan,Organic Search,Mobile,Edge,/about,575,13,0,0
+1005,2025-09-18,Indonesia,Social Media,Desktop,Safari,/products,761,1,0,0
+1006,2025-05-18,Turkey,Social Media,Desktop,Safari,/pricing,21,8,0,0
+1007,2025-06-21,Mexico,Social Media,Desktop,Safari,/about,1242,9,1,0
+1008,2025-01-13,Netherlands,Organic Search,Desktop,Edge,/about,174,10,0,0
+1009,2025-06-17,India,Referral,Desktop,Opera,/contact,887,12,0,0
+1010,2025-05-10,Germany,Social Media,Mobile,Firefox,/products,1327,6,0,0
+1011,2025-03-25,China,Paid Ads,Desktop,Chrome,/blog,1552,2,0,0
+1012,2025-11-17,Saudi Arabia,Social Media,Mobile,Firefox,/blog,87,6,0,0
+1013,2025-11-15,Japan,Direct,Mobile,Opera,/,1467,9,0,0
+1014,2025-04-11,USA,Social Media,Desktop,Firefox,/pricing,1610,12,0,0
+1015,2025-11-25,Mexico,Organic Search,Mobile,Edge,/,623,3,0,0
+1016,2025-09-30,Netherlands,Email,Desktop,Safari,/home,878,9,0,0
+1017,2025-09-22,Australia,Social Media,Desktop,Opera,/blog,821,2,1,0
+1018,2025-02-07,Canada,Email,Desktop,Opera,/pricing,1716,11,0,0
+1019,2025-04-04,Japan,Direct,Desktop,Firefox,/contact,1110,5,1,0
+1020,2025-04-05,Netherlands,Paid Ads,Mobile,Edge,/,1081,11,0,1
+1021,2025-11-01,Japan,Email,Mobile,Firefox,/contact,776,2,0,0
+1022,2025-03-10,Germany,Referral,Desktop,Firefox,/contact,91,7,0,0
+1023,2025-11-14,Germany,Social Media,Mobile,Opera,/login,1754,11,1,0
+1024,2025-08-24,China,Direct,Desktop,Firefox,/login,218,10,0,0
+1025,2025-11-30,UK,Direct,Mobile,Safari,/contact,1478,9,0,0
+1026,2025-05-17,Japan,Email,Desktop,Firefox,/,1629,7,0,0
+1027,2025-03-17,Netherlands,Paid Ads,Desktop,Safari,/login,531,12,0,0
+1028,2025-02-04,Japan,Organic Search,Desktop,Opera,/home,1062,5,1,0
+1029,2025-01-01,UAE,Social Media,Desktop,Edge,/about,1337,4,0,0
+1030,2025-10-23,Saudi Arabia,Direct,Mobile,Safari,/about,1003,12,0,0
+1031,2025-11-16,UAE,Paid Ads,Mobile,Edge,/login,474,4,0,0
+1032,2025-03-01,Italy,Referral,Desktop,Edge,/,1535,10,0,1
+1033,2025-11-16,Canada,Direct,Mobile,Safari,/about,1479,8,0,0
+1034,2025-12-15,Australia,Paid Ads,Mobile,Opera,/products,637,10,0,0
+1035,2025-11-24,Netherlands,Organic Search,Mobile,Chrome,/about,1523,13,0,0
+1036,2025-09-24,South Africa,Organic Search,Desktop,Edge,/blog,790,10,1,0
+1037,2025-12-27,France,Direct,Mobile,Edge,/,1461,14,0,0
+1038,2025-08-17,UAE,Direct,Tablet,Opera,/login,568,10,1,0
+1039,2025-09-27,Mexico,Email,Mobile,Opera,/login,1392,10,0,0
+1040,2025-11-12,France,Social Media,Mobile,Firefox,/about,969,10,0,1
+1041,2025-10-13,Canada,Paid Ads,Desktop,Opera,/,100,1,0,0
+1042,2025-10-18,Italy,Direct,Desktop,Edge,/home,1086,5,1,0
+1043,2025-08-01,USA,Social Media,Mobile,Safari,/products,1763,14,0,0
+1044,2025-06-14,Japan,Email,Mobile,Chrome,/login,869,2,0,0
+1045,2025-01-05,Japan,Social Media,Desktop,Firefox,/,1622,13,0,0
+1046,2025-12-05,Germany,Direct,Mobile,Safari,/login,1237,11,1,0
+1047,2025-03-19,Canada,Organic Search,Mobile,Chrome,/login,565,9,0,0
+1048,2025-03-03,Saudi Arabia,Paid Ads,Mobile,Chrome,/blog,165,7,0,0
+1049,2025-05-12,UK,Paid Ads,Mobile,Chrome,/about,11,10,0,0
+1050,2025-03-30,USA,Organic Search,Mobile,Safari,/blog,1390,8,1,0
+1051,2025-08-25,China,Direct,Desktop,Firefox,/about,834,6,1,0
+1052,2025-02-11,Spain,Paid Ads,Mobile,Firefox,/login,1602,9,0,0
+1053,2025-03-30,Turkey,Direct,Desktop,Chrome,/,811,6,0,0
+1054,2025-10-23,China,Email,Desktop,Safari,/contact,992,7,1,0
+1055,2025-11-24,Italy,Direct,Desktop,Chrome,/about,1091,7,1,0
+1056,2025-10-22,Italy,Social Media,Desktop,Opera,/contact,1287,9,0,0
+1057,2025-04-14,Netherlands,Organic Search,Desktop,Firefox,/products,1213,11,1,0
+1058,2025-01-14,Turkey,Direct,Desktop,Edge,/blog,502,8,0,0
+1059,2025-10-15,Turkey,Email,Mobile,Chrome,/contact,678,13,0,1
+1060,2025-06-28,Japan,Referral,Desktop,Opera,/blog,1068,1,1,0
+1061,2025-05-05,Indonesia,Organic Search,Mobile,Firefox,/about,84,4,0,0
+1062,2025-12-19,Mexico,Paid Ads,Desktop,Safari,/about,953,7,1,0
+1063,2025-01-23,China,Social Media,Tablet,Firefox,/products,1322,11,0,0
+1064,2025-03-04,Indonesia,Paid Ads,Mobile,Safari,/about,380,8,0,0
+1065,2025-05-23,India,Email,Desktop,Safari,/login,596,7,1,0
+1066,2025-06-02,Mexico,Email,Mobile,Chrome,/products,338,12,0,1
+1067,2025-05-25,Indonesia,Paid Ads,Mobile,Chrome,/contact,599,3,0,0
+1068,2025-08-13,Germany,Organic Search,Mobile,Firefox,/about,786,4,1,0
+1069,2025-11-05,Pakistan,Paid Ads,Mobile,Opera,/,313,12,0,0
+1070,2025-04-14,Germany,Direct,Mobile,Firefox,/pricing,588,7,0,0
+1071,2025-04-14,Italy,Paid Ads,Mobile,Edge,/home,230,8,1,0
+1072,2025-02-08,Spain,Social Media,Mobile,Safari,/login,988,7,0,0
+1073,2025-07-17,Canada,Social Media,Desktop,Safari,/pricing,1197,6,1,0
+1074,2025-05-14,Italy,Referral,Mobile,Chrome,/pricing,1513,9,1,0
+1075,2025-03-08,UK,Social Media,Mobile,Opera,/blog,1488,9,0,0
+1076,2025-06-28,UK,Paid Ads,Mobile,Chrome,/login,384,11,0,0
+1077,2025-02-11,Japan,Social Media,Desktop,Edge,/login,1253,13,1,0
+1078,2025-01-15,USA,Organic Search,Mobile,Firefox,/products,1717,7,0,0
+1079,2025-04-21,China,Social Media,Tablet,Firefox,/blog,1287,8,0,0
+1080,2025-06-06,India,Direct,Desktop,Opera,/contact,1755,6,0,0
+1081,2025-10-16,India,Organic Search,Mobile,Chrome,/home,197,1,0,0
+1082,2025-08-19,South Africa,Referral,Mobile,Chrome,/contact,1224,1,0,0
+1083,2025-06-06,Saudi Arabia,Direct,Mobile,Edge,/,1422,6,1,0
+1084,2025-02-07,Italy,Paid Ads,Mobile,Firefox,/home,1248,2,1,0
+1085,2025-04-07,India,Paid Ads,Desktop,Chrome,/blog,1408,14,0,0
+1086,2025-10-16,China,Paid Ads,Tablet,Opera,/about,1119,8,0,0
+1087,2025-09-11,Indonesia,Direct,Mobile,Firefox,/about,483,1,0,0
+1088,2025-07-15,Brazil,Direct,Desktop,Edge,/blog,1651,13,0,0
+1089,2025-03-27,USA,Direct,Desktop,Opera,/contact,853,2,1,0
+1090,2025-11-18,Spain,Organic Search,Mobile,Safari,/blog,540,8,1,0
+1091,2025-01-10,Saudi Arabia,Email,Desktop,Edge,/blog,1080,12,1,0
+1092,2025-01-05,Canada,Organic Search,Desktop,Opera,/pricing,1098,6,0,0
+1093,2025-05-03,China,Paid Ads,Mobile,Chrome,/,972,12,0,0
+1094,2025-11-26,Netherlands,Email,Desktop,Safari,/login,484,10,0,0
+1095,2025-12-19,Canada,Social Media,Mobile,Edge,/about,1179,2,0,1
+1096,2025-04-28,UAE,Paid Ads,Desktop,Chrome,/pricing,955,2,0,0
+1097,2025-10-21,Spain,Referral,Mobile,Safari,/blog,1415,11,1,0
+1098,2025-06-08,Mexico,Organic Search,Mobile,Firefox,/products,1099,14,1,0
+1099,2025-10-30,Saudi Arabia,Direct,Desktop,Chrome,/pricing,526,7,1,0
+1100,2025-08-16,Spain,Organic Search,Mobile,Opera,/blog,1126,5,1,1
+1101,2025-12-31,India,Direct,Desktop,Edge,/about,435,5,0,0
+1102,2025-08-04,Saudi Arabia,Email,Mobile,Safari,/login,1501,8,0,0
+1103,2025-07-03,Netherlands,Referral,Mobile,Chrome,/blog,1127,12,0,0
+1104,2025-01-15,Saudi Arabia,Email,Mobile,Firefox,/,1651,12,0,0
+1105,2025-06-06,China,Referral,Mobile,Edge,/contact,142,7,0,0
+1106,2025-05-16,Australia,Organic Search,Desktop,Edge,/home,1467,12,1,0
+1107,2025-09-18,Mexico,Direct,Mobile,Chrome,/pricing,1374,14,0,0
+1108,2025-06-06,USA,Email,Mobile,Firefox,/pricing,323,9,0,0
+1109,2025-02-16,Pakistan,Referral,Desktop,Safari,/pricing,600,4,0,0
+1110,2025-11-20,Saudi Arabia,Paid Ads,Mobile,Chrome,/blog,1245,10,0,0
+1111,2025-11-28,Brazil,Paid Ads,Desktop,Safari,/login,1553,4,0,0
+1112,2025-06-22,Australia,Email,Mobile,Edge,/,1018,2,0,0
+1113,2025-05-10,Japan,Direct,Desktop,Safari,/login,168,3,0,0
+1114,2025-04-05,Japan,Email,Mobile,Firefox,/blog,1301,1,1,0
+1115,2025-04-25,France,Organic Search,Desktop,Opera,/blog,670,1,0,0
+1116,2025-08-31,Saudi Arabia,Referral,Desktop,Firefox,/contact,1636,7,0,0
+1117,2025-10-19,Japan,Organic Search,Mobile,Safari,/products,757,14,0,0
+1118,2025-10-09,Saudi Arabia,Paid Ads,Tablet,Chrome,/,1507,14,1,0
+1119,2025-10-26,Indonesia,Referral,Mobile,Edge,/pricing,810,5,0,0
+1120,2025-10-10,Pakistan,Email,Desktop,Opera,/home,419,3,1,1
+1121,2025-03-10,Japan,Organic Search,Desktop,Chrome,/pricing,1507,7,1,0
+1122,2025-05-28,Pakistan,Social Media,Mobile,Chrome,/login,1389,14,1,0
+1123,2025-01-11,Spain,Direct,Mobile,Firefox,/blog,689,2,0,0
+1124,2025-09-11,Australia,Direct,Desktop,Safari,/,1226,3,0,0
+1125,2025-11-26,Netherlands,Social Media,Mobile,Firefox,/about,1732,1,0,0
+1126,2025-12-26,Indonesia,Paid Ads,Mobile,Safari,/,1304,8,0,0
+1127,2025-02-07,Australia,Referral,Tablet,Firefox,/,123,2,0,0
+1128,2025-05-14,Spain,Direct,Tablet,Chrome,/products,906,7,1,0
+1129,2025-07-19,Netherlands,Social Media,Mobile,Edge,/pricing,1556,11,1,0
+1130,2025-01-23,Spain,Email,Desktop,Safari,/products,1088,9,0,0
+1131,2025-10-30,USA,Social Media,Desktop,Opera,/about,74,6,0,0
+1132,2025-12-12,China,Paid Ads,Mobile,Opera,/about,693,2,1,0
+1133,2025-10-29,Italy,Paid Ads,Mobile,Chrome,/contact,1305,2,0,0
+1134,2025-12-29,Indonesia,Organic Search,Mobile,Firefox,/login,1535,9,0,0
+1135,2025-08-06,Italy,Direct,Mobile,Firefox,/home,1695,10,0,0
+1136,2025-05-21,China,Organic Search,Mobile,Chrome,/contact,1395,8,1,0
+1137,2025-04-14,China,Social Media,Mobile,Opera,/blog,155,14,0,0
+1138,2025-07-29,Spain,Referral,Desktop,Opera,/products,952,14,1,0
+1139,2025-04-21,Italy,Referral,Desktop,Firefox,/products,1242,14,0,0
+1140,2025-04-14,UAE,Paid Ads,Mobile,Safari,/contact,1319,9,0,0
+1141,2025-11-12,USA,Referral,Mobile,Edge,/blog,1043,4,0,0
+1142,2025-06-20,Spain,Referral,Desktop,Safari,/,748,4,0,1
+1143,2025-12-22,Pakistan,Referral,Mobile,Opera,/blog,195,2,0,0
+1144,2025-11-20,France,Social Media,Mobile,Safari,/pricing,1607,14,0,0
+1145,2025-05-13,China,Referral,Mobile,Edge,/contact,1630,10,1,0
+1146,2025-10-20,Netherlands,Email,Desktop,Safari,/login,1497,1,0,0
+1147,2025-11-24,Spain,Referral,Mobile,Safari,/blog,1167,10,1,0
+1148,2025-05-07,Turkey,Referral,Desktop,Safari,/,844,13,1,1
+1149,2025-04-16,Saudi Arabia,Organic Search,Tablet,Safari,/blog,818,4,1,1
+1150,2025-04-02,Turkey,Social Media,Desktop,Chrome,/products,180,10,1,0
+1151,2025-10-14,Mexico,Paid Ads,Mobile,Opera,/home,222,10,0,0
+1152,2025-02-20,South Africa,Organic Search,Desktop,Edge,/products,1563,11,0,0
+1153,2025-01-29,South Africa,Direct,Mobile,Opera,/login,1535,8,1,0
+1154,2025-10-23,UK,Social Media,Mobile,Chrome,/about,1605,2,1,0
+1155,2025-10-24,Germany,Email,Desktop,Chrome,/home,1633,13,1,0
+1156,2025-08-02,USA,Social Media,Mobile,Chrome,/about,36,12,0,0
+1157,2025-09-24,Germany,Direct,Desktop,Chrome,/blog,1023,11,0,0
+1158,2025-09-14,South Africa,Direct,Desktop,Safari,/pricing,1101,8,0,0
+1159,2025-10-29,France,Direct,Mobile,Opera,/login,799,1,1,0
+1160,2025-04-11,Indonesia,Paid Ads,Desktop,Firefox,/blog,417,1,0,0
+1161,2025-12-12,Turkey,Referral,Mobile,Edge,/,1585,4,0,0
+1162,2025-04-20,China,Social Media,Mobile,Chrome,/blog,1142,7,0,0
+1163,2025-07-01,Mexico,Referral,Mobile,Opera,/home,83,9,0,0
+1164,2025-11-09,Saudi Arabia,Referral,Desktop,Chrome,/products,587,5,0,1
+1165,2025-01-01,USA,Email,Mobile,Chrome,/pricing,689,2,1,1
+1166,2025-11-15,Italy,Direct,Mobile,Chrome,/about,1295,12,1,0
+1167,2025-02-24,Indonesia,Paid Ads,Desktop,Chrome,/blog,1401,7,0,0
+1168,2025-05-29,Turkey,Email,Mobile,Chrome,/blog,795,11,0,0
+1169,2025-11-05,Japan,Organic Search,Desktop,Edge,/products,858,2,1,0
+1170,2025-05-17,Pakistan,Paid Ads,Mobile,Opera,/pricing,879,9,0,0
+1171,2025-07-21,UK,Referral,Desktop,Chrome,/contact,246,9,1,0
+1172,2025-11-09,Japan,Paid Ads,Mobile,Chrome,/about,736,3,0,0
+1173,2025-04-27,Brazil,Direct,Mobile,Chrome,/blog,1399,13,0,0
+1174,2025-06-03,UK,Organic Search,Desktop,Chrome,/blog,1319,8,0,0
+1175,2025-10-18,Indonesia,Direct,Desktop,Safari,/contact,387,11,1,0
+1176,2025-03-04,Australia,Organic Search,Mobile,Safari,/about,670,4,0,1
+1177,2025-09-01,Spain,Email,Tablet,Firefox,/home,839,3,0,0
+1178,2025-01-25,Brazil,Referral,Desktop,Chrome,/home,915,1,0,0
+1179,2025-03-31,Netherlands,Organic Search,Desktop,Firefox,/login,385,5,0,0
+1180,2025-03-16,South Africa,Organic Search,Mobile,Edge,/login,628,13,0,0
+1181,2025-10-21,Indonesia,Organic Search,Mobile,Firefox,/,662,14,0,0
+1182,2025-07-29,Japan,Paid Ads,Mobile,Opera,/products,1109,11,0,0
+1183,2025-12-13,Pakistan,Email,Mobile,Safari,/pricing,1042,4,0,0
+1184,2025-01-17,Canada,Paid Ads,Desktop,Safari,/blog,205,1,0,0
+1185,2025-05-08,Mexico,Referral,Tablet,Chrome,/about,816,10,0,0
+1186,2025-12-30,India,Organic Search,Mobile,Chrome,/blog,902,8,0,0
+1187,2025-09-08,UK,Email,Desktop,Edge,/login,1663,8,0,0
+1188,2025-06-28,India,Email,Mobile,Edge,/,1323,13,0,0
+1189,2025-07-01,Canada,Social Media,Mobile,Opera,/about,1094,8,0,0
+1190,2025-06-01,UAE,Referral,Desktop,Chrome,/about,946,3,0,0
+1191,2025-01-25,China,Email,Mobile,Chrome,/blog,1422,6,0,0
+1192,2025-06-29,UK,Organic Search,Desktop,Edge,/products,856,12,0,0
+1193,2025-07-17,Saudi Arabia,Organic Search,Mobile,Edge,/,827,12,0,0
+1194,2025-12-10,Japan,Email,Mobile,Edge,/products,1596,7,0,0
+1195,2025-06-10,Italy,Paid Ads,Desktop,Safari,/,573,9,1,0
+1196,2025-06-26,Canada,Referral,Mobile,Firefox,/blog,643,5,1,0
+1197,2025-10-12,Australia,Organic Search,Mobile,Firefox,/,688,9,0,0
+1198,2025-03-04,USA,Email,Tablet,Chrome,/home,1027,6,0,0
+1199,2025-05-30,Spain,Organic Search,Mobile,Safari,/about,17,10,1,0
+1200,2025-06-03,Turkey,Email,Mobile,Edge,/pricing,1402,10,1,0
+1201,2025-06-05,France,Referral,Mobile,Chrome,/blog,1078,10,0,0
+1202,2025-02-18,Saudi Arabia,Email,Tablet,Safari,/contact,353,4,0,0
+1203,2025-12-03,India,Social Media,Mobile,Opera,/pricing,1790,13,0,0
+1204,2025-03-25,Australia,Email,Desktop,Safari,/blog,805,1,0,0
+1205,2025-12-27,South Africa,Email,Mobile,Chrome,/pricing,1408,1,0,0
+1206,2025-06-26,Germany,Referral,Mobile,Firefox,/home,1652,14,0,0
+1207,2025-05-28,Canada,Email,Mobile,Edge,/pricing,1060,10,1,0
+1208,2025-04-28,Spain,Referral,Mobile,Opera,/,1226,5,0,0
+1209,2025-12-08,Japan,Social Media,Mobile,Safari,/login,858,13,0,0
+1210,2025-03-04,India,Referral,Tablet,Chrome,/pricing,1390,14,0,0
+1211,2025-07-08,Italy,Organic Search,Desktop,Chrome,/blog,71,3,0,0
+1212,2025-12-26,UK,Referral,Desktop,Edge,/contact,1095,5,0,0
+1213,2025-02-18,Canada,Social Media,Mobile,Chrome,/contact,431,5,0,0
+1214,2025-11-23,Canada,Direct,Desktop,Chrome,/login,642,1,0,0
+1215,2025-09-14,Italy,Email,Desktop,Edge,/products,801,14,0,0
+1216,2025-08-12,Turkey,Referral,Desktop,Opera,/login,560,8,1,0
+1217,2025-05-21,Japan,Email,Mobile,Firefox,/about,1413,5,0,0
+1218,2025-08-03,China,Paid Ads,Mobile,Firefox,/pricing,1310,5,0,0
+1219,2025-07-30,Australia,Organic Search,Mobile,Safari,/contact,615,9,0,0
+1220,2025-11-14,UAE,Organic Search,Mobile,Opera,/login,1464,8,0,0
+1221,2025-02-01,Germany,Paid Ads,Desktop,Safari,/pricing,1148,13,0,0
+1222,2025-06-07,USA,Paid Ads,Mobile,Firefox,/about,1721,1,0,0
+1223,2025-10-12,Pakistan,Referral,Mobile,Edge,/contact,1154,3,0,0
+1224,2025-11-01,UK,Paid Ads,Mobile,Chrome,/about,534,12,0,1
+1225,2025-10-13,France,Direct,Desktop,Firefox,/pricing,908,7,1,0
+1226,2025-05-24,Pakistan,Email,Desktop,Opera,/blog,1449,1,0,1
+1227,2025-01-19,Germany,Email,Desktop,Firefox,/pricing,172,1,0,0
+1228,2025-01-18,France,Social Media,Mobile,Opera,/login,796,5,0,0
+1229,2025-09-14,USA,Paid Ads,Mobile,Opera,/about,919,9,1,0
+1230,2025-03-19,USA,Paid Ads,Mobile,Opera,/blog,1721,6,0,0
+1231,2025-06-24,Turkey,Direct,Mobile,Safari,/blog,991,10,0,0
+1232,2025-07-13,Mexico,Organic Search,Mobile,Edge,/products,1370,2,1,0
+1233,2025-04-23,Indonesia,Organic Search,Tablet,Firefox,/contact,388,11,0,0
+1234,2025-04-24,Brazil,Email,Desktop,Edge,/,1357,9,0,0
+1235,2025-08-10,South Africa,Email,Mobile,Chrome,/blog,182,6,0,0
+1236,2025-06-15,Canada,Referral,Tablet,Firefox,/about,1009,5,1,0
+1237,2025-11-15,Australia,Direct,Desktop,Edge,/contact,73,5,1,0
+1238,2025-05-12,Turkey,Social Media,Tablet,Edge,/home,1134,12,1,1
+1239,2025-09-21,Australia,Social Media,Tablet,Chrome,/pricing,1355,3,1,0
+1240,2025-02-24,Saudi Arabia,Direct,Mobile,Opera,/login,984,14,1,0
+1241,2025-12-25,Saudi Arabia,Social Media,Mobile,Firefox,/about,75,6,0,0
+1242,2025-05-11,India,Organic Search,Mobile,Firefox,/home,1590,13,1,1
+1243,2025-10-15,France,Social Media,Mobile,Chrome,/about,1632,4,0,0
+1244,2025-09-23,China,Social Media,Desktop,Opera,/pricing,467,13,0,0
+1245,2025-06-11,UK,Direct,Desktop,Firefox,/products,1612,12,0,0
+1246,2025-03-28,UAE,Direct,Desktop,Firefox,/about,462,10,0,1
+1247,2025-02-24,Mexico,Social Media,Mobile,Firefox,/blog,1292,14,1,0
+1248,2025-10-15,Italy,Paid Ads,Desktop,Opera,/,1750,2,0,0
+1249,2025-06-27,India,Direct,Desktop,Chrome,/blog,1459,13,0,0
+1250,2025-12-15,USA,Referral,Desktop,Firefox,/pricing,988,3,0,0
+1251,2025-01-08,Germany,Referral,Mobile,Edge,/about,187,9,1,0
+1252,2025-11-17,Saudi Arabia,Organic Search,Tablet,Opera,/,289,11,0,0
+1253,2025-11-09,Spain,Social Media,Tablet,Safari,/blog,353,11,0,0
+1254,2025-09-04,South Africa,Paid Ads,Mobile,Chrome,/,1050,9,0,0
+1255,2025-11-19,France,Organic Search,Mobile,Edge,/login,305,6,0,0
+1256,2025-09-12,Canada,Social Media,Mobile,Firefox,/pricing,211,10,0,0
+1257,2025-11-24,Australia,Direct,Mobile,Safari,/products,971,10,0,0
+1258,2025-02-23,Spain,Referral,Mobile,Chrome,/products,693,14,1,0
+1259,2025-09-06,Germany,Email,Desktop,Opera,/about,1227,9,0,0
+1260,2025-08-27,Netherlands,Paid Ads,Tablet,Safari,/blog,1182,4,0,0
+1261,2025-08-17,Australia,Email,Mobile,Safari,/home,384,11,0,0
+1262,2025-03-08,Brazil,Referral,Mobile,Edge,/pricing,44,5,0,0
+1263,2025-02-20,Indonesia,Email,Mobile,Chrome,/blog,1402,10,0,1
+1264,2025-04-07,South Africa,Direct,Desktop,Edge,/blog,38,6,0,1
+1265,2025-04-02,India,Social Media,Desktop,Edge,/products,784,13,0,0
+1266,2025-09-21,Turkey,Direct,Mobile,Firefox,/about,230,9,1,0
+1267,2025-10-18,Brazil,Email,Desktop,Opera,/,62,13,0,0
+1268,2025-04-06,France,Direct,Mobile,Safari,/pricing,800,5,0,0
+1269,2025-03-29,France,Referral,Mobile,Chrome,/login,1386,8,0,0
+1270,2025-03-19,Brazil,Paid Ads,Mobile,Opera,/,1425,11,0,0
+1271,2025-10-15,France,Direct,Mobile,Opera,/contact,85,1,0,0
+1272,2025-04-30,Canada,Referral,Mobile,Chrome,/contact,503,5,0,0
+1273,2025-10-29,India,Paid Ads,Mobile,Opera,/pricing,1721,10,1,0
+1274,2025-06-14,Germany,Social Media,Mobile,Firefox,/about,1555,1,0,0
+1275,2025-07-01,South Africa,Email,Mobile,Opera,/home,126,10,0,1
+1276,2025-08-11,Japan,Social Media,Mobile,Firefox,/contact,289,14,1,0
+1277,2025-11-07,Saudi Arabia,Organic Search,Mobile,Safari,/products,1763,6,0,0
+1278,2025-01-07,Spain,Referral,Desktop,Safari,/home,1208,7,1,0
+1279,2025-11-26,Turkey,Paid Ads,Mobile,Edge,/blog,755,12,0,0
+1280,2025-09-20,Mexico,Direct,Tablet,Firefox,/contact,958,14,0,0
+1281,2025-06-10,Saudi Arabia,Social Media,Mobile,Safari,/products,773,5,0,0
+1282,2025-05-31,Spain,Paid Ads,Desktop,Opera,/blog,304,1,1,0
+1283,2025-03-26,UAE,Referral,Mobile,Chrome,/home,1027,6,1,0
+1284,2025-05-27,Germany,Organic Search,Desktop,Chrome,/pricing,1484,10,0,1
+1285,2025-04-22,France,Social Media,Desktop,Firefox,/blog,1551,5,0,1
+1286,2025-02-05,France,Email,Tablet,Edge,/,1054,6,0,0
+1287,2025-10-12,Japan,Paid Ads,Mobile,Opera,/pricing,1106,11,0,1
+1288,2025-07-07,Saudi Arabia,Email,Desktop,Firefox,/pricing,851,10,0,0
+1289,2025-03-23,Spain,Paid Ads,Tablet,Chrome,/home,1069,7,0,0
+1290,2025-01-02,UK,Paid Ads,Tablet,Firefox,/home,1540,7,0,0
+1291,2025-10-30,Spain,Referral,Mobile,Opera,/products,1266,2,0,0
+1292,2025-07-16,Indonesia,Referral,Desktop,Safari,/products,1761,12,0,0
+1293,2025-01-11,Canada,Referral,Mobile,Opera,/,506,3,1,0
+1294,2025-08-22,Brazil,Direct,Mobile,Safari,/pricing,215,12,1,0
+1295,2025-07-14,UK,Paid Ads,Mobile,Safari,/login,435,6,0,0
+1296,2025-04-29,Spain,Social Media,Mobile,Safari,/about,53,3,1,1
+1297,2025-01-20,Indonesia,Email,Mobile,Firefox,/,1124,2,0,1
+1298,2025-09-18,Saudi Arabia,Referral,Desktop,Chrome,/,1503,4,1,0
+1299,2025-10-20,Netherlands,Referral,Mobile,Firefox,/about,614,5,0,0
+1300,2025-09-13,Italy,Email,Desktop,Chrome,/about,1500,11,0,0
+1301,2025-08-10,Italy,Email,Mobile,Opera,/about,463,10,1,0
+1302,2025-08-14,Australia,Paid Ads,Mobile,Edge,/home,604,9,0,0
+1303,2025-02-22,Pakistan,Referral,Desktop,Opera,/,1366,3,1,0
+1304,2025-12-21,Germany,Email,Mobile,Firefox,/,516,3,1,0
+1305,2025-12-08,Indonesia,Direct,Desktop,Firefox,/blog,803,6,1,0
+1306,2025-12-30,USA,Direct,Desktop,Chrome,/about,1503,5,0,0
+1307,2025-10-07,Canada,Referral,Mobile,Firefox,/about,30,6,0,0
+1308,2025-03-22,Spain,Email,Desktop,Safari,/products,1261,7,0,0
+1309,2025-07-21,Turkey,Paid Ads,Mobile,Firefox,/products,1409,11,1,0
+1310,2025-06-07,UK,Paid Ads,Desktop,Chrome,/pricing,1163,3,0,0
+1311,2025-04-30,Australia,Paid Ads,Mobile,Chrome,/products,1720,13,0,0
+1312,2025-02-28,Germany,Organic Search,Mobile,Safari,/contact,629,5,0,0
+1313,2025-08-03,Indonesia,Referral,Mobile,Chrome,/pricing,423,8,0,0
+1314,2025-05-08,Saudi Arabia,Paid Ads,Mobile,Edge,/login,1104,4,0,0
+1315,2025-08-12,Canada,Direct,Tablet,Opera,/about,1437,10,0,0
+1316,2025-07-28,South Africa,Email,Desktop,Firefox,/blog,1595,2,1,0
+1317,2025-04-25,China,Social Media,Desktop,Edge,/products,1640,4,0,0
+1318,2025-07-28,Indonesia,Social Media,Mobile,Firefox,/blog,1430,2,1,1
+1319,2025-01-14,France,Paid Ads,Desktop,Edge,/products,346,3,0,0
+1320,2025-01-09,Pakistan,Social Media,Tablet,Firefox,/products,1677,4,0,0
+1321,2025-02-09,China,Social Media,Desktop,Safari,/blog,1538,4,0,0
+1322,2025-08-25,France,Organic Search,Mobile,Chrome,/,919,10,0,0
+1323,2025-10-08,Saudi Arabia,Direct,Mobile,Chrome,/,285,9,0,0
+1324,2025-12-25,France,Direct,Desktop,Safari,/,901,10,1,0
+1325,2025-07-20,Germany,Organic Search,Mobile,Edge,/contact,22,6,0,0
+1326,2025-09-03,Indonesia,Organic Search,Desktop,Opera,/,1036,9,0,0
+1327,2025-10-05,UK,Social Media,Mobile,Edge,/products,987,4,0,0
+1328,2025-08-23,Australia,Referral,Desktop,Chrome,/about,1257,9,1,0
+1329,2025-01-04,Spain,Email,Tablet,Opera,/home,983,11,0,1
+1330,2025-06-03,Turkey,Email,Tablet,Firefox,/blog,184,13,0,1
+1331,2025-01-29,Italy,Social Media,Desktop,Opera,/about,1418,9,0,0
+1332,2025-04-19,Australia,Email,Desktop,Edge,/home,1635,6,1,1
+1333,2025-04-08,Pakistan,Organic Search,Mobile,Safari,/about,250,5,0,0
+1334,2025-08-03,France,Direct,Desktop,Firefox,/contact,556,3,0,0
+1335,2025-10-20,Saudi Arabia,Email,Mobile,Edge,/home,23,14,0,0
+1336,2025-03-16,Mexico,Social Media,Mobile,Firefox,/login,1228,5,1,0
+1337,2025-11-22,Japan,Referral,Mobile,Opera,/pricing,1430,3,0,0
+1338,2025-05-26,Netherlands,Social Media,Mobile,Chrome,/,1464,5,1,0
+1339,2025-05-08,Italy,Paid Ads,Mobile,Edge,/login,1339,5,0,0
+1340,2025-12-07,India,Social Media,Tablet,Safari,/contact,1367,2,0,0
+1341,2025-02-11,Saudi Arabia,Organic Search,Tablet,Opera,/about,734,14,0,0
+1342,2025-12-22,Indonesia,Direct,Desktop,Edge,/products,1443,14,1,0
+1343,2025-02-10,Indonesia,Direct,Desktop,Safari,/,12,9,0,0
+1344,2025-02-03,UAE,Email,Tablet,Edge,/login,700,7,1,0
+1345,2025-01-17,Italy,Organic Search,Tablet,Opera,/,1585,14,0,0
+1346,2025-06-14,Italy,Paid Ads,Desktop,Edge,/home,1485,6,1,0
+1347,2025-06-02,Mexico,Organic Search,Mobile,Firefox,/pricing,1709,5,0,0
+1348,2025-03-17,India,Social Media,Mobile,Opera,/,756,4,0,0
+1349,2025-03-28,Germany,Organic Search,Desktop,Edge,/about,778,8,0,0
+1350,2025-04-27,India,Organic Search,Mobile,Chrome,/about,881,2,0,0
+1351,2025-12-28,Australia,Paid Ads,Desktop,Edge,/blog,504,8,0,0
+1352,2025-12-08,USA,Social Media,Tablet,Firefox,/blog,426,1,0,0
+1353,2025-01-27,Turkey,Referral,Desktop,Safari,/,1424,10,0,0
+1354,2025-11-09,Australia,Referral,Mobile,Safari,/home,1406,1,0,0
+1355,2025-10-14,Indonesia,Direct,Desktop,Safari,/home,637,3,0,0
+1356,2025-05-14,South Africa,Email,Mobile,Chrome,/products,1085,5,0,0
+1357,2025-08-07,Saudi Arabia,Organic Search,Mobile,Firefox,/contact,1409,14,0,0
+1358,2025-06-17,Indonesia,Direct,Desktop,Opera,/contact,1428,6,0,0
+1359,2025-04-08,Netherlands,Paid Ads,Mobile,Safari,/login,1030,4,0,0
+1360,2025-09-25,South Africa,Referral,Mobile,Firefox,/contact,151,7,0,0
+1361,2025-08-25,Indonesia,Organic Search,Desktop,Edge,/pricing,1119,7,1,0
+1362,2025-11-05,Turkey,Paid Ads,Mobile,Chrome,/home,1497,2,1,1
+1363,2025-06-22,Turkey,Email,Desktop,Firefox,/products,55,2,0,0
+1364,2025-07-09,Germany,Paid Ads,Mobile,Firefox,/blog,853,2,0,0
+1365,2025-05-02,Pakistan,Organic Search,Mobile,Opera,/about,1018,14,0,0
+1366,2025-02-15,Spain,Email,Mobile,Firefox,/contact,1271,2,0,0
+1367,2025-03-05,Canada,Paid Ads,Desktop,Opera,/blog,19,13,0,0
+1368,2025-05-10,UAE,Email,Mobile,Chrome,/blog,673,9,0,0
+1369,2025-11-06,Japan,Organic Search,Mobile,Chrome,/,582,14,0,0
+1370,2025-12-29,China,Organic Search,Mobile,Edge,/pricing,1563,5,0,1
+1371,2025-07-12,Mexico,Email,Mobile,Opera,/products,1631,11,0,0
+1372,2025-11-03,Spain,Social Media,Mobile,Opera,/pricing,658,8,0,0
+1373,2025-06-30,Saudi Arabia,Direct,Desktop,Safari,/,922,5,0,0
+1374,2025-10-19,Saudi Arabia,Paid Ads,Desktop,Safari,/products,1775,13,0,0
+1375,2025-10-09,Saudi Arabia,Paid Ads,Desktop,Edge,/products,649,11,0,0
+1376,2025-01-29,USA,Social Media,Desktop,Chrome,/home,625,5,1,0
+1377,2025-05-29,China,Social Media,Mobile,Safari,/pricing,707,1,1,0
+1378,2025-09-24,Indonesia,Social Media,Desktop,Firefox,/pricing,918,6,0,0
+1379,2025-10-23,India,Referral,Desktop,Chrome,/home,187,4,0,0
+1380,2025-01-11,Canada,Referral,Desktop,Firefox,/login,878,3,0,0
+1381,2025-06-13,France,Email,Desktop,Opera,/blog,1039,6,0,0
+1382,2025-04-23,Spain,Referral,Desktop,Chrome,/,862,2,0,0
+1383,2025-07-06,Turkey,Organic Search,Desktop,Edge,/pricing,316,8,0,0
+1384,2025-10-22,Netherlands,Email,Mobile,Opera,/home,557,1,0,0
+1385,2025-08-20,UAE,Paid Ads,Mobile,Opera,/about,336,12,0,0
+1386,2025-08-15,South Africa,Direct,Desktop,Firefox,/login,1389,9,1,1
+1387,2025-11-06,Australia,Organic Search,Mobile,Opera,/products,404,8,1,0
+1388,2025-04-08,Canada,Paid Ads,Desktop,Safari,/contact,309,1,0,0
+1389,2025-02-24,Brazil,Paid Ads,Desktop,Chrome,/about,1559,10,0,0
+1390,2025-04-21,Brazil,Email,Desktop,Safari,/home,758,12,0,0
+1391,2025-06-01,UAE,Social Media,Mobile,Firefox,/contact,294,9,1,0
+1392,2025-09-03,Italy,Social Media,Mobile,Firefox,/blog,339,2,1,0
+1393,2025-03-10,UK,Organic Search,Desktop,Chrome,/,59,3,1,0
+1394,2025-11-08,Japan,Social Media,Desktop,Opera,/contact,782,2,0,0
+1395,2025-10-16,Canada,Paid Ads,Mobile,Edge,/login,1655,13,1,1
+1396,2025-09-07,Turkey,Social Media,Desktop,Firefox,/blog,1742,14,0,0
+1397,2025-02-05,Canada,Referral,Desktop,Chrome,/contact,387,8,1,0
+1398,2025-08-27,Indonesia,Social Media,Mobile,Edge,/products,1797,2,1,0
+1399,2025-05-28,South Africa,Paid Ads,Mobile,Opera,/products,1633,10,0,0
+1400,2025-08-15,China,Email,Mobile,Firefox,/login,1009,2,0,0
+1401,2025-09-01,Saudi Arabia,Organic Search,Mobile,Chrome,/products,1571,1,1,0
+1402,2025-12-03,China,Direct,Desktop,Chrome,/products,783,7,0,0
+1403,2025-12-31,Pakistan,Social Media,Desktop,Chrome,/home,1177,12,0,0
+1404,2025-07-20,Pakistan,Paid Ads,Mobile,Firefox,/products,1093,2,0,0
+1405,2025-06-03,Canada,Direct,Desktop,Edge,/about,877,10,0,0
+1406,2025-03-14,USA,Direct,Mobile,Chrome,/products,1108,5,0,0
+1407,2025-07-20,Germany,Referral,Tablet,Opera,/about,12,5,0,0
+1408,2025-10-23,France,Direct,Tablet,Chrome,/home,1608,3,0,0
+1409,2025-01-17,USA,Email,Desktop,Edge,/products,757,3,0,0
+1410,2025-05-09,Turkey,Paid Ads,Mobile,Firefox,/login,1481,13,0,0
+1411,2025-08-05,France,Paid Ads,Mobile,Chrome,/blog,1774,12,0,0
+1412,2025-03-02,Spain,Social Media,Mobile,Chrome,/login,284,3,0,0
+1413,2025-04-14,China,Social Media,Desktop,Opera,/blog,1563,6,0,0
+1414,2025-02-11,China,Social Media,Desktop,Opera,/pricing,1625,14,0,0
+1415,2025-01-25,France,Email,Desktop,Chrome,/blog,224,4,1,0
+1416,2025-02-08,Japan,Direct,Desktop,Chrome,/,1716,13,0,0
+1417,2025-10-18,USA,Direct,Desktop,Opera,/,1518,3,1,0
+1418,2025-05-11,Germany,Referral,Mobile,Edge,/,338,2,0,0
+1419,2025-08-17,Canada,Email,Mobile,Safari,/home,264,13,1,0
+1420,2025-04-18,UK,Social Media,Desktop,Safari,/login,1420,3,0,0
+1421,2025-06-21,China,Organic Search,Mobile,Chrome,/blog,135,4,0,0
+1422,2025-04-12,Japan,Referral,Desktop,Opera,/login,776,6,0,0
+1423,2025-12-20,UK,Organic Search,Mobile,Firefox,/about,1617,4,0,1
+1424,2025-01-12,Netherlands,Direct,Tablet,Firefox,/,1583,8,0,0
+1425,2025-10-02,Netherlands,Referral,Tablet,Safari,/pricing,1357,3,0,0
+1426,2025-04-11,Germany,Referral,Mobile,Edge,/home,1237,12,0,0
+1427,2025-02-13,India,Paid Ads,Desktop,Safari,/pricing,1205,3,1,0
+1428,2025-11-01,Australia,Direct,Desktop,Chrome,/blog,1768,3,0,0
+1429,2025-01-17,Canada,Direct,Mobile,Edge,/products,226,8,0,1
+1430,2025-11-26,China,Email,Tablet,Firefox,/pricing,1278,4,0,0
+1431,2025-02-26,Canada,Referral,Desktop,Opera,/products,1369,1,0,0
+1432,2025-11-07,Netherlands,Direct,Desktop,Opera,/home,1736,2,1,0
+1433,2025-10-30,Spain,Referral,Mobile,Chrome,/pricing,1331,13,1,0
+1434,2025-01-12,Spain,Email,Desktop,Safari,/pricing,841,14,1,0
+1435,2025-11-14,UK,Email,Mobile,Chrome,/contact,191,10,1,0
+1436,2025-03-21,Spain,Paid Ads,Mobile,Opera,/home,343,13,0,0
+1437,2025-08-04,Indonesia,Referral,Desktop,Firefox,/home,520,13,0,0
+1438,2025-12-05,India,Direct,Desktop,Opera,/,392,14,0,0
+1439,2025-09-21,UAE,Direct,Mobile,Edge,/blog,1750,2,1,0
+1440,2025-05-29,UK,Referral,Mobile,Opera,/pricing,1232,14,1,1
+1441,2025-03-22,China,Referral,Tablet,Opera,/login,341,3,0,0
+1442,2025-08-03,Saudi Arabia,Referral,Desktop,Edge,/pricing,1198,6,0,0
+1443,2025-07-17,UK,Social Media,Desktop,Safari,/about,1275,8,1,0
+1444,2025-07-19,Brazil,Direct,Mobile,Opera,/home,909,12,0,0
+1445,2025-01-25,UAE,Email,Mobile,Chrome,/login,651,1,1,0
+1446,2025-03-30,India,Direct,Desktop,Opera,/home,1260,9,0,1
+1447,2025-09-25,UK,Social Media,Mobile,Chrome,/blog,643,1,0,0
+1448,2025-05-23,UK,Referral,Desktop,Edge,/home,1589,10,0,0
+1449,2025-02-28,Spain,Paid Ads,Desktop,Opera,/products,460,2,0,0
+1450,2025-12-31,Turkey,Referral,Desktop,Edge,/products,205,3,0,0
+1451,2025-01-26,UK,Referral,Mobile,Edge,/contact,1237,7,0,0
+1452,2025-02-16,Pakistan,Social Media,Mobile,Safari,/products,467,9,1,0
+1453,2025-10-15,Canada,Direct,Mobile,Opera,/products,839,3,0,0
+1454,2025-09-23,China,Referral,Mobile,Chrome,/blog,266,8,1,0
+1455,2025-01-16,Netherlands,Direct,Tablet,Chrome,/pricing,1562,9,0,0
+1456,2025-07-18,Pakistan,Organic Search,Desktop,Opera,/products,1305,10,1,0
+1457,2025-10-09,Pakistan,Email,Desktop,Safari,/login,18,7,0,0
+1458,2025-03-27,USA,Direct,Desktop,Safari,/contact,770,4,0,0
+1459,2025-09-07,Saudi Arabia,Paid Ads,Desktop,Safari,/home,958,4,0,0
+1460,2025-09-27,Japan,Email,Mobile,Chrome,/products,1234,4,0,0
+1461,2025-12-01,Spain,Paid Ads,Mobile,Edge,/contact,1092,6,1,0
+1462,2025-04-27,Indonesia,Referral,Mobile,Safari,/blog,896,4,0,0
+1463,2025-01-07,Indonesia,Email,Desktop,Chrome,/about,402,5,0,1
+1464,2025-05-17,Saudi Arabia,Direct,Desktop,Chrome,/about,1685,9,1,0
+1465,2025-06-25,Brazil,Email,Mobile,Edge,/about,1152,12,0,0
+1466,2025-11-24,Brazil,Referral,Desktop,Opera,/home,1586,7,1,0
+1467,2025-11-11,Germany,Social Media,Mobile,Opera,/contact,408,8,0,0
+1468,2025-08-03,China,Paid Ads,Tablet,Safari,/products,340,5,1,1
+1469,2025-03-23,Mexico,Referral,Mobile,Safari,/pricing,1300,5,0,0
+1470,2025-08-11,Mexico,Social Media,Mobile,Edge,/home,1553,13,1,0
+1471,2025-04-13,South Africa,Email,Mobile,Safari,/home,1728,11,0,0
+1472,2025-09-30,Netherlands,Email,Desktop,Edge,/about,489,7,0,0
+1473,2025-01-14,South Africa,Referral,Mobile,Chrome,/pricing,143,11,0,0
+1474,2025-06-08,Netherlands,Direct,Desktop,Safari,/about,1726,13,0,0
+1475,2025-06-01,Mexico,Email,Desktop,Chrome,/home,925,14,0,0
+1476,2025-04-18,Turkey,Direct,Mobile,Firefox,/products,944,12,0,0
+1477,2025-07-07,Germany,Direct,Mobile,Edge,/about,364,8,0,1
+1478,2025-10-28,Spain,Direct,Desktop,Firefox,/about,593,9,1,0
+1479,2025-04-08,China,Organic Search,Mobile,Safari,/login,1531,14,0,0
+1480,2025-05-11,South Africa,Social Media,Mobile,Chrome,/about,634,2,1,0
+1481,2025-10-20,Italy,Social Media,Mobile,Safari,/home,1140,3,0,0
+1482,2025-06-20,Netherlands,Email,Mobile,Firefox,/products,299,12,0,0
+1483,2025-07-02,UK,Email,Desktop,Safari,/pricing,834,12,1,0
+1484,2025-12-30,South Africa,Direct,Tablet,Opera,/,638,2,1,0
+1485,2025-02-08,UK,Organic Search,Desktop,Firefox,/pricing,1028,10,0,0
+1486,2025-01-15,Australia,Direct,Mobile,Safari,/products,641,7,0,0
+1487,2025-01-04,Japan,Organic Search,Desktop,Chrome,/blog,1180,12,0,0
+1488,2025-12-15,Italy,Direct,Mobile,Safari,/about,336,2,0,1
+1489,2025-07-29,Saudi Arabia,Paid Ads,Desktop,Chrome,/pricing,1448,12,0,0
+1490,2025-06-10,Turkey,Paid Ads,Mobile,Opera,/blog,219,14,0,0
+1491,2025-01-16,Saudi Arabia,Referral,Desktop,Safari,/blog,1329,2,0,0
+1492,2025-04-18,South Africa,Direct,Desktop,Opera,/products,1431,14,0,0
+1493,2025-11-07,India,Email,Mobile,Firefox,/products,1136,14,1,1
+1494,2025-08-15,Saudi Arabia,Social Media,Mobile,Chrome,/login,645,2,1,0
+1495,2025-06-19,South Africa,Referral,Tablet,Firefox,/about,1790,12,0,0
+1496,2025-02-03,China,Email,Desktop,Chrome,/,1541,13,0,1
+1497,2025-09-08,Japan,Paid Ads,Mobile,Opera,/contact,877,4,0,0
+1498,2025-09-04,India,Direct,Mobile,Edge,/home,1242,1,1,0
+1499,2025-09-26,France,Referral,Desktop,Safari,/pricing,437,2,0,1
+1500,2025-05-21,Italy,Direct,Desktop,Opera,/products,402,3,0,0
+1501,2025-10-01,Australia,Paid Ads,Mobile,Chrome,/pricing,835,7,0,0
+1502,2025-04-06,USA,Referral,Tablet,Chrome,/contact,925,10,0,0
+1503,2025-08-15,Australia,Paid Ads,Mobile,Chrome,/contact,1142,1,0,0
+1504,2025-02-08,Indonesia,Organic Search,Mobile,Chrome,/about,357,6,1,0
+1505,2025-10-29,Japan,Paid Ads,Mobile,Safari,/blog,59,3,0,0
+1506,2025-01-29,UK,Direct,Desktop,Firefox,/about,925,3,0,0
+1507,2025-11-14,Italy,Social Media,Mobile,Edge,/home,1138,4,0,0
+1508,2025-09-02,Germany,Paid Ads,Mobile,Safari,/,1453,13,0,0
+1509,2025-08-24,Germany,Email,Desktop,Chrome,/pricing,1406,4,0,0
+1510,2025-07-04,South Africa,Social Media,Mobile,Safari,/home,1060,7,0,1
+1511,2025-09-29,Turkey,Organic Search,Desktop,Opera,/login,977,3,0,0
+1512,2025-08-24,Indonesia,Referral,Tablet,Chrome,/,809,8,1,0
+1513,2025-08-27,Spain,Referral,Mobile,Edge,/pricing,1306,8,1,0
+1514,2025-09-23,Indonesia,Social Media,Desktop,Chrome,/home,1026,11,0,0
+1515,2025-12-25,Saudi Arabia,Referral,Mobile,Edge,/products,658,13,1,0
+1516,2025-12-06,India,Paid Ads,Mobile,Edge,/pricing,1373,7,1,0
+1517,2025-03-06,UAE,Social Media,Desktop,Firefox,/home,310,2,0,0
+1518,2025-06-26,Italy,Direct,Mobile,Firefox,/contact,1513,5,0,0
+1519,2025-01-03,Indonesia,Paid Ads,Mobile,Safari,/,1577,6,0,0
+1520,2025-05-22,France,Paid Ads,Mobile,Safari,/home,1590,12,0,0
+1521,2025-06-07,Saudi Arabia,Paid Ads,Desktop,Edge,/products,1298,10,1,1
+1522,2025-11-20,USA,Direct,Mobile,Chrome,/about,1575,4,0,0
+1523,2025-05-26,Brazil,Organic Search,Desktop,Opera,/pricing,1629,13,0,0
+1524,2025-10-20,Turkey,Email,Mobile,Opera,/login,175,10,0,1
+1525,2025-06-02,Australia,Referral,Desktop,Chrome,/pricing,325,5,0,1
+1526,2025-07-12,Spain,Social Media,Tablet,Chrome,/pricing,10,14,0,1
+1527,2025-03-14,France,Organic Search,Mobile,Firefox,/products,1029,9,0,0
+1528,2025-11-01,USA,Social Media,Mobile,Opera,/,1794,11,0,0
+1529,2025-12-10,Italy,Referral,Mobile,Edge,/pricing,1294,7,1,0
+1530,2025-05-20,Australia,Direct,Desktop,Safari,/,72,2,1,0
+1531,2025-07-06,Saudi Arabia,Paid Ads,Desktop,Firefox,/home,492,11,1,0
+1532,2025-10-20,Germany,Paid Ads,Mobile,Opera,/contact,1709,1,1,0
+1533,2025-03-02,Turkey,Direct,Tablet,Chrome,/login,1354,2,1,0
+1534,2025-07-17,Japan,Organic Search,Desktop,Opera,/contact,1234,3,0,0
+1535,2025-10-22,Mexico,Organic Search,Mobile,Edge,/,231,11,0,0
+1536,2025-11-15,Indonesia,Social Media,Mobile,Firefox,/,161,2,0,0
+1537,2025-10-29,Indonesia,Direct,Mobile,Chrome,/contact,653,11,0,0
+1538,2025-12-10,Italy,Organic Search,Desktop,Edge,/pricing,635,3,0,0
+1539,2025-01-11,France,Direct,Desktop,Safari,/blog,1495,10,1,0
+1540,2025-03-03,Brazil,Referral,Desktop,Firefox,/blog,226,11,0,0
+1541,2025-11-29,Saudi Arabia,Paid Ads,Mobile,Edge,/products,205,11,0,0
+1542,2025-08-14,France,Paid Ads,Mobile,Edge,/login,1235,12,0,0
+1543,2025-06-02,UAE,Paid Ads,Mobile,Chrome,/about,1004,14,0,1
+1544,2025-07-18,Pakistan,Direct,Tablet,Safari,/contact,1024,12,1,0
+1545,2025-02-21,Japan,Direct,Mobile,Edge,/contact,656,9,0,0
+1546,2025-09-17,Canada,Social Media,Mobile,Firefox,/products,1267,4,0,0
+1547,2025-02-28,Turkey,Paid Ads,Mobile,Edge,/login,1174,12,0,0
+1548,2025-03-13,UAE,Social Media,Desktop,Opera,/blog,717,9,1,0
+1549,2025-05-28,South Africa,Paid Ads,Tablet,Firefox,/home,1531,11,0,0
+1550,2025-12-15,Netherlands,Social Media,Mobile,Firefox,/pricing,1588,3,0,1
+1551,2025-03-04,Canada,Social Media,Desktop,Edge,/pricing,1090,12,1,0
+1552,2025-11-06,Italy,Referral,Desktop,Chrome,/home,1537,1,0,0
+1553,2025-08-31,Japan,Social Media,Desktop,Firefox,/home,1175,11,0,1
+1554,2025-11-26,Pakistan,Direct,Mobile,Opera,/login,731,5,0,0
+1555,2025-04-17,Japan,Social Media,Mobile,Chrome,/blog,1617,10,1,0
+1556,2025-08-14,Spain,Paid Ads,Tablet,Chrome,/products,1769,10,0,0
+1557,2025-11-09,South Africa,Social Media,Tablet,Chrome,/home,1572,14,0,1
+1558,2025-08-06,France,Organic Search,Desktop,Firefox,/products,649,2,0,1
+1559,2025-08-29,Spain,Email,Mobile,Chrome,/login,115,4,0,1
+1560,2025-09-16,Germany,Paid Ads,Desktop,Edge,/about,174,2,0,0
+1561,2025-09-19,UK,Organic Search,Mobile,Chrome,/,224,2,0,0
+1562,2025-01-05,UAE,Paid Ads,Mobile,Opera,/pricing,1104,13,0,0
+1563,2025-09-18,Japan,Direct,Mobile,Safari,/blog,1749,3,0,0
+1564,2025-02-23,Japan,Email,Mobile,Opera,/pricing,1698,5,0,1
+1565,2025-02-16,India,Email,Mobile,Firefox,/blog,1612,4,0,0
+1566,2025-08-03,Australia,Direct,Desktop,Chrome,/login,99,2,0,0
+1567,2025-06-26,USA,Email,Tablet,Chrome,/,883,11,0,0
+1568,2025-01-09,Germany,Direct,Tablet,Edge,/pricing,1261,14,0,0
+1569,2025-04-09,Spain,Organic Search,Desktop,Chrome,/,1112,14,1,0
+1570,2025-01-20,Spain,Referral,Mobile,Opera,/login,617,10,0,0
+1571,2025-08-29,Spain,Paid Ads,Tablet,Firefox,/blog,358,2,0,0
+1572,2025-03-02,UK,Direct,Desktop,Safari,/home,903,14,0,0
+1573,2025-06-27,Japan,Paid Ads,Mobile,Chrome,/about,255,6,0,0
+1574,2025-12-04,China,Organic Search,Desktop,Safari,/pricing,281,7,1,0
+1575,2025-03-03,Pakistan,Referral,Mobile,Chrome,/,412,12,0,1
+1576,2025-05-25,Germany,Organic Search,Desktop,Firefox,/contact,1702,10,0,0
+1577,2025-08-04,South Africa,Email,Mobile,Opera,/pricing,1149,6,0,1
+1578,2025-01-03,Canada,Paid Ads,Desktop,Firefox,/pricing,1468,7,0,0
+1579,2025-06-09,India,Referral,Mobile,Safari,/pricing,1563,1,0,0
+1580,2025-08-15,Italy,Email,Tablet,Chrome,/products,1475,6,0,0
+1581,2025-09-26,Italy,Referral,Mobile,Safari,/,1205,11,1,0
+1582,2025-04-30,China,Email,Mobile,Opera,/,1049,3,1,0
+1583,2025-03-30,USA,Organic Search,Mobile,Firefox,/pricing,970,1,0,0
+1584,2025-11-25,Germany,Direct,Desktop,Safari,/login,1785,8,0,0
+1585,2025-03-09,Australia,Paid Ads,Desktop,Safari,/login,907,4,1,0
+1586,2025-12-23,Canada,Social Media,Tablet,Opera,/home,1089,10,0,0
+1587,2025-04-08,Spain,Social Media,Mobile,Chrome,/pricing,1624,8,0,0
+1588,2025-09-24,Saudi Arabia,Organic Search,Desktop,Safari,/products,1136,10,1,0
+1589,2025-04-15,Brazil,Paid Ads,Mobile,Opera,/blog,293,14,0,0
+1590,2025-11-19,Italy,Paid Ads,Desktop,Chrome,/products,1738,11,0,0
+1591,2025-05-03,Turkey,Organic Search,Desktop,Chrome,/login,526,4,0,0
+1592,2025-01-29,Brazil,Paid Ads,Tablet,Firefox,/home,627,4,0,1
+1593,2025-05-17,Netherlands,Direct,Mobile,Opera,/login,1311,12,1,0
+1594,2025-07-14,Spain,Organic Search,Mobile,Chrome,/login,621,14,0,1
+1595,2025-08-14,France,Direct,Tablet,Firefox,/login,759,10,1,0
+1596,2025-11-28,India,Paid Ads,Mobile,Edge,/pricing,1302,4,0,0
+1597,2025-06-19,UK,Organic Search,Mobile,Opera,/login,409,6,0,0
+1598,2025-01-09,Saudi Arabia,Paid Ads,Desktop,Edge,/,1536,14,0,0
+1599,2025-02-09,Germany,Organic Search,Desktop,Chrome,/about,95,9,0,0
+1600,2025-01-25,Netherlands,Paid Ads,Mobile,Opera,/contact,329,5,0,0
+1601,2025-09-18,Brazil,Direct,Mobile,Firefox,/pricing,1065,12,0,0
+1602,2025-08-14,Canada,Direct,Mobile,Chrome,/home,345,13,1,0
+1603,2025-05-04,Canada,Paid Ads,Desktop,Opera,/,60,10,1,0
+1604,2025-02-07,Turkey,Organic Search,Desktop,Opera,/products,1112,14,0,0
+1605,2025-11-24,India,Social Media,Mobile,Edge,/login,1731,8,0,0
+1606,2025-09-08,Saudi Arabia,Direct,Desktop,Chrome,/blog,183,8,1,0
+1607,2025-06-25,Italy,Direct,Mobile,Firefox,/blog,1651,4,0,0
+1608,2025-03-31,Mexico,Email,Desktop,Firefox,/about,510,11,0,1
+1609,2025-02-06,Australia,Social Media,Desktop,Chrome,/pricing,1608,10,1,0
+1610,2025-11-12,Germany,Paid Ads,Mobile,Chrome,/products,85,9,0,0
+1611,2025-06-25,India,Organic Search,Mobile,Safari,/about,325,9,0,0
+1612,2025-10-11,USA,Email,Desktop,Edge,/contact,1406,5,0,0
+1613,2025-03-22,Mexico,Paid Ads,Desktop,Chrome,/contact,1114,6,0,0
+1614,2025-04-24,UAE,Referral,Mobile,Chrome,/about,1673,5,0,0
+1615,2025-02-09,Turkey,Direct,Desktop,Safari,/home,1728,3,0,1
+1616,2025-10-28,Saudi Arabia,Referral,Mobile,Safari,/blog,1788,11,1,0
+1617,2025-08-12,China,Direct,Tablet,Opera,/products,706,8,0,0
+1618,2025-11-14,Italy,Direct,Desktop,Firefox,/pricing,1019,9,0,0
+1619,2025-12-15,Brazil,Referral,Tablet,Edge,/login,741,4,0,0
+1620,2025-04-25,Turkey,Referral,Desktop,Opera,/,1104,9,1,0
+1621,2025-07-05,Japan,Paid Ads,Mobile,Chrome,/pricing,978,9,1,0
+1622,2025-11-19,UK,Email,Mobile,Safari,/pricing,863,7,1,0
+1623,2025-02-25,France,Email,Tablet,Firefox,/products,675,8,0,0
+1624,2025-02-09,India,Referral,Desktop,Opera,/blog,1790,3,1,0
+1625,2025-12-20,Pakistan,Paid Ads,Mobile,Firefox,/products,661,5,0,0
+1626,2025-02-09,USA,Email,Tablet,Safari,/,1104,3,0,0
+1627,2025-12-13,Pakistan,Paid Ads,Mobile,Opera,/about,55,7,0,0
+1628,2025-08-25,Mexico,Paid Ads,Mobile,Opera,/products,1080,6,0,0
+1629,2025-10-16,Italy,Direct,Desktop,Firefox,/home,1624,11,1,0
+1630,2025-09-19,UAE,Email,Mobile,Safari,/pricing,1455,3,0,0
+1631,2025-08-04,UAE,Email,Desktop,Chrome,/blog,158,9,0,0
+1632,2025-05-27,Australia,Direct,Desktop,Opera,/login,919,12,0,0
+1633,2025-12-02,Germany,Referral,Mobile,Chrome,/contact,1163,1,0,0
+1634,2025-06-17,Spain,Direct,Desktop,Safari,/,465,10,0,0
+1635,2025-04-02,Pakistan,Email,Tablet,Opera,/contact,1672,3,0,0
+1636,2025-12-19,Germany,Email,Tablet,Opera,/pricing,886,11,0,0
+1637,2025-02-28,Turkey,Referral,Mobile,Chrome,/products,1664,10,0,0
+1638,2025-02-28,Indonesia,Direct,Mobile,Edge,/contact,975,11,1,0
+1639,2025-10-31,Japan,Organic Search,Mobile,Chrome,/home,878,7,1,0
+1640,2025-06-18,Australia,Organic Search,Desktop,Chrome,/products,1538,3,1,0
+1641,2025-09-26,China,Referral,Mobile,Edge,/pricing,938,14,1,0
+1642,2025-12-29,USA,Direct,Desktop,Safari,/contact,1033,3,0,0
+1643,2025-02-14,China,Direct,Desktop,Safari,/login,1010,2,1,0
+1644,2025-12-11,Spain,Paid Ads,Mobile,Opera,/about,783,9,0,1
+1645,2025-06-30,Germany,Email,Mobile,Firefox,/,253,11,1,0
+1646,2025-06-19,China,Social Media,Mobile,Firefox,/contact,483,4,0,0
+1647,2025-12-22,Canada,Referral,Desktop,Opera,/login,391,10,1,0
+1648,2025-07-10,Japan,Social Media,Mobile,Firefox,/about,1136,13,0,0
+1649,2025-06-04,UK,Social Media,Desktop,Chrome,/about,498,6,0,0
+1650,2025-07-07,UK,Referral,Mobile,Chrome,/contact,1070,2,0,0
+1651,2025-01-07,Spain,Direct,Mobile,Edge,/blog,1687,9,0,0
+1652,2025-05-13,Turkey,Referral,Mobile,Edge,/contact,1582,7,1,0
+1653,2025-08-23,Italy,Social Media,Desktop,Opera,/pricing,1553,10,0,0
+1654,2025-02-14,Germany,Email,Desktop,Opera,/about,1776,5,0,0
+1655,2025-11-10,China,Email,Desktop,Opera,/,1366,7,1,0
+1656,2025-09-06,Japan,Email,Mobile,Chrome,/pricing,406,14,0,0
+1657,2025-01-31,France,Direct,Tablet,Firefox,/home,305,4,0,0
+1658,2025-01-23,Mexico,Organic Search,Desktop,Opera,/products,116,13,0,0
+1659,2025-06-09,South Africa,Referral,Mobile,Opera,/contact,869,10,0,0
+1660,2025-12-29,Australia,Email,Mobile,Chrome,/blog,963,13,1,0
+1661,2025-06-07,Turkey,Referral,Mobile,Chrome,/,539,7,1,0
+1662,2025-02-08,Japan,Email,Mobile,Chrome,/blog,1116,2,1,1
+1663,2025-03-23,Saudi Arabia,Direct,Mobile,Firefox,/blog,943,7,0,0
+1664,2025-12-22,Italy,Organic Search,Desktop,Opera,/blog,297,4,0,0
+1665,2025-09-15,Pakistan,Organic Search,Desktop,Safari,/contact,715,4,0,0
+1666,2025-07-25,Brazil,Email,Desktop,Safari,/,1494,1,1,0
+1667,2025-03-18,Brazil,Direct,Tablet,Opera,/,224,12,0,0
+1668,2025-01-12,Spain,Paid Ads,Tablet,Opera,/about,1314,3,0,0
+1669,2025-10-22,Indonesia,Referral,Mobile,Opera,/blog,741,5,0,0
+1670,2025-08-12,Australia,Referral,Desktop,Opera,/about,1492,5,0,0
+1671,2025-01-13,Spain,Social Media,Mobile,Firefox,/about,353,2,1,0
+1672,2025-02-15,China,Direct,Desktop,Safari,/products,203,4,0,0
+1673,2025-06-04,China,Social Media,Desktop,Edge,/contact,167,1,0,0
+1674,2025-04-23,Germany,Email,Mobile,Safari,/contact,474,9,0,0
+1675,2025-08-21,Turkey,Social Media,Tablet,Safari,/pricing,113,1,1,0
+1676,2025-01-17,Australia,Organic Search,Tablet,Chrome,/login,43,6,0,0
+1677,2025-12-26,Australia,Referral,Mobile,Opera,/about,1135,7,0,1
+1678,2025-08-11,USA,Social Media,Desktop,Opera,/contact,648,3,0,0
+1679,2025-12-20,Saudi Arabia,Organic Search,Desktop,Opera,/blog,1759,12,0,0
+1680,2025-07-07,Turkey,Direct,Desktop,Chrome,/login,334,1,1,0
+1681,2025-12-10,Mexico,Social Media,Mobile,Firefox,/home,700,7,0,0
+1682,2025-12-31,India,Email,Mobile,Firefox,/blog,601,3,1,0
+1683,2025-06-12,Turkey,Email,Mobile,Edge,/,150,13,0,0
+1684,2025-11-22,Japan,Email,Mobile,Firefox,/contact,483,10,1,0
+1685,2025-03-15,Netherlands,Referral,Desktop,Firefox,/login,1064,12,1,0
+1686,2025-08-21,South Africa,Social Media,Desktop,Opera,/contact,893,12,0,0
+1687,2025-08-12,Saudi Arabia,Direct,Mobile,Safari,/pricing,72,6,0,0
+1688,2025-11-15,South Africa,Social Media,Desktop,Firefox,/about,1593,13,0,0
+1689,2025-03-01,France,Referral,Mobile,Firefox,/home,1120,12,0,1
+1690,2025-12-01,Mexico,Organic Search,Mobile,Chrome,/contact,313,14,0,0
+1691,2025-08-10,Mexico,Referral,Mobile,Edge,/pricing,1094,6,0,1
+1692,2025-02-06,Japan,Email,Desktop,Chrome,/pricing,405,14,1,0
+1693,2025-10-05,Australia,Organic Search,Desktop,Opera,/home,343,12,0,0
+1694,2025-07-15,USA,Email,Mobile,Safari,/blog,795,4,1,0
+1695,2025-12-18,South Africa,Paid Ads,Mobile,Edge,/blog,420,12,0,0
+1696,2025-08-30,India,Referral,Mobile,Chrome,/blog,293,11,0,0
+1697,2025-11-20,UK,Referral,Mobile,Firefox,/products,475,6,1,0
+1698,2025-08-07,Turkey,Direct,Mobile,Firefox,/about,89,11,0,0
+1699,2025-07-11,Netherlands,Social Media,Mobile,Edge,/login,1725,10,0,0
+1700,2025-01-17,France,Organic Search,Desktop,Firefox,/about,793,4,1,0
+1701,2025-01-12,India,Organic Search,Mobile,Chrome,/blog,1110,13,1,0
+1702,2025-07-12,India,Direct,Desktop,Chrome,/home,742,8,0,0
+1703,2025-01-22,South Africa,Direct,Desktop,Firefox,/products,1573,9,0,0
+1704,2025-04-30,Netherlands,Social Media,Mobile,Firefox,/about,1394,2,0,0
+1705,2025-07-29,Brazil,Email,Mobile,Opera,/blog,86,7,0,0
+1706,2025-11-02,Netherlands,Social Media,Tablet,Safari,/products,518,9,0,0
+1707,2025-09-27,Spain,Referral,Mobile,Edge,/login,1197,9,0,0
+1708,2025-07-11,Canada,Email,Tablet,Chrome,/home,1042,12,0,0
+1709,2025-06-24,India,Paid Ads,Tablet,Edge,/blog,1208,5,1,0
+1710,2025-10-12,China,Social Media,Mobile,Opera,/login,471,1,1,1
+1711,2025-07-23,Italy,Direct,Mobile,Chrome,/,1340,6,0,0
+1712,2025-06-13,Spain,Email,Mobile,Opera,/login,1621,8,0,1
+1713,2025-09-08,Australia,Social Media,Tablet,Opera,/contact,254,1,0,0
+1714,2025-08-15,Italy,Organic Search,Mobile,Firefox,/home,131,2,0,1
+1715,2025-01-07,USA,Paid Ads,Desktop,Edge,/login,194,13,0,0
+1716,2025-01-29,Saudi Arabia,Referral,Mobile,Edge,/login,41,13,0,0
+1717,2025-02-02,UAE,Organic Search,Desktop,Firefox,/pricing,1007,1,0,0
+1718,2025-05-14,Australia,Organic Search,Mobile,Edge,/pricing,771,5,1,0
+1719,2025-03-20,Spain,Paid Ads,Desktop,Firefox,/login,578,2,1,0
+1720,2025-02-27,South Africa,Referral,Mobile,Chrome,/login,319,10,1,1
+1721,2025-01-26,Australia,Direct,Mobile,Opera,/home,1405,10,0,1
+1722,2025-08-14,Italy,Email,Desktop,Opera,/pricing,1689,14,0,0
+1723,2025-10-12,India,Referral,Desktop,Edge,/about,839,4,0,0
+1724,2025-01-04,Japan,Social Media,Desktop,Safari,/home,1629,1,1,1
+1725,2025-04-09,UAE,Organic Search,Mobile,Opera,/,1001,7,0,0
+1726,2025-02-08,Germany,Social Media,Desktop,Firefox,/home,1089,8,0,0
+1727,2025-09-28,Canada,Direct,Desktop,Safari,/blog,800,5,0,0
+1728,2025-10-12,UAE,Social Media,Desktop,Safari,/blog,1306,2,0,0
+1729,2025-06-06,Italy,Referral,Mobile,Opera,/products,473,8,0,0
+1730,2025-03-16,Australia,Social Media,Desktop,Opera,/pricing,687,1,0,0
+1731,2025-10-15,France,Direct,Mobile,Opera,/login,1489,7,0,0
+1732,2025-05-10,South Africa,Direct,Desktop,Firefox,/contact,988,1,0,0
+1733,2025-06-24,Indonesia,Direct,Mobile,Safari,/pricing,679,12,0,0
+1734,2025-03-25,India,Referral,Desktop,Edge,/about,1282,6,0,0
+1735,2025-01-22,South Africa,Direct,Mobile,Firefox,/home,707,13,1,0
+1736,2025-01-27,India,Organic Search,Desktop,Chrome,/contact,1003,6,0,0
+1737,2025-07-14,Germany,Direct,Mobile,Opera,/contact,87,5,0,0
+1738,2025-12-03,Italy,Social Media,Tablet,Safari,/login,543,2,0,0
+1739,2025-08-24,Indonesia,Email,Tablet,Firefox,/login,117,2,1,0
+1740,2025-04-02,UK,Social Media,Mobile,Chrome,/pricing,1306,9,0,0
+1741,2025-01-21,Saudi Arabia,Email,Mobile,Firefox,/contact,773,5,0,1
+1742,2025-10-30,Australia,Social Media,Mobile,Firefox,/contact,24,5,0,0
+1743,2025-12-23,Australia,Referral,Mobile,Edge,/blog,379,7,0,0
+1744,2025-03-25,UAE,Social Media,Desktop,Edge,/,1337,6,0,0
+1745,2025-09-19,UK,Referral,Mobile,Firefox,/login,1705,2,0,0
+1746,2025-05-27,UK,Referral,Mobile,Chrome,/home,214,11,1,0
+1747,2025-09-14,China,Direct,Desktop,Safari,/pricing,1146,1,1,0
+1748,2025-02-27,Spain,Organic Search,Desktop,Safari,/login,1713,5,1,0
+1749,2025-01-15,Brazil,Email,Desktop,Opera,/blog,874,4,0,0
+1750,2025-06-11,China,Direct,Mobile,Opera,/about,1286,12,1,0
+1751,2025-06-12,Germany,Direct,Desktop,Safari,/login,450,3,0,0
+1752,2025-11-16,Turkey,Referral,Desktop,Firefox,/about,1219,2,0,0
+1753,2025-10-08,USA,Referral,Desktop,Firefox,/products,868,10,1,0
+1754,2025-10-07,Australia,Email,Mobile,Edge,/contact,236,2,0,0
+1755,2025-01-12,Pakistan,Social Media,Mobile,Edge,/contact,537,14,0,0
+1756,2025-10-01,Saudi Arabia,Social Media,Desktop,Opera,/pricing,1701,4,0,0
+1757,2025-09-28,Mexico,Direct,Desktop,Safari,/,363,2,0,0
+1758,2025-07-27,South Africa,Paid Ads,Desktop,Firefox,/,632,4,1,0
+1759,2025-01-27,Italy,Paid Ads,Tablet,Safari,/pricing,1034,3,0,0
+1760,2025-03-13,Japan,Social Media,Mobile,Chrome,/pricing,1586,9,0,0
+1761,2025-03-01,France,Paid Ads,Mobile,Safari,/blog,1593,7,0,0
+1762,2025-05-25,Brazil,Social Media,Desktop,Chrome,/about,936,14,1,0
+1763,2025-04-03,Germany,Referral,Mobile,Edge,/pricing,1453,13,0,0
+1764,2025-11-05,France,Direct,Mobile,Edge,/about,1653,11,0,0
+1765,2025-01-08,Brazil,Organic Search,Desktop,Opera,/login,1194,12,1,0
+1766,2025-03-20,Australia,Direct,Desktop,Safari,/login,170,3,0,0
+1767,2025-01-27,Brazil,Social Media,Mobile,Safari,/products,880,13,0,0
+1768,2025-06-23,China,Social Media,Mobile,Chrome,/about,1161,14,1,0
+1769,2025-02-19,UK,Direct,Mobile,Edge,/blog,1755,8,0,0
+1770,2025-07-18,China,Email,Mobile,Chrome,/login,1184,9,1,0
+1771,2025-12-15,UAE,Social Media,Mobile,Edge,/contact,453,13,0,0
+1772,2025-06-30,France,Paid Ads,Desktop,Chrome,/contact,1504,7,1,0
+1773,2025-01-24,Canada,Paid Ads,Mobile,Edge,/login,472,6,1,1
+1774,2025-11-12,Italy,Social Media,Mobile,Chrome,/login,1763,4,0,0
+1775,2025-02-15,Spain,Social Media,Desktop,Edge,/login,1063,5,0,0
+1776,2025-01-15,Spain,Email,Mobile,Chrome,/about,482,8,1,0
+1777,2025-06-02,Brazil,Paid Ads,Desktop,Safari,/contact,566,3,0,0
+1778,2025-08-10,Germany,Social Media,Desktop,Opera,/contact,89,2,0,0
+1779,2025-07-25,Japan,Social Media,Mobile,Chrome,/home,1072,3,0,0
+1780,2025-09-30,UK,Email,Mobile,Opera,/login,249,12,1,0
+1781,2025-08-24,Indonesia,Email,Mobile,Safari,/products,566,7,1,1
+1782,2025-12-06,USA,Direct,Desktop,Safari,/login,599,8,0,0
+1783,2025-08-16,Pakistan,Email,Mobile,Edge,/blog,1370,1,0,0
+1784,2025-01-09,Saudi Arabia,Organic Search,Mobile,Opera,/blog,1313,13,1,0
+1785,2025-06-15,Canada,Paid Ads,Mobile,Firefox,/contact,1149,7,1,0
+1786,2025-11-15,Mexico,Direct,Tablet,Edge,/login,278,9,0,0
+1787,2025-08-02,Mexico,Organic Search,Mobile,Opera,/,344,12,1,1
+1788,2025-04-27,Canada,Social Media,Desktop,Chrome,/blog,321,13,1,0
+1789,2025-12-10,Canada,Social Media,Mobile,Chrome,/login,1086,14,0,0
+1790,2025-03-13,Saudi Arabia,Direct,Desktop,Safari,/products,1101,14,1,1
+1791,2025-03-05,Pakistan,Email,Desktop,Firefox,/pricing,703,3,0,0
+1792,2025-07-24,Netherlands,Social Media,Mobile,Chrome,/login,43,3,0,0
+1793,2025-07-28,Saudi Arabia,Referral,Tablet,Opera,/products,395,8,0,0
+1794,2025-03-13,South Africa,Direct,Desktop,Opera,/contact,258,4,1,0
+1795,2025-10-04,Spain,Organic Search,Mobile,Chrome,/contact,1144,14,1,0
+1796,2025-10-01,Mexico,Direct,Desktop,Opera,/home,1127,8,0,0
+1797,2025-11-16,Mexico,Paid Ads,Mobile,Opera,/about,1443,5,0,1
+1798,2025-12-04,South Africa,Email,Mobile,Safari,/blog,1212,14,0,0
+1799,2025-04-05,Germany,Email,Mobile,Firefox,/about,1080,3,1,0
+1800,2025-06-15,USA,Direct,Desktop,Safari,/login,803,4,1,0
+1801,2025-02-01,South Africa,Social Media,Mobile,Firefox,/about,861,14,0,1
+1802,2025-01-11,USA,Social Media,Tablet,Opera,/blog,883,4,0,0
+1803,2025-10-28,Spain,Referral,Mobile,Firefox,/blog,1637,8,0,0
+1804,2025-08-05,Mexico,Referral,Mobile,Opera,/login,385,6,0,0
+1805,2025-10-16,Mexico,Email,Tablet,Opera,/contact,733,7,0,0
+1806,2025-04-12,Brazil,Referral,Desktop,Safari,/blog,1620,9,1,0
+1807,2025-09-24,Australia,Organic Search,Mobile,Safari,/,211,6,0,0
+1808,2025-08-02,Japan,Referral,Mobile,Edge,/,454,3,0,1
+1809,2025-06-28,Japan,Organic Search,Desktop,Chrome,/pricing,306,13,0,0
+1810,2025-03-29,France,Referral,Mobile,Edge,/blog,1341,3,0,0
+1811,2025-02-10,USA,Email,Desktop,Edge,/home,1756,11,0,0
+1812,2025-03-17,Saudi Arabia,Email,Mobile,Firefox,/pricing,502,3,0,0
+1813,2025-02-15,UK,Organic Search,Mobile,Opera,/contact,347,12,0,1
+1814,2025-06-09,Spain,Direct,Desktop,Opera,/blog,932,10,1,0
+1815,2025-03-21,Japan,Email,Mobile,Opera,/,1679,2,0,0
+1816,2025-11-06,Germany,Direct,Desktop,Chrome,/home,1099,1,1,0
+1817,2025-03-27,France,Social Media,Mobile,Firefox,/login,801,11,0,0
+1818,2025-04-02,Australia,Organic Search,Desktop,Firefox,/pricing,1455,10,0,1
+1819,2025-05-28,Indonesia,Email,Mobile,Opera,/home,1573,1,0,0
+1820,2025-06-10,Canada,Paid Ads,Desktop,Edge,/blog,1662,4,1,0
+1821,2025-07-21,Italy,Social Media,Mobile,Chrome,/products,1526,3,0,0
+1822,2025-08-30,Indonesia,Direct,Mobile,Edge,/home,971,5,0,0
+1823,2025-12-19,Indonesia,Email,Desktop,Safari,/home,326,12,1,0
+1824,2025-01-02,Spain,Organic Search,Mobile,Firefox,/contact,951,9,0,0
+1825,2025-08-13,Pakistan,Referral,Mobile,Firefox,/,635,12,1,0
+1826,2025-10-16,Turkey,Paid Ads,Mobile,Edge,/login,84,13,0,0
+1827,2025-08-21,Pakistan,Direct,Desktop,Chrome,/blog,1747,8,0,0
+1828,2025-03-18,China,Social Media,Mobile,Firefox,/home,948,12,0,0
+1829,2025-04-26,France,Organic Search,Desktop,Edge,/blog,68,9,1,0
+1830,2025-06-03,Netherlands,Paid Ads,Desktop,Chrome,/,395,13,0,0
+1831,2025-04-13,Germany,Organic Search,Mobile,Edge,/contact,24,5,0,0
+1832,2025-07-13,Brazil,Email,Desktop,Chrome,/blog,1264,8,0,0
+1833,2025-06-15,Mexico,Referral,Desktop,Opera,/about,1650,4,0,0
+1834,2025-12-25,Turkey,Social Media,Desktop,Chrome,/,1710,5,1,0
+1835,2025-03-31,South Africa,Organic Search,Desktop,Safari,/,208,12,0,0
+1836,2025-06-23,Mexico,Direct,Desktop,Opera,/login,1387,3,0,0
+1837,2025-05-02,Spain,Email,Tablet,Edge,/pricing,44,5,0,0
+1838,2025-05-23,China,Email,Desktop,Opera,/contact,171,12,0,0
+1839,2025-04-16,Japan,Social Media,Mobile,Opera,/contact,1790,3,0,0
+1840,2025-11-01,UAE,Email,Desktop,Edge,/login,991,5,0,0
+1841,2025-12-26,Indonesia,Direct,Tablet,Edge,/about,808,11,1,0
+1842,2025-11-13,UAE,Organic Search,Desktop,Safari,/blog,904,14,1,0
+1843,2025-05-03,Pakistan,Social Media,Tablet,Edge,/products,480,5,0,0
+1844,2025-01-09,Netherlands,Email,Mobile,Firefox,/about,540,6,1,0
+1845,2025-09-19,Netherlands,Email,Desktop,Firefox,/pricing,801,9,0,0
+1846,2025-03-14,Germany,Direct,Mobile,Safari,/contact,861,1,0,0
+1847,2025-12-25,Turkey,Referral,Mobile,Chrome,/,1456,12,0,0
+1848,2025-08-11,Canada,Referral,Desktop,Chrome,/contact,357,10,0,0
+1849,2025-02-10,France,Email,Mobile,Firefox,/about,703,14,0,0
+1850,2025-07-23,USA,Organic Search,Tablet,Edge,/products,944,6,1,0
+1851,2025-09-21,Canada,Social Media,Mobile,Safari,/home,922,1,1,0
+1852,2025-11-24,Turkey,Email,Desktop,Chrome,/home,156,6,0,0
+1853,2025-06-27,China,Paid Ads,Mobile,Chrome,/login,1407,2,0,0
+1854,2025-12-14,Germany,Social Media,Mobile,Opera,/contact,1721,8,1,0
+1855,2025-11-14,UK,Referral,Mobile,Firefox,/contact,684,11,0,0
+1856,2025-03-25,Brazil,Email,Mobile,Edge,/pricing,1449,3,0,1
+1857,2025-11-14,Germany,Direct,Desktop,Safari,/contact,696,10,0,0
+1858,2025-04-21,Canada,Paid Ads,Tablet,Chrome,/products,1527,14,0,0
+1859,2025-09-08,UK,Email,Desktop,Opera,/contact,1592,6,0,0
+1860,2025-01-07,Saudi Arabia,Organic Search,Desktop,Firefox,/blog,1289,6,1,0
+1861,2025-03-25,Mexico,Paid Ads,Mobile,Firefox,/about,969,4,1,0
+1862,2025-07-27,Spain,Email,Mobile,Safari,/login,695,5,0,1
+1863,2025-11-10,France,Organic Search,Desktop,Chrome,/products,1136,2,1,0
+1864,2025-01-22,Japan,Paid Ads,Mobile,Safari,/pricing,130,10,0,0
+1865,2025-01-03,India,Organic Search,Mobile,Safari,/blog,428,10,0,0
+1866,2025-05-07,France,Organic Search,Mobile,Opera,/blog,359,8,1,0
+1867,2025-10-24,Brazil,Paid Ads,Mobile,Firefox,/about,1690,10,0,0
+1868,2025-07-07,China,Paid Ads,Mobile,Edge,/home,51,7,0,0
+1869,2025-12-28,Pakistan,Organic Search,Desktop,Firefox,/products,1400,10,0,0
+1870,2025-01-14,Pakistan,Referral,Desktop,Firefox,/about,38,6,1,0
+1871,2025-01-12,India,Paid Ads,Tablet,Opera,/blog,975,7,1,0
+1872,2025-03-28,Mexico,Email,Desktop,Edge,/pricing,794,12,1,0
+1873,2025-01-12,Canada,Social Media,Mobile,Chrome,/about,23,1,0,0
+1874,2025-01-25,Indonesia,Direct,Mobile,Edge,/home,929,14,1,1
+1875,2025-10-28,Turkey,Organic Search,Mobile,Chrome,/blog,827,14,0,1
+1876,2025-08-31,Germany,Organic Search,Desktop,Edge,/about,834,5,1,0
+1877,2025-05-02,Italy,Direct,Mobile,Safari,/products,1518,7,0,0
+1878,2025-05-27,India,Referral,Mobile,Edge,/home,1222,1,0,0
+1879,2025-02-24,Indonesia,Direct,Tablet,Opera,/products,881,2,0,1
+1880,2025-08-26,Germany,Paid Ads,Desktop,Chrome,/products,304,9,1,0
+1881,2025-12-22,Turkey,Direct,Mobile,Firefox,/products,1216,12,1,0
+1882,2025-06-22,Japan,Organic Search,Mobile,Opera,/about,873,3,0,0
+1883,2025-08-09,France,Direct,Mobile,Chrome,/home,557,6,0,0
+1884,2025-04-29,Spain,Social Media,Mobile,Chrome,/about,1070,7,1,0
+1885,2025-11-05,South Africa,Email,Desktop,Firefox,/about,1017,9,0,0
+1886,2025-07-02,France,Paid Ads,Desktop,Safari,/about,1047,5,1,0
+1887,2025-10-15,UAE,Direct,Mobile,Opera,/blog,644,4,1,0
+1888,2025-11-03,Indonesia,Organic Search,Mobile,Firefox,/contact,604,11,0,0
+1889,2025-10-27,Netherlands,Email,Mobile,Firefox,/,1192,12,0,0
+1890,2025-03-23,UAE,Paid Ads,Desktop,Safari,/blog,1527,2,0,0
+1891,2025-07-30,Turkey,Organic Search,Desktop,Opera,/home,1362,3,0,0
+1892,2025-05-30,Germany,Referral,Desktop,Firefox,/,623,5,0,0
+1893,2025-02-06,Pakistan,Social Media,Desktop,Safari,/,1116,11,1,1
+1894,2025-12-18,UAE,Referral,Mobile,Opera,/,1589,13,0,0
+1895,2025-11-08,China,Social Media,Mobile,Edge,/contact,1613,2,0,0
+1896,2025-12-27,Saudi Arabia,Direct,Desktop,Chrome,/about,1593,13,0,0
+1897,2025-02-28,UAE,Paid Ads,Desktop,Safari,/login,1602,4,0,0
+1898,2025-05-11,Brazil,Direct,Desktop,Chrome,/pricing,1620,1,1,0
+1899,2025-07-21,Brazil,Social Media,Mobile,Edge,/home,1055,4,0,0
+1900,2025-08-31,UK,Social Media,Desktop,Firefox,/login,1165,7,0,0
+1901,2025-02-04,Japan,Social Media,Tablet,Firefox,/contact,474,14,1,0
+1902,2025-04-03,Saudi Arabia,Email,Mobile,Opera,/contact,1489,12,0,0
+1903,2025-07-26,Australia,Organic Search,Tablet,Safari,/pricing,1335,3,0,0
+1904,2025-12-19,Brazil,Paid Ads,Mobile,Safari,/,964,10,0,0
+1905,2025-11-28,Saudi Arabia,Direct,Mobile,Opera,/about,939,8,1,1
+1906,2025-11-01,Germany,Direct,Mobile,Chrome,/pricing,1300,6,0,0
+1907,2025-12-16,UAE,Referral,Desktop,Firefox,/login,808,6,1,0
+1908,2025-08-01,Mexico,Social Media,Mobile,Firefox,/login,404,14,1,0
+1909,2025-06-08,Turkey,Social Media,Tablet,Safari,/pricing,1153,1,0,0
+1910,2025-01-24,France,Social Media,Desktop,Safari,/contact,255,5,0,0
+1911,2025-10-20,India,Direct,Mobile,Opera,/home,577,3,0,1
+1912,2025-01-04,Saudi Arabia,Referral,Desktop,Edge,/products,47,10,0,0
+1913,2025-08-08,USA,Organic Search,Mobile,Chrome,/about,254,1,1,0
+1914,2025-12-30,Indonesia,Email,Tablet,Edge,/login,30,8,0,0
+1915,2025-01-20,Germany,Paid Ads,Mobile,Edge,/login,1143,7,0,0
+1916,2025-06-01,Saudi Arabia,Organic Search,Mobile,Safari,/pricing,1639,7,1,0
+1917,2025-02-19,Japan,Direct,Mobile,Safari,/about,403,12,0,1
+1918,2025-06-26,UK,Email,Mobile,Safari,/pricing,1443,10,0,0
+1919,2025-04-06,China,Email,Tablet,Edge,/,996,14,0,0
+1920,2025-04-15,Turkey,Email,Mobile,Chrome,/about,1681,10,0,0
+1921,2025-09-07,Pakistan,Social Media,Mobile,Safari,/,1776,10,1,1
+1922,2025-04-27,India,Paid Ads,Mobile,Firefox,/login,17,4,0,0
+1923,2025-12-20,USA,Direct,Mobile,Chrome,/contact,1477,13,0,0
+1924,2025-08-16,Turkey,Direct,Mobile,Firefox,/,337,11,0,0
+1925,2025-03-07,Pakistan,Email,Mobile,Chrome,/about,299,6,0,0
+1926,2025-12-01,Saudi Arabia,Direct,Mobile,Safari,/blog,1796,13,0,0
+1927,2025-09-19,UK,Paid Ads,Desktop,Opera,/about,520,9,0,0
+1928,2025-10-22,Japan,Paid Ads,Mobile,Safari,/pricing,921,14,1,0
+1929,2025-08-31,Japan,Referral,Mobile,Edge,/,370,3,1,0
+1930,2025-07-05,Spain,Referral,Desktop,Edge,/home,1632,9,0,0
+1931,2025-09-03,India,Organic Search,Desktop,Chrome,/blog,725,4,0,0
+1932,2025-05-05,India,Paid Ads,Mobile,Edge,/contact,228,5,0,0
+1933,2025-09-25,Mexico,Paid Ads,Desktop,Safari,/products,415,7,0,0
+1934,2025-05-11,Mexico,Paid Ads,Desktop,Firefox,/pricing,762,6,0,0
+1935,2025-08-25,Canada,Referral,Mobile,Safari,/pricing,932,10,0,0
+1936,2025-01-18,Saudi Arabia,Email,Tablet,Chrome,/home,841,8,0,0
+1937,2025-02-09,Saudi Arabia,Email,Mobile,Edge,/products,1654,8,0,1
+1938,2025-01-21,Italy,Direct,Tablet,Firefox,/login,803,8,1,0
+1939,2025-08-13,UAE,Email,Mobile,Opera,/products,1253,3,0,0
+1940,2025-12-21,Turkey,Social Media,Desktop,Firefox,/contact,604,14,1,0
+1941,2025-10-09,Spain,Referral,Mobile,Firefox,/contact,116,10,0,0
+1942,2025-01-08,USA,Paid Ads,Mobile,Safari,/blog,590,6,0,0
+1943,2025-04-10,Saudi Arabia,Email,Mobile,Opera,/login,618,7,1,0
+1944,2025-08-28,Canada,Referral,Desktop,Chrome,/pricing,1757,9,0,0
+1945,2025-03-28,Turkey,Email,Mobile,Chrome,/,1319,10,1,0
+1946,2025-10-25,Germany,Organic Search,Desktop,Firefox,/contact,1782,10,0,0
+1947,2025-01-14,Germany,Paid Ads,Mobile,Firefox,/home,17,14,0,0
+1948,2025-11-30,South Africa,Organic Search,Desktop,Edge,/home,815,12,0,0
+1949,2025-01-02,Saudi Arabia,Paid Ads,Mobile,Opera,/home,198,4,0,1
+1950,2025-10-20,Indonesia,Referral,Mobile,Firefox,/about,90,5,1,0
+1951,2025-11-21,Australia,Direct,Desktop,Edge,/login,117,8,1,0
+1952,2025-02-10,Mexico,Email,Mobile,Opera,/login,1354,1,1,0
+1953,2025-11-14,Canada,Email,Mobile,Chrome,/contact,1612,12,0,1
+1954,2025-11-12,China,Social Media,Mobile,Edge,/contact,695,6,0,0
+1955,2025-04-21,Netherlands,Organic Search,Mobile,Opera,/home,355,4,0,0
+1956,2025-01-14,USA,Email,Mobile,Edge,/login,337,5,0,0
+1957,2025-08-19,Netherlands,Referral,Mobile,Firefox,/login,564,11,1,0
+1958,2025-03-25,UK,Direct,Desktop,Safari,/contact,1732,5,0,0
+1959,2025-05-10,Germany,Referral,Desktop,Chrome,/about,311,2,0,0
+1960,2025-08-19,Indonesia,Organic Search,Desktop,Firefox,/,209,8,0,0
+1961,2025-11-22,India,Social Media,Mobile,Firefox,/,902,2,1,0
+1962,2025-05-25,USA,Email,Desktop,Opera,/blog,1452,4,1,0
+1963,2025-12-11,Saudi Arabia,Referral,Desktop,Edge,/login,1072,12,0,0
+1964,2025-01-28,China,Paid Ads,Mobile,Chrome,/pricing,1765,13,0,0
+1965,2025-03-07,Indonesia,Direct,Mobile,Firefox,/,316,5,0,0
+1966,2025-06-12,USA,Referral,Mobile,Opera,/blog,1037,14,0,0
+1967,2025-08-17,France,Direct,Desktop,Chrome,/products,1666,1,1,0
+1968,2025-09-18,UAE,Email,Mobile,Edge,/pricing,1110,6,0,0
+1969,2025-06-13,India,Paid Ads,Mobile,Firefox,/login,477,2,0,0
+1970,2025-10-28,China,Social Media,Mobile,Firefox,/,188,14,0,0
+1971,2025-10-30,Spain,Social Media,Desktop,Firefox,/about,654,5,0,0
+1972,2025-10-14,UAE,Paid Ads,Mobile,Chrome,/products,1774,6,1,0
+1973,2025-01-10,Canada,Direct,Mobile,Chrome,/blog,285,11,0,0
+1974,2025-07-14,Indonesia,Email,Desktop,Chrome,/,1185,8,0,0
+1975,2025-04-28,Italy,Referral,Tablet,Chrome,/login,1197,9,1,0
+1976,2025-09-27,UAE,Paid Ads,Mobile,Opera,/,1323,13,0,0
+1977,2025-03-21,Australia,Organic Search,Desktop,Safari,/contact,1411,12,1,0
+1978,2025-04-03,Brazil,Direct,Mobile,Opera,/products,630,6,0,0
+1979,2025-09-23,Mexico,Social Media,Desktop,Firefox,/,647,5,0,0
+1980,2025-11-28,Germany,Paid Ads,Desktop,Opera,/home,1785,12,0,0
+1981,2025-12-16,Italy,Social Media,Mobile,Edge,/about,1343,4,0,0
+1982,2025-12-27,UK,Direct,Mobile,Chrome,/contact,939,2,0,0
+1983,2025-09-14,Indonesia,Social Media,Tablet,Edge,/contact,1422,2,0,0
+1984,2025-05-13,France,Paid Ads,Mobile,Edge,/,1691,7,0,0
+1985,2025-10-03,China,Direct,Desktop,Firefox,/about,1797,5,0,1
+1986,2025-09-21,Pakistan,Organic Search,Mobile,Chrome,/contact,192,7,0,0
+1987,2025-06-20,Netherlands,Paid Ads,Mobile,Edge,/pricing,1339,13,1,0
+1988,2025-01-01,Canada,Referral,Mobile,Firefox,/products,81,11,0,0
+1989,2025-11-09,South Africa,Email,Mobile,Chrome,/pricing,1252,1,0,1
+1990,2025-03-05,UAE,Paid Ads,Mobile,Safari,/blog,728,1,1,0
+1991,2025-10-11,Indonesia,Direct,Mobile,Firefox,/pricing,1206,5,0,0
+1992,2025-05-01,Indonesia,Email,Mobile,Opera,/about,1686,2,0,0
+1993,2025-04-17,South Africa,Paid Ads,Desktop,Chrome,/home,1305,8,0,0
+1994,2025-06-24,Mexico,Organic Search,Tablet,Edge,/contact,735,14,0,0
+1995,2025-07-23,UAE,Organic Search,Desktop,Edge,/about,1501,3,0,0
+1996,2025-06-14,China,Referral,Desktop,Opera,/contact,278,1,1,0
+1997,2025-11-01,USA,Social Media,Desktop,Opera,/login,1053,13,1,0
+1998,2025-04-30,Saudi Arabia,Email,Mobile,Edge,/home,587,2,0,0
+1999,2025-02-13,Italy,Direct,Mobile,Chrome,/contact,1004,10,0,0
+2000,2025-11-08,Australia,Direct,Mobile,Firefox,/pricing,824,10,0,0
