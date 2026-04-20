@@ -1,5 +1,5 @@
 """
-app.py — Web Traffic Forecasting Dashboard (Modified)
+app.py — Web Traffic Forecasting Dashboard
 Multi-section Streamlit app with 60-30-10 color rule, timeline controls,
 festival spike analysis, and ML forecasting.
 """
@@ -13,7 +13,7 @@ from datetime import date, timedelta
 
 from data_loader import (
     load_amazon, load_web_traffic, load_web_traffic_2026,
-    load_ride_bookings,
+    load_ride_bookings, load_shoppers,
     aggregate_amazon_daily, aggregate_web_daily, aggregate_rides_daily,
     compute_festival_lift, get_festivals_in_range, FESTIVAL_DATES,
 )
@@ -30,6 +30,9 @@ st.set_page_config(
 )
 
 # 60-30-10 palette
+# 60 %  — Background:   #0E1117 (Streamlit dark default)
+# 30 %  — Surface/cards: #1A1D23
+# 10 %  — Accent:        #4FC3F7 (light blue)
 ACCENT = "#4FC3F7"
 SURFACE = "#1A1D23"
 TEXT_PRIMARY = "#E0E0E0"
@@ -137,7 +140,7 @@ st.markdown(f"""
 
 
 # ========================================================================
-# Plotly layout defaults
+# Plotly layout defaults (dark, no gradient)
 # ========================================================================
 PLOTLY_LAYOUT = dict(
     template="plotly_dark",
@@ -192,19 +195,25 @@ def get_web_2026():
 def get_rides():
     return load_ride_bookings()
 
+@st.cache_data(show_spinner=False)
+def get_shoppers():
+    return load_shoppers()
+
 
 # ========================================================================
 # Sidebar — Navigation & Global controls
 # ========================================================================
 st.sidebar.markdown(f'<div class="page-title">Traffic Forecast</div>', unsafe_allow_html=True)
-st.sidebar.markdown(f'<div class="page-subtitle">Time Series Analysis Dashboard</div>', unsafe_allow_html=True)
+st.sidebar.markdown(f'<div class="page-subtitle">Web Traffic Forecasting using Time Series</div>', unsafe_allow_html=True)
 
 page = st.sidebar.radio(
     "Navigate",
     [
+        "Executive Overview",
         "E-Commerce Analysis",
         "Web Traffic Analysis",
         "Ride Bookings Analysis",
+        "Shopper Behavior",
         "Forecasting Lab",
         "Comparative Insights",
     ],
@@ -215,7 +224,7 @@ st.sidebar.markdown("---")
 
 
 # ========================================================================
-# Helper — timeline range controls
+# Helper — timeline range controls (reused per section)
 # ========================================================================
 def timeline_control(key_prefix, min_date, max_date, default_start=None, default_end=None):
     """Render a date range selector and return (start, end) as date objects."""
@@ -233,20 +242,22 @@ def timeline_control(key_prefix, min_date, max_date, default_start=None, default
     return start, end
 
 
+
 # ========================================================================
-# PAGE 1 — E-Commerce Analysis
+# PAGE 2 — E-Commerce Deep Dive
 # ========================================================================
-if page == "E-Commerce Analysis":
+elif page == "E-Commerce Analysis":
     st.markdown('<div class="page-title">E-Commerce Deep Dive</div>', unsafe_allow_html=True)
     st.markdown('<div class="page-subtitle">Amazon sales trends, category breakdown, and festival spikes</div>', unsafe_allow_html=True)
 
     amz = get_amazon()
 
-    # Sidebar filter for Category only
+    # Sidebar filters
     categories = ["All"] + sorted(amz["Category"].dropna().unique().tolist())
     sel_cat = st.sidebar.selectbox("Category", categories, key="amz_cat")
     if sel_cat != "All":
         amz = amz[amz["Category"] == sel_cat]
+
 
     amz_daily = aggregate_amazon_daily(amz)
     mn = amz_daily["date"].min().date()
@@ -283,18 +294,21 @@ if page == "E-Commerce Analysis":
             apply_layout(fig, height=380, xaxis_title="Date", yaxis_title=label)
             st.plotly_chart(fig, use_container_width=True)
 
+            # Dynamic description per tab
             if len(filtered) > 0:
                 avg_v = filtered[col_name].mean()
                 peak_v = filtered[col_name].max()
                 peak_d = filtered.loc[filtered[col_name].idxmax(), "date"].strftime("%b %d, %Y")
                 filter_ctx = f" for {sel_cat}" if sel_cat != "All" else ""
+                filter_ctx += f" / {sel_brand}" if sel_brand != "All" else ""
                 st.markdown(f'<div class="chart-desc">{label}{filter_ctx}: Average <b>{avg_v:,.0f}</b> per day, '
-                            f'peak of <b>{peak_v:,.0f}</b> on {peak_d}. '
-                            f'The white line shows a 7-day rolling mean.</div>',
+                            f'peak of <b>{peak_v:,.0f}</b> on {peak_d} across the selected {(te - ts).days}-day window. '
+                            f'The white line smooths daily noise using a 7-day rolling mean.</div>',
                             unsafe_allow_html=True)
 
     st.markdown("---")
 
+    # --- Category Breakdown ---
     c1, c2 = st.columns(2)
     with c1:
         st.markdown('<div class="section-header">Revenue by Category</div>', unsafe_allow_html=True)
@@ -306,6 +320,10 @@ if page == "E-Commerce Analysis":
         ))
         apply_layout(fig, height=360, xaxis_title="Revenue ($)", yaxis_title="")
         st.plotly_chart(fig, use_container_width=True)
+        top_cat = cat_df.iloc[-1]["Category"] if len(cat_df) > 0 else "N/A"
+        st.markdown(f'<div class="chart-desc">Top revenue-generating category: <b>{top_cat}</b>. '
+                    f'Bars show cumulative revenue across the full dataset{" (filtered by " + sel_brand + ")" if sel_brand != "All" else ""}.</div>',
+                    unsafe_allow_html=True)
 
     with c2:
         st.markdown('<div class="section-header">Top 10 Products</div>', unsafe_allow_html=True)
@@ -317,14 +335,20 @@ if page == "E-Commerce Analysis":
         ))
         apply_layout(fig, height=360, xaxis_title="Revenue ($)", yaxis_title="")
         st.plotly_chart(fig, use_container_width=True)
+        top_prod = prod_df.iloc[-1]["ProductName"] if len(prod_df) > 0 else "N/A"
+        st.markdown(f'<div class="chart-desc">Highest-revenue product: <b>{top_prod}</b>. '
+                    f'Shows the top 10 individual products by total sales value.</div>',
+                    unsafe_allow_html=True)
 
+    # --- Monthly Heatmap ---
     st.markdown('<div class="section-header">Monthly Revenue Heatmap</div>', unsafe_allow_html=True)
     amz_copy = amz.copy()
     amz_copy["year"] = amz_copy["date"].dt.year
     amz_copy["month"] = amz_copy["date"].dt.month
     heat_df = amz_copy.groupby(["year", "month"])["TotalAmount"].sum().reset_index()
     heat_pivot = heat_df.pivot(index="year", columns="month", values="TotalAmount").fillna(0)
-    month_labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    month_labels = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     fig = go.Figure(go.Heatmap(
         z=heat_pivot.values,
         x=month_labels[:heat_pivot.shape[1]],
@@ -334,7 +358,11 @@ if page == "E-Commerce Analysis":
     ))
     apply_layout(fig, height=280, xaxis_title="Month", yaxis_title="Year")
     st.plotly_chart(fig, use_container_width=True)
+    st.markdown('<div class="chart-desc">Color intensity represents total monthly revenue. '
+                'Brighter cells (Oct-Nov) typically correspond to Diwali/Navratri festival season, '
+                'the strongest retail period in India.</div>', unsafe_allow_html=True)
 
+    # --- Festival Lift ---
     st.markdown('<div class="section-header">Festival Impact</div>', unsafe_allow_html=True)
     lift_df = compute_festival_lift(amz_daily, "revenue")
     if not lift_df.empty:
@@ -346,20 +374,26 @@ if page == "E-Commerce Analysis":
         ))
         apply_layout(fig, height=340, xaxis_title="", yaxis_title="% Lift vs Baseline")
         st.plotly_chart(fig, use_container_width=True)
+        best = lift_df.iloc[0]
+        st.markdown(f'<div class="chart-desc">Strongest festival: <b>{best["festival"]}</b> with '
+                    f'<b>{best["lift_pct"]:+.1f}%</b> lift over the baseline of ${best["baseline"]:,.0f}/day. '
+                    f'Green bars = positive impact, red = negative. Lift is computed by comparing the full festival '
+                    f'week average against non-festival daily average.</div>', unsafe_allow_html=True)
 
 
 # ========================================================================
-# PAGE 2 — Web Traffic Analysis
+# PAGE 3 — Web Traffic Analysis
 # ========================================================================
 elif page == "Web Traffic Analysis":
     st.markdown('<div class="page-title">Web Traffic Analysis</div>', unsafe_allow_html=True)
-    st.markdown('<div class="page-subtitle">Visit trends, traffic sources, and domain rankings</div>', unsafe_allow_html=True)
+    st.markdown('<div class="page-subtitle">Visit trends, traffic sources, devices, and conversions</div>', unsafe_allow_html=True)
 
     web = get_web_traffic()
     web_daily = aggregate_web_daily(web)
     mn = web_daily["date"].min().date()
     mx = web_daily["date"].max().date()
 
+    # --- Timeline ---
     st.markdown('<div class="section-header">Daily Visits</div>', unsafe_allow_html=True)
     ts, te = timeline_control("web_visits", mn, mx)
     mask = (web_daily["date"].dt.date >= ts) & (web_daily["date"].dt.date <= te)
@@ -390,11 +424,19 @@ elif page == "Web Traffic Analysis":
             apply_layout(fig, height=380, xaxis_title="Date", yaxis_title=label)
             st.plotly_chart(fig, use_container_width=True)
 
+            # Dynamic description
+            if len(filtered) > 0:
+                avg_v = filtered[col].mean()
+                st.markdown(f'<div class="chart-desc">{label} over {(te - ts).days} days. '
+                            f'Average: <b>{avg_v:,.1f}</b>. The 7-day moving average (white) reveals the underlying trend '
+                            f'by smoothing out daily volatility.</div>', unsafe_allow_html=True)
+
     st.markdown("---")
 
     c1, c2 = st.columns(2)
     with c1:
         st.markdown('<div class="section-header">Traffic Source Breakdown</div>', unsafe_allow_html=True)
+        # Filter by timeline
         web_filt = web[(web["date"].dt.date >= ts) & (web["date"].dt.date <= te)]
         src = web_filt.groupby("traffic_source").size().reset_index(name="count")
         fig = go.Figure(go.Pie(
@@ -404,6 +446,10 @@ elif page == "Web Traffic Analysis":
         ))
         apply_layout(fig, height=360)
         st.plotly_chart(fig, use_container_width=True)
+        top_src = src.sort_values("count", ascending=False).iloc[0]["traffic_source"] if len(src) > 0 else "N/A"
+        st.markdown(f'<div class="chart-desc">Dominant traffic source: <b>{top_src}</b>. '
+                    f'Organic search = Google/Bing, Social = social media platforms, Direct = typed URL.</div>',
+                    unsafe_allow_html=True)
 
     with c2:
         st.markdown('<div class="section-header">Device Distribution</div>', unsafe_allow_html=True)
@@ -415,32 +461,41 @@ elif page == "Web Traffic Analysis":
         ))
         apply_layout(fig, height=360)
         st.plotly_chart(fig, use_container_width=True)
+        top_dev = dev.sort_values("count", ascending=False).iloc[0]["device_type"] if len(dev) > 0 else "N/A"
+        st.markdown(f'<div class="chart-desc">Most-used device: <b>{top_dev}</b>. '
+                    f'High mobile share indicates a need for mobile-first website design.</div>',
+                    unsafe_allow_html=True)
 
-    st.markdown('<div class="section-header">Top Domains (2026 Dataset)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">Top Domains by Monthly Visits</div>', unsafe_allow_html=True)
     web2026 = get_web_2026()
     top_n = st.slider("Show top N domains", 5, 30, 15, key="top_domains")
     top = web2026.nlargest(top_n, "monthly_visits")[["global_rank", "domain", "category", "monthly_visits", "bounce_rate_pct"]]
     st.dataframe(top, use_container_width=True, hide_index=True)
+    st.markdown(f'<div class="chart-desc">Showing the top {top_n} globally-ranked domains by monthly visits '
+                f'from the 2026 dataset. Bounce rate indicates the % of single-page sessions.</div>',
+                unsafe_allow_html=True)
 
 
 # ========================================================================
-# PAGE 3 — Ride Bookings Analysis
+# PAGE 4 — Ride Bookings Analysis
 # ========================================================================
 elif page == "Ride Bookings Analysis":
     st.markdown('<div class="page-title">Ride Bookings Analysis</div>', unsafe_allow_html=True)
-    st.markdown('<div class="page-subtitle">NCR ride demand and booking trends</div>', unsafe_allow_html=True)
+    st.markdown('<div class="page-subtitle">NCR ride demand, vehicle types, and booking trends</div>', unsafe_allow_html=True)
 
     rides = get_rides()
     rides_daily = aggregate_rides_daily(rides)
     mn = rides_daily["date"].min().date()
     mx = rides_daily["date"].max().date()
 
+    # --- KPIs ---
     rk1, rk2, rk3 = st.columns(3)
     completed = rides[rides["Booking Status"] == "Completed"]
     rk1.metric("Total Bookings", f"{len(rides):,}")
     rk2.metric("Completed Rides", f"{len(completed):,}")
     rk3.metric("Avg Booking Value", f"Rs {rides['Booking Value'].mean():,.0f}")
 
+    # --- Timeline ---
     st.markdown('<div class="section-header">Daily Bookings Trend</div>', unsafe_allow_html=True)
     ts, te = timeline_control("ride_trend", mn, mx)
     mask = (rides_daily["date"].dt.date >= ts) & (rides_daily["date"].dt.date <= te)
@@ -467,6 +522,13 @@ elif page == "Ride Bookings Analysis":
             apply_layout(fig, height=380, xaxis_title="Date", yaxis_title=label)
             st.plotly_chart(fig, use_container_width=True)
 
+            # Dynamic description
+            if len(filtered) > 0:
+                avg_v = filtered[col].mean()
+                st.markdown(f'<div class="chart-desc">{label} over {(te - ts).days} days in Delhi-NCR. '
+                            f'Average: <b>{avg_v:,.0f}</b>/day. Festival bands show periods of expected '
+                            f'higher ride demand due to celebrations and travel.</div>', unsafe_allow_html=True)
+
     st.markdown("---")
 
     c1, c2 = st.columns(2)
@@ -479,6 +541,10 @@ elif page == "Ride Bookings Analysis":
         ))
         apply_layout(fig, height=340, xaxis_title="Count", yaxis_title="")
         st.plotly_chart(fig, use_container_width=True)
+        top_vt = vt.sort_values("count", ascending=False).iloc[0]["Vehicle Type"] if len(vt) > 0 else "N/A"
+        st.markdown(f'<div class="chart-desc">Most popular vehicle type: <b>{top_vt}</b>. '
+                    f'Distribution reflects rider preferences in the Delhi-NCR region.</div>',
+                    unsafe_allow_html=True)
 
     with c2:
         st.markdown('<div class="section-header">Booking Status Distribution</div>', unsafe_allow_html=True)
@@ -490,15 +556,20 @@ elif page == "Ride Bookings Analysis":
         ))
         apply_layout(fig, height=340)
         st.plotly_chart(fig, use_container_width=True)
+        completed_pct = (bs.loc[bs["Booking Status"] == "Completed", "count"].sum() / bs["count"].sum() * 100) if len(bs) > 0 else 0
+        st.markdown(f'<div class="chart-desc">Completion rate: <b>{completed_pct:.1f}%</b>. '
+                    f'High cancellation or "No Driver Found" rates indicate supply-demand imbalance.</div>',
+                    unsafe_allow_html=True)
 
 
 # ========================================================================
-# PAGE 4 — Forecasting Lab
+# PAGE 6 — Forecasting Lab (PRIMARY FOCUS)
 # ========================================================================
 elif page == "Forecasting Lab":
     st.markdown('<div class="page-title">Forecasting Lab</div>', unsafe_allow_html=True)
     st.markdown('<div class="page-subtitle">Time-series forecasting with Prophet and ARIMA models</div>', unsafe_allow_html=True)
 
+    # --- Controls ---
     fc1, fc2, fc3 = st.columns(3)
     with fc1:
         dataset_choice = st.selectbox("Dataset", [
@@ -513,100 +584,317 @@ elif page == "Forecasting Lab":
     with fc3:
         horizon = st.slider("Forecast Horizon (days)", 7, 180, 30, key="fc_horizon")
 
+    # --- Prepare data ---
     if "Amazon" in dataset_choice:
         amz = get_amazon()
         amz_daily = aggregate_amazon_daily(amz)
-        date_col, val_col = "date", ("revenue" if "Revenue" in dataset_choice else "orders")
-        df_fc = amz_daily[["date", val_col]].rename(columns={"date": "ds", val_col: "y"})
-        value_label = "Revenue ($)" if "Revenue" in dataset_choice else "Orders"
+        if "Revenue" in dataset_choice:
+            df_fc = amz_daily[["date", "revenue"]].rename(columns={"date": "ds", "revenue": "y"})
+            value_label = "Revenue ($)"
+        else:
+            df_fc = amz_daily[["date", "orders"]].rename(columns={"date": "ds", "orders": "y"})
+            value_label = "Orders"
+        df_for_model = amz_daily
+        date_col = "date"
+        val_col = "revenue" if "Revenue" in dataset_choice else "orders"
     elif "Web Traffic" in dataset_choice:
-        web_daily = aggregate_web_daily(get_web_traffic())
-        date_col, val_col = "date", "visits"
+        web = get_web_traffic()
+        web_daily = aggregate_web_daily(web)
         df_fc = web_daily[["date", "visits"]].rename(columns={"date": "ds", "visits": "y"})
         value_label = "Visits"
-    else:
-        rides_daily = aggregate_rides_daily(get_rides())
+        df_for_model = web_daily
         date_col = "date"
-        val_col = "booking_value" if "Value" in dataset_choice else "bookings"
-        df_fc = rides_daily[["date", val_col]].rename(columns={"date": "ds", val_col: "y"})
-        value_label = "Value (Rs)" if "Value" in dataset_choice else "Bookings"
+        val_col = "visits"
+    else:
+        rides = get_rides()
+        rides_daily = aggregate_rides_daily(rides)
+        if "Value" in dataset_choice:
+            df_fc = rides_daily[["date", "booking_value"]].rename(columns={"date": "ds", "booking_value": "y"})
+            value_label = "Booking Value (Rs)"
+            val_col = "booking_value"
+        else:
+            df_fc = rides_daily[["date", "bookings"]].rename(columns={"date": "ds", "bookings": "y"})
+            value_label = "Bookings"
+            val_col = "bookings"
+        df_for_model = rides_daily
+        date_col = "date"
 
+    # --- Timeline control for historical view ---
     st.markdown('<div class="section-header">Historical Data Range</div>', unsafe_allow_html=True)
-    ts, te = timeline_control("fc_hist", df_fc["ds"].min().date(), df_fc["ds"].max().date())
-    df_fc_filtered = df_fc[(df_fc["ds"].dt.date >= ts) & (df_fc["ds"].dt.date <= te)].copy()
+    mn = df_fc["ds"].min().date()
+    mx = df_fc["ds"].max().date()
+    ts, te = timeline_control("fc_hist", mn, mx)
+    mask_hist = (df_fc["ds"].dt.date >= ts) & (df_fc["ds"].dt.date <= te)
+    df_fc_filtered = df_fc[mask_hist].copy()
 
+    st.markdown("---")
+
+    # --- Run forecast ---
     if st.button("Run Forecast", type="primary", use_container_width=True):
-        with st.spinner("Training model..."):
+        with st.spinner("Training model... this may take a moment."):
             if model_choice == "Prophet":
-                forecast, metrics, _ = forecast_prophet(df_fc.rename(columns={"ds": date_col, "y": val_col}), date_col, val_col, periods=horizon)
+                forecast, metrics, model = forecast_prophet(
+                    df_for_model, date_col, val_col, periods=horizon,
+                )
+                # Build chart
                 fig = go.Figure()
-                fig.add_trace(go.Scatter(x=df_fc_filtered["ds"], y=df_fc_filtered["y"], mode="lines", name="Actual", line=dict(color="#B0BEC5")))
-                forecast_portion = forecast[forecast["ds"] > df_fc["ds"].max()]
-                fig.add_trace(go.Scatter(x=forecast_portion["ds"], y=forecast_portion["yhat"], mode="lines", name="Forecast", line=dict(color=ACCENT, width=2.5)))
-                fig.add_trace(go.Scatter(x=forecast_portion["ds"], y=forecast_portion["yhat_upper"], mode="lines", line=dict(width=0), showlegend=False))
-                fig.add_trace(go.Scatter(x=forecast_portion["ds"], y=forecast_portion["yhat_lower"], mode="lines", fill="tonexty", fillcolor="rgba(79, 195, 247, 0.15)", line=dict(width=0), name="80% CI"))
+                # Historical
+                fig.add_trace(go.Scatter(
+                    x=df_fc_filtered["ds"], y=df_fc_filtered["y"],
+                    mode="lines", name="Actual",
+                    line=dict(color="#B0BEC5", width=1.5),
+                ))
+                # Forecast
+                last_hist_date = df_fc["ds"].max()
+                forecast_portion = forecast[forecast["ds"] > last_hist_date]
+                fig.add_trace(go.Scatter(
+                    x=forecast_portion["ds"], y=forecast_portion["yhat"],
+                    mode="lines", name="Forecast",
+                    line=dict(color=ACCENT, width=2.5),
+                ))
+                # Confidence interval
+                fig.add_trace(go.Scatter(
+                    x=forecast_portion["ds"], y=forecast_portion["yhat_upper"],
+                    mode="lines", line=dict(width=0), showlegend=False,
+                ))
+                fig.add_trace(go.Scatter(
+                    x=forecast_portion["ds"], y=forecast_portion["yhat_lower"],
+                    mode="lines", fill="tonexty",
+                    fillcolor="rgba(79, 195, 247, 0.15)",
+                    line=dict(width=0), name="Confidence Interval",
+                ))
+                # Festival bands on forecast
+                if len(forecast_portion) > 0:
+                    f_start = forecast_portion["ds"].min().date()
+                    f_end = forecast_portion["ds"].max().date()
+                    add_festival_bands(fig, ts, f_end)
+
+                apply_layout(fig, height=460, xaxis_title="Date", yaxis_title=value_label)
+                st.plotly_chart(fig, use_container_width=True)
+
+                # Live forecast description
+                if len(forecast_portion) > 0:
+                    pred_end = forecast_portion.iloc[-1]["yhat"]
+                    pred_start = forecast_portion.iloc[0]["yhat"]
+                    direction = "upward" if pred_end > pred_start else "downward" if pred_end < pred_start else "flat"
+                    fests = get_festivals_in_range(forecast_portion["ds"].min().date(), forecast_portion["ds"].max().date())
+                    fest_txt = f' Upcoming festivals in forecast window: {", ".join(set(f[0] for f in fests))}.' if fests else ''
+                    st.markdown(f'<div class="chart-desc">Prophet forecasts a <b>{direction}</b> trend over the next '
+                                f'<b>{horizon} days</b>. Predicted end value: <b>{pred_end:,.0f}</b>. '
+                                f'The shaded band is the 80% confidence interval — wider bands indicate higher uncertainty.{fest_txt}</div>',
+                                unsafe_allow_html=True)
+
             else:
-                forecast_df, _, metrics = forecast_arima(df_fc.rename(columns={"ds": date_col, "y": val_col}), date_col, val_col, periods=horizon)
+                # ARIMA
+                forecast_df, hist_df, metrics = forecast_arima(
+                    df_for_model, date_col, val_col, periods=horizon,
+                )
                 fig = go.Figure()
-                fig.add_trace(go.Scatter(x=df_fc_filtered["ds"], y=df_fc_filtered["y"], mode="lines", name="Actual", line=dict(color="#B0BEC5")))
-                fig.add_trace(go.Scatter(x=forecast_df["ds"], y=forecast_df["yhat"], mode="lines", name="ARIMA Forecast", line=dict(color=ACCENT, width=2.5)))
+                fig.add_trace(go.Scatter(
+                    x=df_fc_filtered["ds"], y=df_fc_filtered["y"],
+                    mode="lines", name="Actual",
+                    line=dict(color="#B0BEC5", width=1.5),
+                ))
+                fig.add_trace(go.Scatter(
+                    x=forecast_df["ds"], y=forecast_df["yhat"],
+                    mode="lines", name="ARIMA Forecast",
+                    line=dict(color=ACCENT, width=2.5),
+                ))
+                if len(forecast_df) > 0:
+                    f_start = forecast_df["ds"].min().date()
+                    f_end = forecast_df["ds"].max().date()
+                    add_festival_bands(fig, ts, f_end)
 
-            apply_layout(fig, height=460, xaxis_title="Date", yaxis_title=value_label)
-            st.plotly_chart(fig, use_container_width=True)
+                apply_layout(fig, height=460, xaxis_title="Date", yaxis_title=value_label)
+                st.plotly_chart(fig, use_container_width=True)
 
+                # Live ARIMA description
+                if len(forecast_df) > 0:
+                    pred_end = forecast_df.iloc[-1]["yhat"]
+                    direction = "upward" if forecast_df["yhat"].iloc[-1] > forecast_df["yhat"].iloc[0] else "downward"
+                    st.markdown(f'<div class="chart-desc">ARIMA/SARIMA forecasts a <b>{direction}</b> trend over '
+                                f'<b>{horizon} days</b>. Final predicted value: <b>{pred_end:,.0f}</b>. '
+                                f'ARIMA uses autoregression (past values) and moving average (past errors) '
+                                f'with differencing to handle non-stationary data.</div>',
+                                unsafe_allow_html=True)
+
+            # --- Metrics ---
             st.markdown('<div class="section-header">Model Performance</div>', unsafe_allow_html=True)
             mc1, mc2, mc3 = st.columns(3)
             mc1.metric("MAE", f"{metrics['MAE']:,.2f}")
             mc2.metric("RMSE", f"{metrics['RMSE']:,.2f}")
             mc3.metric("MAPE", f"{metrics['MAPE']:.2f}%")
+
+            # Metrics description
+            mape_quality = "excellent" if metrics["MAPE"] < 10 else "good" if metrics["MAPE"] < 20 else "moderate" if metrics["MAPE"] < 30 else "high"
+            rmse_vs_mae = "consistent errors" if metrics["RMSE"] < metrics["MAE"] * 1.3 else "some large outlier errors"
+            st.markdown(f'<div class="chart-desc">MAE (Mean Absolute Error) = avg error in original units. '
+                        f'RMSE penalizes large errors more — {rmse_vs_mae}. '
+                        f'MAPE of <b>{metrics["MAPE"]:.1f}%</b> is <b>{mape_quality}</b> '
+                        f'(under 10% = excellent, 10-20% = good, over 30% = poor). '
+                        f'Metrics computed on a 20% held-out test set.</div>', unsafe_allow_html=True)
+
+            # --- Seasonal Decomposition ---
+            st.markdown('<div class="section-header">Seasonal Decomposition</div>', unsafe_allow_html=True)
+            try:
+                series = df_fc_filtered.set_index("ds")["y"].dropna()
+                if len(series) >= 14:
+                    decomp = seasonal_decompose(series, period=7)
+                    comp_tab1, comp_tab2, comp_tab3 = st.tabs(["Trend", "Seasonal", "Residual"])
+                    for comp_tab, comp_key, comp_label in [
+                        (comp_tab1, "trend", "Trend"),
+                        (comp_tab2, "seasonal", "Seasonal"),
+                        (comp_tab3, "residual", "Residual"),
+                    ]:
+                        with comp_tab:
+                            fig = go.Figure()
+                            fig.add_trace(go.Scatter(
+                                x=decomp[comp_key].index, y=decomp[comp_key].values,
+                                mode="lines", name=comp_label,
+                                line=dict(color=ACCENT if comp_key != "residual" else "#78909C", width=1.5),
+                            ))
+                            apply_layout(fig, height=280, xaxis_title="Date", yaxis_title=comp_label)
+                            st.plotly_chart(fig, use_container_width=True)
+                            descs = {"trend": "Shows the long-term direction after removing seasonality. Upward = growing, flat = stable.",
+                                     "seasonal": "Repeating weekly pattern extracted via additive decomposition. Peaks show high-activity days (e.g. weekends).",
+                                     "residual": "Random noise left after removing trend and seasonality. Large spikes here indicate unusual events or anomalies."}
+                            st.markdown(f'<div class="chart-desc">{descs[comp_key]}</div>', unsafe_allow_html=True)
+                else:
+                    st.info("Not enough data points for seasonal decomposition (need 14+).")
+            except Exception as e:
+                st.warning(f"Decomposition unavailable: {e}")
+
     else:
-        fig = go.Figure(go.Scatter(x=df_fc_filtered["ds"], y=df_fc_filtered["y"], mode="lines", line=dict(color=ACCENT)))
+        # Show preview before running
+        fig = go.Figure()
+        fig.add_trace(go.Scatter(
+            x=df_fc_filtered["ds"], y=df_fc_filtered["y"],
+            mode="lines", name="Historical",
+            line=dict(color=ACCENT, width=1.5),
+        ))
+        add_festival_bands(fig, ts, te)
         apply_layout(fig, height=400, xaxis_title="Date", yaxis_title=value_label)
         st.plotly_chart(fig, use_container_width=True)
+        st.info("Select your dataset, model, and horizon above, then click **Run Forecast**.")
 
 
 # ========================================================================
-# PAGE 5 — Comparative Insights
+# PAGE 7 — Comparative Insights
 # ========================================================================
 elif page == "Comparative Insights":
     st.markdown('<div class="page-title">Comparative Insights</div>', unsafe_allow_html=True)
     st.markdown('<div class="page-subtitle">Cross-dataset festival impact and anomaly detection</div>', unsafe_allow_html=True)
 
-    amz_daily = aggregate_amazon_daily(get_amazon())
-    web_daily = aggregate_web_daily(get_web_traffic())
-    rides_daily = aggregate_rides_daily(get_rides())
+    amz = get_amazon()
+    web = get_web_traffic()
+    rides = get_rides()
 
+    amz_daily = aggregate_amazon_daily(amz)
+    web_daily = aggregate_web_daily(web)
+    rides_daily = aggregate_rides_daily(rides)
+
+    # --- Festival Impact Comparison ---
     st.markdown('<div class="section-header">Festival Impact Comparison</div>', unsafe_allow_html=True)
-    lift_amz = compute_festival_lift(amz_daily, "revenue").rename(columns={"lift_pct": "Amazon Revenue %"})
-    lift_web = compute_festival_lift(web_daily, "visits").rename(columns={"lift_pct": "Web Visits %"})
-    lift_rides = compute_festival_lift(rides_daily, "bookings").rename(columns={"lift_pct": "Ride Bookings %"})
 
-    merged = lift_amz[["festival", "Amazon Revenue %"]].merge(lift_web[["festival", "Web Visits %"]], on="festival", how="outer")
-    merged = merged.merge(lift_rides[["festival", "Ride Bookings %"]], on="festival", how="outer")
-    st.dataframe(merged.fillna("-"), use_container_width=True, hide_index=True)
+    lift_amz = compute_festival_lift(amz_daily, "revenue")
+    lift_web = compute_festival_lift(web_daily, "visits")
+    lift_rides = compute_festival_lift(rides_daily, "bookings")
+
+    if not lift_amz.empty:
+        lift_amz = lift_amz.rename(columns={"lift_pct": "Amazon Revenue %"}).drop(columns=["avg_value", "baseline"], errors="ignore")
+    if not lift_web.empty:
+        lift_web = lift_web.rename(columns={"lift_pct": "Web Visits %"}).drop(columns=["avg_value", "baseline"], errors="ignore")
+    if not lift_rides.empty:
+        lift_rides = lift_rides.rename(columns={"lift_pct": "Ride Bookings %"}).drop(columns=["avg_value", "baseline"], errors="ignore")
+
+    # Merge
+    merged = lift_amz
+    if not lift_web.empty:
+        merged = merged.merge(lift_web, on="festival", how="outer")
+    if not lift_rides.empty:
+        merged = merged.merge(lift_rides, on="festival", how="outer")
+
+    if not merged.empty:
+        st.dataframe(merged.fillna("-"), use_container_width=True, hide_index=True)
+
+        # Grouped bar chart
+        value_cols = [c for c in merged.columns if c != "festival"]
+        fig = go.Figure()
+        colors = [ACCENT, "#B0BEC5", "#78909C"]
+        for i, col in enumerate(value_cols):
+            vals = pd.to_numeric(merged[col], errors="coerce").fillna(0)
+            fig.add_trace(go.Bar(
+                name=col, x=merged["festival"], y=vals,
+                marker_color=colors[i % len(colors)],
+            ))
+        fig.update_layout(barmode="group")
+        apply_layout(fig, height=400, xaxis_title="Festival", yaxis_title="% Lift vs Baseline")
+        st.plotly_chart(fig, use_container_width=True)
+        st.markdown('<div class="chart-desc">Grouped bars compare the % lift each festival brings across all three datasets. '
+                    'Festivals that show positive lift across all domains have a universal economic impact. '
+                    'Mismatches reveal domain-specific effects (e.g. Diwali boosts sales but may reduce ride bookings).</div>',
+                    unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # --- Anomaly Detection (Z-score) ---
+    st.markdown('<div class="section-header">Anomaly Detection (Z-Score Method)</div>', unsafe_allow_html=True)
+    anomaly_dataset = st.selectbox("Dataset", ["Amazon Revenue", "Web Visits", "Ride Bookings"], key="anom_ds")
+
+    if anomaly_dataset == "Amazon Revenue":
+        anom_df = amz_daily[["date", "revenue"]].copy()
+        col = "revenue"
+    elif anomaly_dataset == "Web Visits":
+        anom_df = web_daily[["date", "visits"]].copy()
+        col = "visits"
+    else:
+        anom_df = rides_daily[["date", "bookings"]].copy()
+        col = "bookings"
+
+    # Timeline control
+    anom_mn = anom_df["date"].min().date()
+    anom_mx = anom_df["date"].max().date()
+    ats, ate = timeline_control("anom", anom_mn, anom_mx)
+    anom_mask = (anom_df["date"].dt.date >= ats) & (anom_df["date"].dt.date <= ate)
+    anom_df = anom_df[anom_mask].copy()
+
+    threshold = st.slider("Z-score threshold", 1.0, 4.0, 2.5, 0.5, key="zscore_thresh")
+
+    mean_val = anom_df[col].mean()
+    std_val = anom_df[col].std()
+    if std_val > 0:
+        anom_df["zscore"] = (anom_df[col] - mean_val) / std_val
+        anom_df["is_anomaly"] = anom_df["zscore"].abs() > threshold
+    else:
+        anom_df["zscore"] = 0
+        anom_df["is_anomaly"] = False
 
     fig = go.Figure()
-    colors = [ACCENT, "#B0BEC5", "#78909C"]
-    for i, col in enumerate(["Amazon Revenue %", "Web Visits %", "Ride Bookings %"]):
-        if col in merged.columns:
-            fig.add_trace(go.Bar(name=col, x=merged["festival"], y=pd.to_numeric(merged[col], errors='coerce'), marker_color=colors[i]))
-    fig.update_layout(barmode="group")
-    apply_layout(fig, height=400, yaxis_title="% Lift vs Baseline")
-    st.plotly_chart(fig, use_container_width=True)
+    normal = anom_df[~anom_df["is_anomaly"]]
+    anomalies = anom_df[anom_df["is_anomaly"]]
 
-    st.markdown('<div class="section-header">Anomaly Detection (Z-Score)</div>', unsafe_allow_html=True)
-    anomaly_dataset = st.selectbox("Dataset", ["Amazon Revenue", "Web Visits", "Ride Bookings"])
-    anom_df = {"Amazon Revenue": amz_daily.rename(columns={"revenue": "v"}), 
-               "Web Visits": web_daily.rename(columns={"visits": "v"}), 
-               "Ride Bookings": rides_daily.rename(columns={"bookings": "v"})}[anomaly_dataset]
-    
-    threshold = st.slider("Z-score threshold", 1.0, 4.0, 2.5, 0.5)
-    mean_v, std_v = anom_df["v"].mean(), anom_df["v"].std()
-    anom_df["is_anomaly"] = ((anom_df["v"] - mean_v) / std_v).abs() > threshold
-
-    fig = go.Figure()
-    fig.add_trace(go.Scatter(x=anom_df["date"], y=anom_df["v"], mode="lines", name="Normal", line=dict(color=ACCENT)))
-    anoms = anom_df[anom_df["is_anomaly"]]
-    fig.add_trace(go.Scatter(x=anoms["date"], y=anoms["v"], mode="markers", name="Anomaly", marker=dict(color=NEGATIVE, size=8, symbol="diamond")))
-    apply_layout(fig, height=400)
+    fig.add_trace(go.Scatter(
+        x=normal["date"], y=normal[col],
+        mode="lines", name="Normal",
+        line=dict(color=ACCENT, width=1.5),
+    ))
+    fig.add_trace(go.Scatter(
+        x=anomalies["date"], y=anomalies[col],
+        mode="markers", name="Anomaly",
+        marker=dict(color=NEGATIVE, size=8, symbol="diamond"),
+    ))
+    add_festival_bands(fig, ats, ate)
+    apply_layout(fig, height=400, xaxis_title="Date", yaxis_title=col.title())
     st.plotly_chart(fig, use_container_width=True)
+    st.markdown(f'<div class="chart-desc">Z-score = (value - mean) / std_dev. Points beyond <b>{threshold} sigma</b> '
+                f'(red diamonds) are statistical outliers. Mean: <b>{mean_val:,.0f}</b>, '
+                f'Std Dev: <b>{std_val:,.0f}</b>. These anomalies often align with festivals, flash sales, or system outages. '
+                f'Lower threshold = more sensitive detection.</div>', unsafe_allow_html=True)
+
+    if len(anomalies) > 0:
+        st.markdown(f"**{len(anomalies)} anomalies detected** (threshold: {threshold} sigma)")
+        with st.expander("View anomaly details"):
+            st.dataframe(anomalies[["date", col, "zscore"]].sort_values("zscore", ascending=False),
+                         use_container_width=True, hide_index=True)
+    else:
+        st.info("No anomalies detected at the current threshold.")
