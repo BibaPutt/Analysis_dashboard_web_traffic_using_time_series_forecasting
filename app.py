@@ -303,8 +303,7 @@ if page == "E-Commerce Analysis":
     st.markdown("---")
 
     # --- Category Breakdown ---
-    c1 = st.columns(1)
-    with c1:
+
         st.markdown('<div class="section-header">Revenue by Category</div>', unsafe_allow_html=True)
         cat_df = amz.groupby("Category")["TotalAmount"].sum().reset_index()
         cat_df = cat_df.sort_values("TotalAmount", ascending=True).tail(10)
