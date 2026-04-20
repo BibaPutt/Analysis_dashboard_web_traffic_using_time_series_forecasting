@@ -334,7 +334,7 @@ if page == "E-Commerce Analysis":
         st.plotly_chart(fig, use_container_width=True)
         top_prod = prod_df.iloc[-1]["ProductName"] if len(prod_df) > 0 else "N/A"
         st.markdown(f'<div class="chart-desc">Highest-revenue product: <b>{top_prod}</b>. '
-                    f'Shows the top 10 individual products by total sales value.</div>',
+                    f'</div>',
                     unsafe_allow_html=True)
 
     # --- Monthly Heatmap ---
