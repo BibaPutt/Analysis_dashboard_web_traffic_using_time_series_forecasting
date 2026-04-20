@@ -246,7 +246,7 @@ def timeline_control(key_prefix, min_date, max_date, default_start=None, default
 # ========================================================================
 # PAGE 2 — E-Commerce Deep Dive
 # ========================================================================
-elif page == "E-Commerce Analysis":
+if page == "E-Commerce Analysis":
     st.markdown('<div class="page-title">E-Commerce Deep Dive</div>', unsafe_allow_html=True)
     st.markdown('<div class="page-subtitle">Amazon sales trends, category breakdown, and festival spikes</div>', unsafe_allow_html=True)
 
