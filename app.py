@@ -715,35 +715,7 @@ elif page == "Forecasting Lab":
                         f'(under 10% = excellent, 10-20% = good, over 30% = poor). '
                         f'Metrics computed on a 20% held-out test set.</div>', unsafe_allow_html=True)
 
-            # --- Seasonal Decomposition ---
-            st.markdown('<div class="section-header">Seasonal Decomposition</div>', unsafe_allow_html=True)
-            try:
-                series = df_fc_filtered.set_index("ds")["y"].dropna()
-                if len(series) >= 14:
-                    decomp = seasonal_decompose(series, period=7)
-                    comp_tab1, comp_tab2, comp_tab3 = st.tabs(["Trend", "Seasonal", "Residual"])
-                    for comp_tab, comp_key, comp_label in [
-                        (comp_tab1, "trend", "Trend"),
-                        (comp_tab2, "seasonal", "Seasonal"),
-                        (comp_tab3, "residual", "Residual"),
-                    ]:
-                        with comp_tab:
-                            fig = go.Figure()
-                            fig.add_trace(go.Scatter(
-                                x=decomp[comp_key].index, y=decomp[comp_key].values,
-                                mode="lines", name=comp_label,
-                                line=dict(color=ACCENT if comp_key != "residual" else "#78909C", width=1.5),
-                            ))
-                            apply_layout(fig, height=280, xaxis_title="Date", yaxis_title=comp_label)
-                            st.plotly_chart(fig, use_container_width=True)
-                            descs = {"trend": "Shows the long-term direction after removing seasonality. Upward = growing, flat = stable.",
-                                     "seasonal": "Repeating weekly pattern extracted via additive decomposition. Peaks show high-activity days (e.g. weekends).",
-                                     "residual": "Random noise left after removing trend and seasonality. Large spikes here indicate unusual events or anomalies."}
-                            st.markdown(f'<div class="chart-desc">{descs[comp_key]}</div>', unsafe_allow_html=True)
-                else:
-                    st.info("Not enough data points for seasonal decomposition (need 14+).")
-            except Exception as e:
-                st.warning(f"Decomposition unavailable: {e}")
+
 
     else:
         # Show preview before running
