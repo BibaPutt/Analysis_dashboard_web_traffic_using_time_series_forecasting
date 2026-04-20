@@ -209,11 +209,9 @@ st.sidebar.markdown(f'<div class="page-subtitle">Web Traffic Forecasting using T
 page = st.sidebar.radio(
     "Navigate",
     [
-        "Executive Overview",
         "E-Commerce Analysis",
         "Web Traffic Analysis",
         "Ride Bookings Analysis",
-        "Shopper Behavior",
         "Forecasting Lab",
         "Comparative Insights",
     ],
@@ -298,9 +296,8 @@ if page == "E-Commerce Analysis":
             if len(filtered) > 0:
                 avg_v = filtered[col_name].mean()
                 peak_v = filtered[col_name].max()
-                peak_d = filtered.loc[filtered[col_name].idxmax(), "date"].strftime("%b %d, %Y")
                 filter_ctx = f" for {sel_cat}" if sel_cat != "All" else ""
-                filter_ctx += f" / {sel_brand}" if sel_brand != "All" else ""
+                peak_d = filtered.loc[filtered[col_name].idxmax(), "date"].strftime("%b %d, %Y")
                 st.markdown(f'<div class="chart-desc">{label}{filter_ctx}: Average <b>{avg_v:,.0f}</b> per day, '
                             f'peak of <b>{peak_v:,.0f}</b> on {peak_d} across the selected {(te - ts).days}-day window. '
                             f'The white line smooths daily noise using a 7-day rolling mean.</div>',
