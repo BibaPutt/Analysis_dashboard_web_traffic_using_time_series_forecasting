@@ -303,7 +303,7 @@ if page == "E-Commerce Analysis":
     st.markdown("---")
 
     # --- Category Breakdown ---
-    c1, c2 = st.columns(2)
+    c1 = st.columns(1)
     with c1:
         st.markdown('<div class="section-header">Revenue by Category</div>', unsafe_allow_html=True)
         cat_df = amz.groupby("Category")["TotalAmount"].sum().reset_index()
@@ -319,20 +319,7 @@ if page == "E-Commerce Analysis":
                     f'</div>',
                     unsafe_allow_html=True)
 
-    with c2:
-        st.markdown('<div class="section-header">Top 10 Products</div>', unsafe_allow_html=True)
-        prod_df = amz.groupby("ProductName")["TotalAmount"].sum().reset_index()
-        prod_df = prod_df.sort_values("TotalAmount", ascending=True).tail(10)
-        fig = go.Figure(go.Bar(
-            x=prod_df["TotalAmount"], y=prod_df["ProductName"],
-            orientation="h", marker_color="#B0BEC5",
-        ))
-        apply_layout(fig, height=360, xaxis_title="Revenue ($)", yaxis_title="")
-        st.plotly_chart(fig, use_container_width=True)
-        top_prod = prod_df.iloc[-1]["ProductName"] if len(prod_df) > 0 else "N/A"
-        st.markdown(f'<div class="chart-desc">Highest-revenue product: <b>{top_prod}</b>. '
-                    f'</div>',
-                    unsafe_allow_html=True)
+
 
     # --- Monthly Heatmap ---
     st.markdown('<div class="section-header">Monthly Revenue Heatmap</div>', unsafe_allow_html=True)
