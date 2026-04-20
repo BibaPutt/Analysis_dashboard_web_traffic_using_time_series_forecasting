@@ -319,7 +319,7 @@ if page == "E-Commerce Analysis":
         st.plotly_chart(fig, use_container_width=True)
         top_cat = cat_df.iloc[-1]["Category"] if len(cat_df) > 0 else "N/A"
         st.markdown(f'<div class="chart-desc">Top revenue-generating category: <b>{top_cat}</b>. '
-                    f'Bars show cumulative revenue across the full dataset{" (filtered by " + sel_brand + ")" if sel_brand != "All" else ""}.</div>',
+                    f'</div>',
                     unsafe_allow_html=True)
 
     with c2:
