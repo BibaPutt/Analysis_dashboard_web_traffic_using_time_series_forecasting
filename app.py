@@ -302,22 +302,23 @@ if page == "E-Commerce Analysis":
 
     st.markdown("---")
 
-    # --- Category Breakdown ---
+# --- Category Breakdown ---
 
-        st.markdown('<div class="section-header">Revenue by Category</div>', unsafe_allow_html=True)
-        cat_df = amz.groupby("Category")["TotalAmount"].sum().reset_index()
-        cat_df = cat_df.sort_values("TotalAmount", ascending=True).tail(10)
-        fig = go.Figure(go.Bar(
-            x=cat_df["TotalAmount"], y=cat_df["Category"],
-            orientation="h", marker_color=ACCENT,
-        ))
-        apply_layout(fig, height=360, xaxis_title="Revenue ($)", yaxis_title="")
-        st.plotly_chart(fig, use_container_width=True)
-        top_cat = cat_df.iloc[-1]["Category"] if len(cat_df) > 0 else "N/A"
-        st.markdown(f'<div class="chart-desc">Top revenue-generating category: <b>{top_cat}</b>. '
-                    f'</div>',
-                    unsafe_allow_html=True)
+st.markdown('<div class="section-header">Revenue by Category</div>', unsafe_allow_html=True)
+cat_df = amz.groupby("Category")["TotalAmount"].sum().reset_index()
+cat_df = cat_df.sort_values("TotalAmount", ascending=True).tail(10)
 
+fig = go.Figure(go.Bar(
+    x=cat_df["TotalAmount"], y=cat_df["Category"],
+    orientation="h", marker_color=ACCENT,
+))
+apply_layout(fig, height=360, xaxis_title="Revenue ($)", yaxis_title="")
+st.plotly_chart(fig, use_container_width=True)
+
+top_cat = cat_df.iloc[-1]["Category"] if len(cat_df) > 0 else "N/A"
+st.markdown(f'<div class="chart-desc">Top revenue-generating category: <b>{top_cat}</b>. '
+            f'</div>',
+            unsafe_allow_html=True)
 
 
     # --- Monthly Heatmap ---
