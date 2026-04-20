@@ -195,9 +195,6 @@ def get_web_2026():
 def get_rides():
     return load_ride_bookings()
 
-@st.cache_data(show_spinner=False)
-def get_shoppers():
-    return load_shoppers()
 
 
 # ========================================================================
@@ -213,7 +210,7 @@ page = st.sidebar.radio(
         "Web Traffic Analysis",
         "Ride Bookings Analysis",
         "Forecasting Lab",
-        "Comparative Insights",
+
     ],
     label_visibility="collapsed",
 )
@@ -775,123 +772,4 @@ elif page == "Forecasting Lab":
         st.info("Select your dataset, model, and horizon above, then click **Run Forecast**.")
 
 
-# ========================================================================
-# PAGE 7 — Comparative Insights
-# ========================================================================
-elif page == "Comparative Insights":
-    st.markdown('<div class="page-title">Comparative Insights</div>', unsafe_allow_html=True)
-    st.markdown('<div class="page-subtitle">Cross-dataset festival impact and anomaly detection</div>', unsafe_allow_html=True)
 
-    amz = get_amazon()
-    web = get_web_traffic()
-    rides = get_rides()
-
-    amz_daily = aggregate_amazon_daily(amz)
-    web_daily = aggregate_web_daily(web)
-    rides_daily = aggregate_rides_daily(rides)
-
-    # --- Festival Impact Comparison ---
-    st.markdown('<div class="section-header">Festival Impact Comparison</div>', unsafe_allow_html=True)
-
-    lift_amz = compute_festival_lift(amz_daily, "revenue")
-    lift_web = compute_festival_lift(web_daily, "visits")
-    lift_rides = compute_festival_lift(rides_daily, "bookings")
-
-    if not lift_amz.empty:
-        lift_amz = lift_amz.rename(columns={"lift_pct": "Amazon Revenue %"}).drop(columns=["avg_value", "baseline"], errors="ignore")
-    if not lift_web.empty:
-        lift_web = lift_web.rename(columns={"lift_pct": "Web Visits %"}).drop(columns=["avg_value", "baseline"], errors="ignore")
-    if not lift_rides.empty:
-        lift_rides = lift_rides.rename(columns={"lift_pct": "Ride Bookings %"}).drop(columns=["avg_value", "baseline"], errors="ignore")
-
-    # Merge
-    merged = lift_amz
-    if not lift_web.empty:
-        merged = merged.merge(lift_web, on="festival", how="outer")
-    if not lift_rides.empty:
-        merged = merged.merge(lift_rides, on="festival", how="outer")
-
-    if not merged.empty:
-        st.dataframe(merged.fillna("-"), use_container_width=True, hide_index=True)
-
-        # Grouped bar chart
-        value_cols = [c for c in merged.columns if c != "festival"]
-        fig = go.Figure()
-        colors = [ACCENT, "#B0BEC5", "#78909C"]
-        for i, col in enumerate(value_cols):
-            vals = pd.to_numeric(merged[col], errors="coerce").fillna(0)
-            fig.add_trace(go.Bar(
-                name=col, x=merged["festival"], y=vals,
-                marker_color=colors[i % len(colors)],
-            ))
-        fig.update_layout(barmode="group")
-        apply_layout(fig, height=400, xaxis_title="Festival", yaxis_title="% Lift vs Baseline")
-        st.plotly_chart(fig, use_container_width=True)
-        st.markdown('<div class="chart-desc">Grouped bars compare the % lift each festival brings across all three datasets. '
-                    'Festivals that show positive lift across all domains have a universal economic impact. '
-                    'Mismatches reveal domain-specific effects (e.g. Diwali boosts sales but may reduce ride bookings).</div>',
-                    unsafe_allow_html=True)
-
-    st.markdown("---")
-
-    # --- Anomaly Detection (Z-score) ---
-    st.markdown('<div class="section-header">Anomaly Detection (Z-Score Method)</div>', unsafe_allow_html=True)
-    anomaly_dataset = st.selectbox("Dataset", ["Amazon Revenue", "Web Visits", "Ride Bookings"], key="anom_ds")
-
-    if anomaly_dataset == "Amazon Revenue":
-        anom_df = amz_daily[["date", "revenue"]].copy()
-        col = "revenue"
-    elif anomaly_dataset == "Web Visits":
-        anom_df = web_daily[["date", "visits"]].copy()
-        col = "visits"
-    else:
-        anom_df = rides_daily[["date", "bookings"]].copy()
-        col = "bookings"
-
-    # Timeline control
-    anom_mn = anom_df["date"].min().date()
-    anom_mx = anom_df["date"].max().date()
-    ats, ate = timeline_control("anom", anom_mn, anom_mx)
-    anom_mask = (anom_df["date"].dt.date >= ats) & (anom_df["date"].dt.date <= ate)
-    anom_df = anom_df[anom_mask].copy()
-
-    threshold = st.slider("Z-score threshold", 1.0, 4.0, 2.5, 0.5, key="zscore_thresh")
-
-    mean_val = anom_df[col].mean()
-    std_val = anom_df[col].std()
-    if std_val > 0:
-        anom_df["zscore"] = (anom_df[col] - mean_val) / std_val
-        anom_df["is_anomaly"] = anom_df["zscore"].abs() > threshold
-    else:
-        anom_df["zscore"] = 0
-        anom_df["is_anomaly"] = False
-
-    fig = go.Figure()
-    normal = anom_df[~anom_df["is_anomaly"]]
-    anomalies = anom_df[anom_df["is_anomaly"]]
-
-    fig.add_trace(go.Scatter(
-        x=normal["date"], y=normal[col],
-        mode="lines", name="Normal",
-        line=dict(color=ACCENT, width=1.5),
-    ))
-    fig.add_trace(go.Scatter(
-        x=anomalies["date"], y=anomalies[col],
-        mode="markers", name="Anomaly",
-        marker=dict(color=NEGATIVE, size=8, symbol="diamond"),
-    ))
-    add_festival_bands(fig, ats, ate)
-    apply_layout(fig, height=400, xaxis_title="Date", yaxis_title=col.title())
-    st.plotly_chart(fig, use_container_width=True)
-    st.markdown(f'<div class="chart-desc">Z-score = (value - mean) / std_dev. Points beyond <b>{threshold} sigma</b> '
-                f'(red diamonds) are statistical outliers. Mean: <b>{mean_val:,.0f}</b>, '
-                f'Std Dev: <b>{std_val:,.0f}</b>. These anomalies often align with festivals, flash sales, or system outages. '
-                f'Lower threshold = more sensitive detection.</div>', unsafe_allow_html=True)
-
-    if len(anomalies) > 0:
-        st.markdown(f"**{len(anomalies)} anomalies detected** (threshold: {threshold} sigma)")
-        with st.expander("View anomaly details"):
-            st.dataframe(anomalies[["date", col, "zscore"]].sort_values("zscore", ascending=False),
-                         use_container_width=True, hide_index=True)
-    else:
-        st.info("No anomalies detected at the current threshold.")
